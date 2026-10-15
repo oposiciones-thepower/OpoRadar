@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local marketing preview only
+.prerender/
+.local-qa/
+.env
+.env.*

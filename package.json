@@ -8,7 +8,14 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:marketing": "vite --config vite.marketing.config.ts",
+    "check:marketing": "tsc -p tsconfig.marketing.json",
+    "build:marketing": "vite build --config vite.marketing.config.ts && vite build --config vite.marketing.config.ts --ssr src/public-site/prerender.tsx --outDir .prerender && node scripts/prerender-marketing.mjs",
+    "serve:marketing": "node scripts/serve-marketing.mjs",
+    "test:marketing": "node --test scripts/test-marketing.mjs",
+    "export:db": "node --env-file-if-exists=.env.local scripts/export-db-catalogue.mjs",
+    "build:marketing:db": "VITE_CATALOGUE=db npm run build:marketing"
   },
   "dependencies": {
     "@ant-design/icons": "6.1.0",
@@ -83,6 +90,7 @@
     "eslint-plugin-react-refresh": "0.4.20",
     "globals": "15.15.0",
     "lovable-tagger": "1.1.13",
+    "pg": "^8.23.1",
     "postcss": "8.5.6",
     "tailwindcss": "3.4.17",
     "typescript": "5.8.3",

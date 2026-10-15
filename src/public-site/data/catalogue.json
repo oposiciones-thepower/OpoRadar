@@ -1,0 +1,3358 @@
+{
+  "snapshot": "2026-10-13",
+  "source": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+  "sampleOnly": true,
+  "records": [
+    {
+      "id": "P-038",
+      "organism": "Ayuntamiento de Daganzo de Arriba",
+      "sector": "Ayuntamientos",
+      "municipality": "Daganzo de Arriba",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Daganzo de Arriba",
+      "category": "Auxiliar administrativo",
+      "type": "convocatoria",
+      "state": "cerrada",
+      "portal": "https://www.ayto-daganzo.org/noticias/convocatoria-y-bases-para-cubrir-una-plaza-de-auxiliar-administrativo",
+      "access": "Libre / laboral fijo por relevo",
+      "seats": 1,
+      "group": "Grupo 1 · 1–5",
+      "published": "02/10/2025",
+      "applicationWindow": "Pendiente de localizar",
+      "exam": "08/04/2026",
+      "sourceRow": 38,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Programa / temario en bases (PDF p. 18)",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8173/bases-de-convocatoria_plaza-de-auxiliar-administrativo-laboral-fijo-por-relevo.pdf#page=18"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Resol. 22/09/2025 · Bases de convocatoria — plaza de Auxiliar Administrativo laboral fijo por relevo\nBases de convocatoria_PLAZA DE AUXILIAR ADMINISTRATIVO LABORAL FIJO POR RELEVO.",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8173/bases-de-convocatoria_plaza-de-auxiliar-administrativo-laboral-fijo-por-relevo.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://www.ayto-daganzo.org/noticias/convocatoria-y-bases-para-cubrir-una-plaza-de-auxiliar-administrativo",
+          "links": [
+            "https://www.ayto-daganzo.org/noticias/convocatoria-y-bases-para-cubrir-una-plaza-de-auxiliar-administrativo"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "Resol. 28/07/2026 · Resolución convocatoria y constitución bolsa de empleo\nResol. 22/09/2025 · Bases de convocatoria — plaza de Auxiliar Administrativo laboral fijo por relevo\nBases de convocatoria_PLAZA DE AUXILIAR ADMINISTRATIVO LABORAL FIJO POR RELEVO.",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8741/resolucion-convocatoria-y-constitucion-bolsa-de-empleo.pdf",
+            "https://www.ayto-daganzo.org/media/8173/bases-de-convocatoria_plaza-de-auxiliar-administrativo-laboral-fijo-por-relevo.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Resol. 09/12/2025 · Resolución listado provisional admitidos y excluidos",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8327/resolucion-listado-provisional-admitidos-y-excluidos.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "02/10/2025 · BOCM-20251002-56\nResol. 22/09/2025 · Bases de convocatoria — plaza de Auxiliar Administrativo laboral fijo por relevo\nPrograma / temario en bases (PDF p. 18)\nPlantilla corrección test\nCertificado acuerdo Junta de Gobierno\nBases de convocatoria_PLAZA DE AUXILIAR ADMINISTRATIVO LABORAL FIJO POR RELEVO.\nBOE-A-2025-20308\nACTA TRIBUNAL APERTURA DE PLICAS\nACTA TRIBUNAL\n2025 11 13 Anuncio plazo requerimiento documentación",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8194/bocm-20251002-56.pdf",
+            "https://www.ayto-daganzo.org/media/8173/bases-de-convocatoria_plaza-de-auxiliar-administrativo-laboral-fijo-por-relevo.pdf",
+            "https://www.ayto-daganzo.org/media/8173/bases-de-convocatoria_plaza-de-auxiliar-administrativo-laboral-fijo-por-relevo.pdf#page=18",
+            "https://www.ayto-daganzo.org/media/8598/plantilla-correccion-test.pdf",
+            "https://www.ayto-daganzo.org/media/8172/certificado-acuerdo-junta-de-gobierno.pdf",
+            "https://www.ayto-daganzo.org/media/8209/boe-a-2025-20308.pdf",
+            "https://www.ayto-daganzo.org/media/8596/acta-tribunal-apertura-de-plicas.pdf",
+            "https://www.ayto-daganzo.org/media/8681/acta-tribunal.pdf",
+            "https://www.ayto-daganzo.org/media/8255/2025-11-13-anuncio-plazo-requerimiento-documentacion.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "08/04/2026",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Resol. 16/07/2026 · Resolución resultados finales y propuesta de adjudicación\nResolucion resultados finales y propuesta adjudicación",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8722/resolucion-resultados-finales-y-propuesta-adjudicacion.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Resol. 28/07/2026 · Resolución convocatoria y constitución bolsa de empleo\nResol. 16/07/2026 · Resolución resultados finales y propuesta de adjudicación\nResol. 19/03/2026 · Decreto 2026-0424 — lista definitiva y primer examen\nResol. 09/12/2025 · Resolución listado provisional admitidos y excluidos\nResolucion resultados finales y propuesta adjudicación\nResolucion notas primer y segundo ejercicio\nResolucion concejala notas tercer ejercicio y apertura plicas\nResolucion concejala notas primer y segundo ejercicio\nDECRETO 2026-0424 [Resolucion concejala listado definitvo admitidos y primer examen]\n20260114_Resolución_Resolución_Nombramiento Tribunal calificador (3)",
+          "links": [
+            "https://www.ayto-daganzo.org/media/8741/resolucion-convocatoria-y-constitucion-bolsa-de-empleo.pdf",
+            "https://www.ayto-daganzo.org/media/8722/resolucion-resultados-finales-y-propuesta-adjudicacion.pdf",
+            "https://www.ayto-daganzo.org/media/8494/decreto-2026-0424-resolucion-concejala-listado-definitvo-admitidos-y-primer-examen.pdf",
+            "https://www.ayto-daganzo.org/media/8327/resolucion-listado-provisional-admitidos-y-excluidos.pdf",
+            "https://www.ayto-daganzo.org/media/8588/resolucion-notas-primer-y-segundo-ejercicio.pdf",
+            "https://www.ayto-daganzo.org/media/8658/resolucion-concejala-notas-tercer-ejercicio-y-apertura-plicas.pdf",
+            "https://www.ayto-daganzo.org/media/8597/resolucion-concejala-notas-primer-y-segundo-ejercicio.pdf",
+            "https://www.ayto-daganzo.org/media/8495/20260114_resolucion_resolucion_nombramiento-tribunal-calificador-3.pdf"
+          ]
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "cerrada"
+    },
+    {
+      "id": "L-004",
+      "organism": "Ayuntamiento de Alcorcón",
+      "sector": "Ayuntamientos",
+      "municipality": "Alcorcón",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Alcorcón",
+      "category": "Administrativo C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1945",
+      "access": "Promoción interna",
+      "seats": 20,
+      "group": "Grupo 3 · 20 o más",
+      "published": "26/09/2025",
+      "applicationWindow": "27/09/2025 — 16/10/2025\n26/09/2025 · 04. ANUNCIO PLAZO INSTANCIAS 20 ADMINISTRATIVOS/AS PROMOCIÓN INTERNA - BOE 26.09.25 (PDF)",
+      "exam": "11/12/2025",
+      "sourceRow": 42,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "25/08/2025 · 02. PUBLICACION RESEÑA BASES 20 PLAZAS ADMINISTRATIVOS/AS BOCM 25_08_25 PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I (PDF)\nAnexo I — Temario, pp. 9–11, Bases 20 Administrativos/as P.I.\n05. ANEXOS 20 ADMINISTRATIVOS/AS PROMOCIÓN INTERNA (PDF)\n01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/02.%20PUBLICACION%20BASES%2020%20ADMINISTRATIVOS%20BOCM%2025_08_25%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/01.%20BASES%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-09/05.%20ANEXOS%2020%20ADMINISTRATIVOS%20PROMOCI%C3%93N%20INTERNA.pdf"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "25/08/2025 · 02. PUBLICACION RESEÑA BASES 20 PLAZAS ADMINISTRATIVOS/AS BOCM 25_08_25 PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I (PDF)\n01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/02.%20PUBLICACION%20BASES%2020%20ADMINISTRATIVOS%20BOCM%2025_08_25%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/01.%20BASES%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1945",
+          "links": [
+            "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1945"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "23/01/2026 · 15. DILIGENCIA RECTIFICACIÓN ERROR MATERIAL ACTA Nº 6 CONVOCATORIA 20 ADMINISTRATIVOS/AS (PDF)\n26/09/2025 · 20 plazas de Administrativo/a (promoción interna)\n25/08/2025 · 03. ANUNCIO INFORMATIVO CONVOCATORIA 20 PLAZAS ADMINISTRATIVOS/AS PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 02. PUBLICACION RESEÑA BASES 20 PLAZAS ADMINISTRATIVOS/AS BOCM 25_08_25 PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I (PDF)\n01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/15.%20DILIGENCIA%20RECTIFICACI%C3%93N%20ERROR%20MATERIAL%20ACTA%20N%C2%BA%206%20CONVOCATORIA%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.boe.es/boe/dias/2025/09/26/pdfs/BOE-A-2025-19077.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/03.%20ANUNCIO%20INFORMATIVO%20CONVOCATORIA%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/02.%20PUBLICACION%20BASES%2020%20ADMINISTRATIVOS%20BOCM%2025_08_25%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/01.%20BASES%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "OEP-045 · Oferta vinculada",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/04/01/BOCM-20250401-69.PDF"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "10/11/2025 · 06. ANUNCIO LISTADO PROVISIONAL Y PLAZO DE SUBSANACIÓN 20 PLAZAS DE ADMINISTRATIVO/A P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/06.%20ANUNCIO%20LISTADO%20PROVISIONAL%20Y%20PLAZO%20DE%20SUBSANACI%C3%93N%2020%20PLAZAS%20DE%20ADMINISTRATIVO%20P.I..pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "26/11/2025 · 07. ANUNCIO LISTADO DEFINITIVO, CONSTITUCIÓN TRIBUNAL Y FECHA EXAMEN 20 PLAZAS DE ADMINISTRATIVO/A P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/07.%20ANUNCIO%20LISTADO%20DEFINITIVO%2C%20CONSTITUCION%20TRIBUNAL%20Y%20FECHA%20EXAMEN%2020%20PLAZAS%20DE%20ADMINISTRATIVO.pdf"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "25/02/2026 · 18. ANUNCIO PRESENTACIÓN DOCUMENTACIÓN 20 ADMINISTRATIVOS/AS (PDF)\n23/01/2026 · 15. DILIGENCIA RECTIFICACIÓN ERROR MATERIAL ACTA Nº 6 CONVOCATORIA 20 ADMINISTRATIVOS/AS (PDF)\n23/01/2026 · 14. ACTA Nº 6 BAREMACIÓN Y PUNTUACIONES PROVISIONALES CONCURSO 20 ADMINISTRATIVOS/AS (PDF)\n23/01/2026 · 13. ACTA Nº 5 BAREMACIÓN 20 ADMINISTRATIVOS/AS (PDF)\n15/12/2025 · 10. ACTA Nº 2 PREPARACIÓN Y CELEBRACIÓN EJERCICIO 20 ADVOS/AS Y PLAZO ALEGACIONES PLANTILLA (PDF)\n02/12/2025 · 09. MODELO HOJA DE RESPUESTAS ADMINISTRATIVOS/AS PI (PDF)\n02/12/2025 · 08. ACTA Nº 1 CONSTITUCIÓN TRIBUNAL 20 ADMINISTRATIVOS/AS PI (PDF)\n26/09/2025 · 20 plazas de Administrativo/a (promoción interna)\n25/08/2025 · 03. ANUNCIO INFORMATIVO CONVOCATORIA 20 PLAZAS ADMINISTRATIVOS/AS PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 02. PUBLICACION RESEÑA BASES 20 PLAZAS ADMINISTRATIVOS/AS BOCM 25_08_25 PROMOCIÓN INTERNA (PDF)\n25/08/2025 · 01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I (PDF)\nAnexo I — Temario, pp. 9–11, Bases 20 Administrativos/as P.I.\n19. ANUNCIO APROBACIÓN BOLSA DE ADMINISTRATIVOS/AS (PDF)\n07. ANUNCIO LISTADO DEFINITIVO, CONSTITUCIÓN TRIBUNAL Y FECHA EXAMEN 20 PLAZAS DE ADMINISTRATIVO/A P.I. (PDF)\n05. ANEXOS 20 ADMINISTRATIVOS/AS PROMOCIÓN INTERNA (PDF)\n01. BASES 20 PLAZAS DE ADMINISTRATIVOS/AS P.I. (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/18.%20ANUNCIO%20PRESENTACI%C3%93N%20DOCUMENTACI%C3%93N%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/15.%20DILIGENCIA%20RECTIFICACI%C3%93N%20ERROR%20MATERIAL%20ACTA%20N%C2%BA%206%20CONVOCATORIA%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/14.%20ACTA%20N%C2%BA%206%20BAREMACI%C3%93N%20Y%20PUNTUACIONES%20PROVISIONALES%20CONCURSO%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/13.%20ACTA%20N%C2%BA%205%20BAREMACI%C3%93N%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-12/10.%20ACTA%20N%C2%BA%202%20PREPARACI%C3%93N%20Y%20CELEBRACI%C3%93N%20EJERCICIO%20%2020%20ADVOS%20Y%20PLAZO%20ALEGACIONES%20PLANTILLA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-12/09.%20MODELO%20HOJA%20DE%20RESPUESTAS%20ADMINISTRATIVOS%20PI.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-12/08.%20ACTA%20N%C2%BA%201%20CONSTITUCION%20TRIBUNAL%2020%20ADMINISTRATIVOS%20PI.pdf",
+            "https://www.boe.es/boe/dias/2025/09/26/pdfs/BOE-A-2025-19077.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/03.%20ANUNCIO%20INFORMATIVO%20CONVOCATORIA%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/02.%20PUBLICACION%20BASES%2020%20ADMINISTRATIVOS%20BOCM%2025_08_25%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-08/01.%20BASES%2020%20ADMINISTRATIVOS%20PROMOCION%20INTERNA.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/19.%20ANUNCIO%20APROBACION%20BOLSA%20DE%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/07.%20ANUNCIO%20LISTADO%20DEFINITIVO%2C%20CONSTITUCION%20TRIBUNAL%20Y%20FECHA%20EXAMEN%2020%20PLAZAS%20DE%20ADMINISTRATIVO.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-09/05.%20ANEXOS%2020%20ADMINISTRATIVOS%20PROMOCI%C3%93N%20INTERNA.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "11/12/2025",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "25/02/2026 · 17. ACTA Nº 8 PUNTUACIONES FINALES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 20 ADMINISTRATIVOS/AS (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/17.%20ACTA%20N%C2%BA%208%20%20PUNTUACIONES%20FINALES%20DEFINITIVAS%20Y%20PROPUESTA%20DE%20NOMBRAMIENTO%20%2020%20ADMINISTRATIVOS.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "12/03/2026 · 19. ANUNCIO APROBACIÓN BOLSA DE ADMINISTRATIVOS/AS (PDF)\n25/02/2026 · 17. ACTA Nº 8 PUNTUACIONES FINALES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 20 ADMINISTRATIVOS/AS (PDF)\n10/02/2026 · 16. ACTA Nº 7 RESOLUCIÓN ALEGACIONES BAREMACIÓN Y PUNTUACIONES FINALES PROVISIONALES 20 ADMINISTRATIVOS/AS (PDF)\n23/01/2026 · 12. ACTA Nº 4 RESOLUCIÓN ALEGACIONES Y COMIENZO BAREMACIÓN 20 ADMINISTRATIVOS/AS (PDF)\n26/12/2025 · 11. ACTA Nº 3 RESOLUCIÓN ALEGACIONES PLANTILLA Y CORRECCIÓN EJERCICIO 20 ADMINISTRATIVOS (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/19.%20ANUNCIO%20APROBACION%20BOLSA%20DE%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/17.%20ACTA%20N%C2%BA%208%20%20PUNTUACIONES%20FINALES%20DEFINITIVAS%20Y%20PROPUESTA%20DE%20NOMBRAMIENTO%20%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/16.%20ACTA%20N%C2%BA%207%20RESOLUCI%C3%93N%20ALEGACIONES%20BAREMACI%C3%93N%20Y%20PUNTUACIONES%20FINALES%20PROVISIONALES%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/12.%20ACTA%20N%C2%BA%204%20%20RESOLUCI%C3%93N%20ALEGACIONES%20%20Y%20COMIENZO%20BAREMACI%C3%93N%2020%20ADMINISTRATIVOS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-12/11.%20ACTA%20N%C2%BA%203%20%20RESOLUCI%C3%93N%20ALEGACIONES%20PLANTILLA%20Y%20CORRECCI%C3%93N%20EJERCICIO%2020%20ADMINISTRATIVOS.pdf"
+          ]
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "L-005",
+      "organism": "Ayuntamiento de Alcorcón",
+      "sector": "Ayuntamientos",
+      "municipality": "Alcorcón",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Alcorcón",
+      "category": "Auxiliar administrativo C2 — Informador/a-tramitador/a",
+      "type": "convocatoria",
+      "state": "en curso",
+      "portal": "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1703",
+      "access": "Libre",
+      "seats": 11,
+      "group": "Grupo 2 · 6–19",
+      "published": "30/05/2025",
+      "applicationWindow": "31/05/2025 — 19/06/2025\n30/05/2025 · 07. APERTURA NUEVO PLAZO PRESENTACIÓN SOLICITUDES 11 INFORMADORES/AS TRAMITADORES/AS - BOE 30.05.25 (PDF)\n13/05/2025 · 06. ACLARACION SOBRE NUEVO PLAZO INSTANCIAS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n13/05/2025 · 05. ANUNCIO INFORMACION NUEVO PLAZO INSTANCIAS INFORMADOR/A TRAMITADOR/A - BOCM 13.05.25 (PDF)\n08. ANUNCIO NUEVO PLAZO INSTANCIAS 11 INFORMADORES/AS TRAMITADORES/AS (PDF)",
+      "exam": "30/01/2026",
+      "sourceRow": 43,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "04. ANEXOS CONVOCATORIA 11 INFORMADORES/AS-TRAMITADOR/AS TURNO LIBRE (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2024-10/04.%20ANEXOS%20CONVOCATORIA%2011%20INFORMADOR%20TRAMITADOR%20TL%2024.pdf"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1703",
+          "links": [
+            "https://www.ayto-alcorcon.es/es/documentos-publicados?field_file_ref_target_id=1703"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "30/05/2025 · 11 plazas de Auxiliar Administrativo Informador Tramitador",
+          "links": [
+            "https://www.boe.es/boe/dias/2025/05/30/pdfs/BOE-A-2025-10712.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "26/11/2025 · 10. ANUNCIO RECTIFICACIÓN ERROR MATERIAL DECRETO LISTADO PROVISIONAL 11 INFORMADORES-TRAMITADORES TL (PDF)\n18/11/2025 · 09. ANUNCIO LISTADO PROVISIONAL Y PLAZO DE SUBSANACIÓN (PTE BOCM) 11 INFORMADORES- TRAMITADORES (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/10.%20ANUNCIO%20RECTIFICACION%20ERROR%20MATERIAL%20DECRETO%20LISTADO%20PROVISIONAL%2011%20INFORMADORES-TRAMITADORES%20TL.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/09.%20ANUNCIO%20%20LISTADO%20PROVISIONAL%20Y%20PLAZO%20DE%20SUBSANACI%C3%93N%20%28PTE%20BOCM%29%2011%20INFORMADORES-%20TRAMITADORES.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "19/01/2026 · 12. ANUNCIO LISTADO DEFINITIVO,CONSTITUCIÓN TRIBUNAL Y FECHA EXAMEN 11 PLAZAS AUX. ADMINISTRATIVO/A PT INFORMADOR/A TRAMITADOR/A (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/12.%20ANUNCIO%20LISTADO%20DEFINITIVO%2CCONSTITUCION%20TRIBUNAL%20Y%20FECHA%20EXAMEN%2011%20INFORMADOR%20TRAMITADOR.pdf"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "13/04/2026 · 28. ANUNCIO ENTREGA DE DOCUMENTACIÓN 11 INFORMADOR/A TRAMITADOR/A TL (PDF)\n24/03/2026 · 26. ACTA Nº 10 PUNTUACIONES CONCURSO, PUNTUACIONES FINALES Y PLAZO ALEGACIONES 11 INFORMADOR/A TRAMITADOR/A (PDF)\n18/03/2026 · 25. ACTA Nº 9 BAREMACIÓN DE MÉRITOS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n16/03/2026 · 24. ACTA Nº 8 BAREMACIÓN DE MÉRITOS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n13/03/2026 · 23. ACTA Nº 7 BAREMACIÓN DE MÉRITOS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n23/02/2026 · 20. ACTA Nº 5 PUNTUACIONES EJERCICIOS Y PLAZO ALEGACIONES 11 INFORMADOR/A TRAMITADOR/A (PDF)\n04/02/2026 · 18. ACTA Nº 3 CELEBRACION FASE OPOSICION Y EJERCICIOS RESUELTOS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n04/02/2026 · 17. ACTA Nº 2 PREPARACION EJERCICIOS 11 INFORMADOR/A TRAMITADOR/A (PDF)\n28/01/2026 · 16. ANUNCIO RECTIFICACIÓN ERROR MATERIAL 11 INFORMADOR/A TRAMITADOR/A (PDF)\n26/01/2026 · 15. ACTA Nº 1 CONSTITUCION TRIBUNAL 11 INFORMADOR/A TRAMITADOR/A (PDF)\n23/01/2026 · 14. MODELO HOJA DE RESPUESTAS (PDF)\n23/01/2026 · 13. INSTRUCCIONES LLAMAMIENTO Y DESARROLLO DE LAS PRUEBAS 30.01.26 (PDF)\n04/12/2025 · 11. ANUNCIO INICIO PLAZO DE SUBSANACIÓN 11 PLAZAS DE INFORMADOR/A TRAMITADOR/A BOCM 4.12.25 (PDF)\n30/05/2025 · 11 plazas de Auxiliar Administrativo Informador Tramitador\n12. ANUNCIO LISTADO DEFINITIVO,CONSTITUCIÓN TRIBUNAL Y FECHA EXAMEN 11 PLAZAS AUX. ADMINISTRATIVO/A PT INFORMADOR/A TRAMITADOR/A (PDF)\n04. ANEXOS CONVOCATORIA 11 INFORMADORES/AS-TRAMITADOR/AS TURNO LIBRE (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-04/28.%20ANUNCIO%20ENTREGA%20DE%20DOCUMENTACI%C3%93N%2011%20INFORMADORES%20TRAMITADORES%20TL_0.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/26.%20ACTA%20N%C2%BA%2010%20%20PUNTUACIONES%20CONCURSO%2C%20PUNTUACIONES%20FINALES%20Y%20PLAZO%20ALEGACIONES%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/25.%20ACTA%20N%C2%BA%209%20%20BAREMACI%C3%93N%20DE%20M%C3%89RITOS%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/24.%20ACTA%20N%C2%BA%208%20%20BAREMACI%C3%93N%20DE%20M%C3%89RITOS%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/23.%20ACTA%20N%C2%BA%207%20BAREMACI%C3%93N%20DE%20M%C3%89RITOS%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/20.%20ACTA%20N%C2%BA%205%20PUNTUACIONES%20EJERCICIOS%20Y%20PLAZO%20ALEGACIONES%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/18.%20ACTA%20N%C2%BA%203%20CELEBRACION%20FASE%20OPOSICION%20Y%20EJERCICIOS%20RESUELTOS%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/17.%20ACTA%20N%C2%BA%202%20PREPARACION%20EJERCICIOS%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/16.%20ANUNCIO%20RECTIFICACION%20ERROR%20MATERIAL%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/15.%20ACTA%20N%C2%BA%201%20CONSTITUCION%20TRIBUNAL%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/14.%20MODELO%20HOJA%20DE%20RESPUESTAS.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/13.%20INSTRUCCIONES%20LLAMAMIENTO%20Y%20DESARROLLO%20DE%20LAS%20PRUEBAS%2030.01.26.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-12/11.%20ANUNCIO%20INICIO%20PLAZO%20DE%20SUBSANACI%C3%93N%2011%20PLAZAS%20DE%20INFORMADOR%20TRAMITADOR%20BOCM%204.12.25.pdf",
+            "https://www.boe.es/boe/dias/2025/05/30/pdfs/BOE-A-2025-10712.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-01/12.%20ANUNCIO%20LISTADO%20DEFINITIVO%2CCONSTITUCION%20TRIBUNAL%20Y%20FECHA%20EXAMEN%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2024-10/04.%20ANEXOS%20CONVOCATORIA%2011%20INFORMADOR%20TRAMITADOR%20TL%2024.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "30/01/2026",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "13/04/2026 · 27. ACTA Nº 11 RESOLUCIÓN ALEGACIONES, PUNTUACIONES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 11 INFORMADOR /A TRAMITADOR/A (PDF)\n27. ACTA Nº 11 RESOLUCIÓN ALEGACIONES, PUNTUACIONES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 11 INFORMADOR /A TRAMITADOR/A (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-04/27.%20ACTA%20N%C2%BA%2011%20%20%20RESOLUCI%C3%93N%20ALEGACIONES%2C%20PUNTUACIONES%20DEFINITIVAS%20Y%20PROPUESTA%20DE%20NOMBRAMIENTO%2011%20INFORMADOR%20TRAMITADOR.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "13/04/2026 · 27. ACTA Nº 11 RESOLUCIÓN ALEGACIONES, PUNTUACIONES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 11 INFORMADOR /A TRAMITADOR/A (PDF)\n10/03/2026 · 22. ANUNCIO APROBACIÓN BOLSA INFORMADOR/A TRAMITADOR/A (PDF)\n04/03/2026 · 21. ACTA Nº 6 RESOLUCIÓN ALEGACIONES Y CALIFICACIONES DEFINITIVAS FASE OPOSICIÓN 11 INFORMADOR/A TRAMITADOR/A (PDF)\n18/02/2026 · 19. ACTA Nº 4 RESOLUCION ALEGACIONES Y APROBACION PLANTILLA DEFINITIVA 11 INFORMADOR/A TRAMITADOR/A (PDF)\n26/11/2025 · 10. ANUNCIO RECTIFICACIÓN ERROR MATERIAL DECRETO LISTADO PROVISIONAL 11 INFORMADORES-TRAMITADORES TL (PDF)\n27. ACTA Nº 11 RESOLUCIÓN ALEGACIONES, PUNTUACIONES DEFINITIVAS Y PROPUESTA DE NOMBRAMIENTO 11 INFORMADOR /A TRAMITADOR/A (PDF)",
+          "links": [
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-04/27.%20ACTA%20N%C2%BA%2011%20%20%20RESOLUCI%C3%93N%20ALEGACIONES%2C%20PUNTUACIONES%20DEFINITIVAS%20Y%20PROPUESTA%20DE%20NOMBRAMIENTO%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/22.%20ANUNCIO%20APROBACI%C3%93N%20BOLSA%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-03/21.%20ACTA%20N%C2%BA%206%20RESOLUCI%C3%93N%20ALEGACIONES%20Y%20CALIFICACIONES%20DEFINITIVAS%20FASE%20OPOSICI%C3%93N%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2026-02/19.%20ACTA%20N%C2%BA%204%20RESOLUCION%20ALEGACIONES%20Y%20APROBACION%20PLANTILLA%20DEFINITIVA%2011%20INFORMADOR%20TRAMITADOR.pdf",
+            "https://www.ayto-alcorcon.es/sites/default/files/2025-11/10.%20ANUNCIO%20RECTIFICACION%20ERROR%20MATERIAL%20DECRETO%20LISTADO%20PROVISIONAL%2011%20INFORMADORES-TRAMITADORES%20TL.pdf"
+          ]
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "en curso"
+    },
+    {
+      "id": "L-006",
+      "organism": "Ayuntamiento de Algete",
+      "sector": "Ayuntamientos",
+      "municipality": "Algete",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Algete",
+      "category": "Administrativo / puesto afín C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article",
+      "access": "Promoción interna y promoción interna cruzada, concurso-oposición",
+      "seats": 4,
+      "group": "Grupo 1 · 1–5",
+      "published": "13/07/2026",
+      "applicationWindow": "Pendiente de localizar",
+      "exam": null,
+      "sourceRow": 44,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Bases específicas — 4 plazas de Administrativo",
+          "links": [
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1531_Aprobacin_bases_PI_C2-C1.pdf"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases específicas — 4 plazas de Administrativo",
+          "links": [
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1531_Aprobacin_bases_PI_C2-C1.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article",
+          "links": [
+            "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "13/07/2026 · 4 plazas de Administrativo (promoción interna)\nBases específicas — 4 plazas de Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/07/13/pdfs/BOE-A-2026-15264.pdf",
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1531_Aprobacin_bases_PI_C2-C1.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "13/07/2026 · 4 plazas de Administrativo (promoción interna)\nBases específicas — 4 plazas de Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/07/13/pdfs/BOE-A-2026-15264.pdf",
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1531_Aprobacin_bases_PI_C2-C1.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No localizado en la muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "L-007",
+      "organism": "Ayuntamiento de Algete",
+      "sector": "Ayuntamientos",
+      "municipality": "Algete",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Algete",
+      "category": "Auxiliar administrativo C2",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article",
+      "access": "Promoción interna, concurso-oposición",
+      "seats": 5,
+      "group": "Grupo 1 · 1–5",
+      "published": "18/07/2026",
+      "applicationWindow": "Inicio por verificar — 07/08/2026",
+      "exam": null,
+      "sourceRow": 45,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Bases específicas — 5 plazas de Auxiliar Administrativo",
+          "links": [
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1612_aprob_bases.pdf"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases específicas — 5 plazas de Auxiliar Administrativo",
+          "links": [
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1612_aprob_bases.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article",
+          "links": [
+            "https://aytoalgete.es/index.php?Itemid=631&id=178&option=com_content&view=article"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "18/07/2026 · 5 plazas de Auxiliar Administrativo (promoción interna)\nBases específicas — 5 plazas de Auxiliar Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/07/18/pdfs/BOE-A-2026-15702.pdf",
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1612_aprob_bases.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "18/07/2026 · 5 plazas de Auxiliar Administrativo (promoción interna)\nBases específicas — 5 plazas de Auxiliar Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/07/18/pdfs/BOE-A-2026-15702.pdf",
+            "https://aytoalgete.es/images/RRHH/DECRETO_2026-1612_aprob_bases.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No localizado en la muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "L-009",
+      "organism": "Ayuntamiento de Arganda del Rey",
+      "sector": "Ayuntamientos",
+      "municipality": "Arganda del Rey",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Arganda del Rey",
+      "category": "Administrativo / puesto afín C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://www.argandadelrey.es/noticias/el-ayuntamiento-de-arganda-del-rey-abre-el-plazo-de-solicitudes-para-nuevos-procesos-selectivos-de-empleo-publico/",
+      "access": "Promoción interna",
+      "seats": 16,
+      "group": "Grupo 2 · 6–19",
+      "published": "11/02/2026",
+      "applicationWindow": "12/02/2026 — 11/03/2026",
+      "exam": null,
+      "sourceRow": 47,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Bases",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://www.argandadelrey.es/noticias/el-ayuntamiento-de-arganda-del-rey-abre-el-plazo-de-solicitudes-para-nuevos-procesos-selectivos-de-empleo-publico/",
+          "links": [
+            "https://www.argandadelrey.es/noticias/el-ayuntamiento-de-arganda-del-rey-abre-el-plazo-de-solicitudes-para-nuevos-procesos-selectivos-de-empleo-publico/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "11/02/2026 · Noticia municipal — apertura de plazo de procesos selectivos\n11/02/2026 · 16 plazas de Administrativo/a (promoción interna)",
+          "links": [
+            "https://www.argandadelrey.es/noticias/el-ayuntamiento-de-arganda-del-rey-abre-el-plazo-de-solicitudes-para-nuevos-procesos-selectivos-de-empleo-publico/",
+            "https://www.boe.es/boe/dias/2026/02/11/pdfs/BOE-A-2026-3133.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "11/02/2026 · Noticia municipal — apertura de plazo de procesos selectivos\n11/02/2026 · 16 plazas de Administrativo/a (promoción interna)",
+          "links": [
+            "https://www.argandadelrey.es/noticias/el-ayuntamiento-de-arganda-del-rey-abre-el-plazo-de-solicitudes-para-nuevos-procesos-selectivos-de-empleo-publico/",
+            "https://www.boe.es/boe/dias/2026/02/11/pdfs/BOE-A-2026-3133.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No localizado en la muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "L-013",
+      "organism": "Ayuntamiento de Boadilla del Monte",
+      "sector": "Ayuntamientos",
+      "municipality": "Boadilla del Monte",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Boadilla del Monte",
+      "category": "Administrativo / puesto afín C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://www.ayuntamientoboadilladelmonte.org/tu-ayuntamiento/oferta-de-empleo-publico?page=2",
+      "access": "Por verificar en bases",
+      "seats": null,
+      "group": "Sin dato verificado",
+      "published": "27/02/2025",
+      "applicationWindow": "Pendiente de localizar",
+      "exam": null,
+      "sourceRow": 51,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Bases",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://www.ayuntamientoboadilladelmonte.org/tu-ayuntamiento/oferta-de-empleo-publico?page=2",
+          "links": [
+            "https://www.ayuntamientoboadilladelmonte.org/tu-ayuntamiento/oferta-de-empleo-publico?page=2"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "27/02/2025 · 1 puesto de Gestor Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2025/02/27/pdfs/BOE-A-2025-3892.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "27/02/2025 · 1 puesto de Gestor Administrativo",
+          "links": [
+            "https://www.boe.es/boe/dias/2025/02/27/pdfs/BOE-A-2025-3892.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No localizado en la muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "L-023",
+      "organism": "Ayuntamiento de Ciempozuelos",
+      "sector": "Ayuntamientos",
+      "municipality": "Ciempozuelos",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Ciempozuelos",
+      "category": "Auxiliar administrativo C2",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "portal": "https://ayto-ciempozuelos.org/index.php/download/resolucion-lista-definitiva-tribunal-y-fecha-examen-2-plazas-aux-administrativo-promocion-interna/",
+      "access": "Promoción interna",
+      "seats": 2,
+      "group": "Grupo 1 · 1–5",
+      "published": "18/08/2026",
+      "applicationWindow": "Pendiente de localizar",
+      "exam": "27/10/2026",
+      "sourceRow": 61,
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Bases",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "https://ayto-ciempozuelos.org/index.php/download/resolucion-lista-definitiva-tribunal-y-fecha-examen-2-plazas-aux-administrativo-promocion-interna/",
+          "links": [
+            "https://ayto-ciempozuelos.org/index.php/download/resolucion-lista-definitiva-tribunal-y-fecha-examen-2-plazas-aux-administrativo-promocion-interna/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "18/08/2026 · Anuncio BOE: 2 plazas Auxiliar Administrativo/a P.I.\n18/08/2026 · 2 plazas de Auxiliar Administrativo/a (promoción interna)",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/08/18/pdfs/BOE-A-2026-17898.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "18/08/2026 · Anuncio BOE: 2 plazas Auxiliar Administrativo/a P.I.\n18/08/2026 · 2 plazas de Auxiliar Administrativo/a (promoción interna)",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/08/18/pdfs/BOE-A-2026-17898.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "27/10/2026",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Resol. 10/09/2026 · Resolución Lista Definitiva, Tribunal y Fecha Examen – 2 Plazas Aux. Administrativo – Promoción Interna",
+          "links": [
+            "https://ayto-ciempozuelos.org/index.php/download/resolucion-lista-definitiva-tribunal-y-fecha-examen-2-plazas-aux-administrativo-promocion-interna/"
+          ]
+        }
+      ],
+      "sourceSheet": "Registro único",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100030",
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "BOL-0178",
+      "organism": "Ayuntamiento de Rivas-Vaciamadrid",
+      "sector": "Ayuntamientos",
+      "municipality": "Rivas-Vaciamadrid",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Rivas-Vaciamadrid",
+      "category": "Administrativo/a C1",
+      "type": "oferta",
+      "state": "pendiente de convocatoria",
+      "access": "Libre · sistema selectivo por verificar",
+      "seats": 5,
+      "applicationWindow": "No aplica · oferta; la convocatoria debe identificarse por categoría/turno.",
+      "portal": "https://rivasciudad.convoca.online/",
+      "group": "Grupo 1 · 1–5",
+      "published": "Pendiente de convocatoria",
+      "exam": "No localizada",
+      "sourceRow": 221,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Bases",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ficha del convocante",
+          "links": [
+            "https://rivasciudad.convoca.online/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Oferta",
+          "text": "2025-01-21 · Oferta original · cupos administrativos",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/01/21/BOCM-20250121-64.PDF#page=1"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        }
+      ],
+      "publicNote": "",
+      "processKind": "oferta",
+      "sourceState": "pendiente de convocatoria"
+    },
+    {
+      "id": "BOL-0178-D02",
+      "organism": "Ayuntamiento de Rivas-Vaciamadrid",
+      "sector": "Ayuntamientos",
+      "municipality": "Rivas-Vaciamadrid",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Rivas-Vaciamadrid",
+      "category": "Auxiliar Administrativo/a C2",
+      "type": "oferta",
+      "state": "pendiente de convocatoria",
+      "access": "Libre · sistema selectivo por verificar",
+      "seats": 7,
+      "applicationWindow": "No aplica · oferta; la convocatoria debe identificarse por categoría/turno.",
+      "portal": "https://rivasciudad.convoca.online/",
+      "group": "Grupo 2 · 6–19",
+      "published": "Pendiente de convocatoria",
+      "exam": "No localizada",
+      "sourceRow": 222,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Bases",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ficha del convocante",
+          "links": [
+            "https://rivasciudad.convoca.online/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Oferta",
+          "text": "2025-01-21 · Oferta original · cupos administrativos",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/01/21/BOCM-20250121-64.PDF#page=1"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "No aplica todavía · oferta sin convocatoria identificada en esta muestra",
+          "links": []
+        }
+      ],
+      "publicNote": "",
+      "processKind": "oferta",
+      "sourceState": "pendiente de convocatoria"
+    },
+    {
+      "id": "BOL-0179",
+      "organism": "Ayuntamiento de Torrelodones",
+      "sector": "Ayuntamientos",
+      "municipality": "Torrelodones",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Torrelodones",
+      "category": "Auxiliar Administrativo/a C2 · 2 plazas OEP 2025",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "oposición · libre",
+      "seats": 2,
+      "applicationWindow": "20 días naturales desde día siguiente al BOE 13/10/2025. Instancia finalizada; fecha final no calculada sin calendario/régimen de prórroga verificados.",
+      "portal": "https://torrelodones.es/ayuntamiento/empleo-publico/oferta-de-empleo-publico/auxiliar-administrativo-turno-libre-2-plazas-oep-2025/",
+      "group": "Grupo 1 · 1–5",
+      "published": "13/10/2025",
+      "exam": "17/01/2026 10:30 · primero; 03/02/2026 09:00 · segundo",
+      "sourceRow": 223,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2022-02-10 · Anexo I · 20 temas efectivos",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/bases-auxiliar-administrativo.pdf#page=2"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2022-02-10 · Bases específicas vigentes publicadas BOCM10/02/2022\nBases generales referenciadas en bases específicas",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/bases-auxiliar-administrativo.pdf#page=1",
+            "https://torrelodones.es/wp-content/uploads/Bases_generales_oposicion.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ficha del convocante",
+          "links": [
+            "https://torrelodones.es/ayuntamiento/empleo-publico/oferta-de-empleo-publico/auxiliar-administrativo-turno-libre-2-plazas-oep-2025/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2025-10-13 · Convocatoria 2 C2 libre · BOE-A-2025-20415",
+          "links": [
+            "https://www.boe.es/boe/dias/2025/10/13/pdfs/BOE-A-2025-20415.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "2025-10-03 · Oferta original · cupos administrativos",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/10/03/BOCM-20251003-99.PDF#page=1"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Admisión provisional · anuncio 09/12/2025",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/20251209_otros_anuncio-listado-provisional-de-admitidos-y-excluidos-pagina-web.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Admisión definitiva, tribunal y primer examen",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-listado-definitivo-fecha-examen-y-tribunal.pdf"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "Distribución de aulas\nNormas del primer ejercicio\nPlano de aulas\nResultado primer ejercicio\nRevisión primer examen\nCuestionario primer ejercicio\nSegundo ejercicio\nMaterial Excel segundo ejercicio\nPropuesta previa con errores de hecho · sustituida\nCorrección de errores y propuesta vigente\nActa 21/01/2026 corrección final primer ejercicio\nActa 22/01/2026 revisión primer examen\nActa 05/02/2026 corrección segundo examen\nActa 09/02/2026 corrección final segundo examen\nActa 13/02/2026 revisión segundo examen\nActa 23/02/2026 revisión segundo examen\nActa 26/02/2026 error de hecho",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-distribucion-aulas-primer-ejercicio.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-normas-de-funcionamiento-primer-ejercicio.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/plano-aulas-instituto.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-resultado-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/acta-revision-primer-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/primer-ejercicio.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/segundo-ejercicio.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/excel-segundo-ejercicio.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-revision-del-segundo-ejercicio-nueva-propuesta-de-nombramiento-y-bolsa-de-empleo.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-error-de-hecho-calificacion-segundo-ejercicio-nueva-propuesta-de-nombramiento-y-bolsa-de-empleo.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.01.21_acta-correccion-final-primer-ejercicio-examen-auxiliar-.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.01.22_acta-revision-primer-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.02.05_acta-correccion-segundo-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.02.09_acta-correccion-final-segundo-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.02.13_acta-revision-segundo-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.02.23_acta-revision-segundo-examen-auxiliar.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/2026.02.26_acta-error-de-hecho-segundo-examen-auxiliar.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Primer ejercicio 17/01/2026 10:30 · IESDiego Velázquez\nSegundo ejercicio 03/02/2026 09:00 · Biblioteca Juan Van Halen",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-listado-definitivo-fecha-examen-y-tribunal.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/convocatoria-segundo-examen-auxiliar.pdf"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Plantilla primer examen 17/01/2026 · fase provisional no indicada en título\nPlantilla de respuestas primer ejercicio",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/plantilla-respuestas.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/plantilla-respuestas-primer-ejercicio.pdf"
+          ]
+        },
+        {
+          "label": "Aprobados",
+          "text": "Segundo ejercicio y calificación final\nPropuesta de nombramiento y bolsa CORREGIDA · no decreto de nombramiento",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-resultado-segundo-examen-auxiliar-administrativo.pdf",
+            "https://torrelodones.es/wp-content/uploads/2026/05/anuncio-error-de-hecho-calificacion-segundo-ejercicio-nueva-propuesta-de-nombramiento-y-bolsa-de-empleo.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Resolución de queja del proceso selectivo",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/resolucion-queja-proceso-selectivo.pdf"
+          ]
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "2025-10-03 · Oferta original · cupos administrativos",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2025/10/03/BOCM-20251003-99.PDF#page=1"
+          ]
+        },
+        {
+          "label": "Solicitud",
+          "text": "Modelo de instancia\nSede electrónica municipal",
+          "links": [
+            "https://torrelodones.es/wp-content/uploads/2026/05/instancias-oposiciones.pdf",
+            "https://sede.torrelodones.es/info.0"
+          ]
+        }
+      ],
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "por verificar"
+    },
+    {
+      "id": "BOL-0183",
+      "organism": "Ayuntamiento de Paracuellos de Jarama",
+      "sector": "Ayuntamientos",
+      "municipality": "Paracuellos de Jarama",
+      "province": "Madrid",
+      "region": "Comunidad de Madrid",
+      "issuer": "Ayuntamiento de Paracuellos de Jarama",
+      "category": "Administrativo/a C1 · 6 plazas acumuladas OEP 2025/2026",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "oposición · libre",
+      "seats": 6,
+      "applicationWindow": "01/07/2026 — 28/07/2026\nPlazo oficial de la convocatoria ampliada a 6 plazas. Las 2 plazas anteriores están incluidas, no se suman de nuevo.",
+      "portal": "https://www.paracuellosdejarama.es/es/tu-ayuntamiento/recursos-humanos/procesos-selectivos-en-vigor",
+      "group": "Grupo 2 · 6–19",
+      "published": "26/09/2025",
+      "exam": "No localizada",
+      "sourceRow": 234,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2025-09-26 · Anexo I ·41 temas efectivos · PDFp 11–14",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/26-09-2025%20BOCM%20%2BBases%20espec%C3%ADficas%20Administrativo.pdf#page=11"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2025-09-26 · Bases íntegras originales 2 plazas + extracto BOCM\n2026-06-01 · Ampliación 2 a 6 plazas · cuatro OEP 2026",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/26-09-2025%20BOCM%20%2BBases%20espec%C3%ADficas%20Administrativo.pdf#page=2",
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/Publicaci%C3%B3n%20ampliaci%C3%B3n%20plazas%20administrativos-as%20BOCM.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ficha del convocante",
+          "links": [
+            "https://www.paracuellosdejarama.es/es/tu-ayuntamiento/recursos-humanos/procesos-selectivos-en-vigor"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "26-09-2025 BOCM +Bases específicas Administrativo\n01-06-26. BOCM Modificación bases de ampliación de plazas administrativo/a\n30-06-2026. BOE Convocatoria plazo presentación solicitudes 01/07/2026 a 28/07/2026, ambos inclusive",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/26-09-2025%20BOCM%20%2BBases%20espec%C3%ADficas%20Administrativo.pdf",
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/Publicaci%C3%B3n%20ampliaci%C3%B3n%20plazas%20administrativos-as%20BOCM.pdf",
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/Publicaci%C3%B3n%20BOE%20convocatoria%206%20plazas%20Administrativos%2030-06-2026.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "2026-05-11 · OEP 2026 ·4 de 6 plazas, no cupo adicional",
+          "links": [
+            "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/05/11/BOCM-20260511-67.PDF#page=1"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "05/10/2026. BOCM+Listado provisional admitidos y excluidos Administrativo/a",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/BOCM%2BListado%20provisional%20adminitidos%20y%20excluidos%20Administrativo-a.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "01-06-26. BOCM Modificación bases de ampliación de plazas administrativo/a\n05/10/2026. BOCM+Listado provisional admitidos y excluidos Administrativo/a",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/Publicaci%C3%B3n%20ampliaci%C3%B3n%20plazas%20administrativos-as%20BOCM.pdf",
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/BOCM%2BListado%20provisional%20adminitidos%20y%20excluidos%20Administrativo-a.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "2-3-2026.BOE-Convocatoria. Plazo presentación del 3-3-2026 al 30-3-2026 ambos inclusive pdf",
+          "links": [
+            "https://www.paracuellosdejarama.es/sites/default/files/repositorio-archivos/2-3-2026.BOE-Convocatoria%202%20plazas%20Administrativos.pdf"
+          ]
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede municipal · registro electrónico",
+          "links": [
+            "https://sede.paracuellosdejarama.es/portal/literal.do?ent_id=1&idioma=1&opc_id=10013"
+          ]
+        }
+      ],
+      "publicNote": "",
+      "processKind": "plaza",
+      "sourceState": "en curso"
+    },
+    {
+      "id": "BOL-0024",
+      "organism": "Ayuntamiento de Martos",
+      "sector": "Ayuntamientos",
+      "municipality": "Martos",
+      "province": "Jaén",
+      "region": "Andalucía",
+      "issuer": "Ayuntamiento de Martos",
+      "category": "Auxiliar Administrativo",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "oposición · libre",
+      "seats": 2,
+      "applicationWindow": "15 días naturales desde el día siguiente a publicación de 2026-03-30. Fecha final no calculada sin calendario acreditado.",
+      "sourceState": "por verificar",
+      "processKind": "plaza",
+      "publicNote": "",
+      "portal": "https://martos.es/recursos-humanos/empleo/personal-funcionario/",
+      "sourceRow": 27,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "30/03/2026",
+      "exam": "27/05/2026 · primer ejercicio; siguiente ejercicio según acta 27/05/2026",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Anexo I · programa de materias",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/44481/bases-de-la-convocatoria-para-cubrir-con-caracter-de-personal-funcionarios-as-interinos-as-2-plazas-de-auxiliar-administrativo-mediante-oposicion-libre-hasta-que-las-plazas-vacantes-en-la-plantilla.pdf#page=7"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-03-30 · Bases íntegras",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/44481/bases-de-la-convocatoria-para-cubrir-con-caracter-de-personal-funcionarios-as-interinos-as-2-plazas-de-auxiliar-administrativo-mediante-oposicion-libre-hasta-que-las-plazas-vacantes-en-la-plantilla.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-03-30 · Extracto original BOP Jaén62",
+          "links": [
+            "https://bop.dipujaen.es/descargarws.dip?anioExpedienteEdicto=2026&boletinSuplemento=0&ejercicioBop=2026&fechaBoletin=2026-03-30&numeroEdicto=1496&tipo=bop#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Aprobar Lista Provisional de Admitidos y Excluidos 2 Plazas Interinos-as de Auxiliar Administrativo",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/45308/aprobar-lista-provisional-de-admitidos-y-excluidos-2-plazas-interinos-as-de-auxiliar-administrativo.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Aprobación de la Lista Definitiva de Admitidos y Excluidos para la provisión de dos Pazas Auxiliar Administrativo, funcionarios-as interinos-as mediante oposición libre y fecha de examen.",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/45899/aprobacion-de-la-lista-definitiva-de-admitidos-y-excluidos-para-la-provision-de-dos-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre-y-fecha-de-examen.pdf"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "Acta Tribunal Selección de fecha 04 de junio de 2026, de dos Plazas de Auxiliar Administrativo interinos-a, mediante el sistema de Oposicion libre, y fecha de apertura sobre de anónimato\nCuestionario tipo Test 2 Plazas Auxiliar Administrativo Interino-a CORREGIDO",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/46903/acta-tribunal-seleccion-de-fecha-04-de-junio-de-2026-de-dos-plazas-de-auxiliar-administrativo-interinos-a-mediante-el-sistema-de-oposicion-libre-y-fecha-de-apertura-sobre-de-anonimato.pdf",
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/46313/cuestionario-tipo-test-2-plazas-auxiliar-administrativo-interino-a-corregido.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Aprobación de la Lista Definitiva de Admitidos y Excluidos para la provisión de dos Pazas Auxiliar Administrativo, funcionarios-as interinos-as mediante oposición libre y fecha de examen.\nActa Tribunal Selección de fecha 27 de mayo de 2026, de dos Plazas de Auxiliar Administrativo interinos-a, mediante el sistema de Oposicion libre, y fecha de examen de ejercicio práctico",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/45899/aprobacion-de-la-lista-definitiva-de-admitidos-y-excluidos-para-la-provision-de-dos-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre-y-fecha-de-examen.pdf",
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/46312/acta-tribunal-seleccion-de-fecha-27-de-mayo-de-2026-de-dos-plazas-de-auxiliar-administrativo-interinos-a-mediante-el-sistema-de-oposicion-libre-y-fecha-de-examen-de-ejercicio-practico.pdf"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Actal Tribunal de Selección de fecha 09 de junio de 2026 de dos Plazas Auxiliar Administrativo y propuesta de Nombramiento como Funcionario Interino para toma de posesión.",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/47149/actal-tribunal-de-seleccion-de-fecha-09-de-junio-de-2026-de-dos-plazas-auxiliar-administrativo-y-propuesta-de-nombramiento-como-funcionario-interino-para-toma-de-posesion.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Modelo Solcitud dos Plazas Auxiliar Administrativo Funcionario-a Interino-a",
+          "links": [
+            "https://martos.es/download/1276/convocatoria-bases-2-pazas-auxiliar-administrativo-funcionarios-as-interinos-as-mediante-oposicion-libre/44482/modelo-solcitud-dos-plazas-auxiliar-administrativo-funcionario-a-interino-a.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0252",
+      "organism": "Ayuntamiento de Fuerte del Rey",
+      "sector": "Ayuntamientos",
+      "municipality": "Fuerte del Rey",
+      "province": "Jaén",
+      "region": "Andalucía",
+      "issuer": "Ayuntamiento de Fuerte del Rey",
+      "category": "Administrativo; C1",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "oposición; libre",
+      "seats": 1,
+      "applicationWindow": "20 días hábiles desde el día siguiente al BOE de 08/08/2026",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "",
+      "portal": "https://fuertedelrey.sedelectronica.es/board",
+      "sourceRow": 325,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "17/06/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "AnexoI:8comunes+33 específicos",
+          "links": [
+            "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-06-17&numeroEdicto=2627&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026#page=11"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases completas18p",
+          "links": [
+            "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-06-17&numeroEdicto=2627&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://www.fuertedelrey.es/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-08-08 · Extracto BOE 17313",
+          "links": [
+            "https://www.boe.es/boe/dias/2026/08/08/pdfs/BOE-A-2026-17313.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "2026-10-01 · Lista provisional exp205/2026,visible en tablón",
+          "links": [
+            "https://fuertedelrey.sedelectronica.es/preview-document/df429ae5-418f-41f4-ae5b-9d0439e02991"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-06-17 · Fuente oficial",
+          "links": [
+            "https://bop.dipujaen.es/bop/17-06-2026#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede citada base4; acceso público previo a identificación",
+          "links": [
+            "https://fuertedelrey.sedelectronica.es/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0249",
+      "organism": "Diputación Provincial de Huesca",
+      "sector": "Administración local",
+      "municipality": "Huesca",
+      "province": "Huesca",
+      "region": "Aragón",
+      "issuer": "Diputación Provincial de Huesca",
+      "category": "Administrativo, Administración General, C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "oposición; libre",
+      "seats": 17,
+      "applicationWindow": "20 días hábiles desde siguiente BOE29/08/2025;sinfecha calculada",
+      "sourceState": "por verificar",
+      "processKind": "plaza",
+      "publicNote": "El portal provincial devolvió 403 durante la revisión del scraper. Las bases y el programa están enlazados; las fases actuales siguen por verificar.",
+      "portal": "https://www.dphuesca.es/convocatoriaempleo",
+      "sourceRow": 322,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 2 · 6–19",
+      "published": "12/08/2025",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2025-08-18 · AnexoI41 temas",
+          "links": [
+            "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1407994340404&type=pdf#page=13"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2025-08-18 · Bases completas19pBOA158",
+          "links": [
+            "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1407994340404&type=pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://www.dphuesca.es/convocatoriaempleo"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2025-08-29 · BOE 17322:17Admin y2Aux proceso distinto",
+          "links": [
+            "https://www.boe.es/boe/dias/2025/08/29/pdfs/BOE-A-2025-17322.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2025-08-12 · Fuente oficial",
+          "links": [
+            "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?BASE=BOLE&CMD=VERDOC&DOCN=007951479&SEC=BUSQUEDA_AVANZADA#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0254",
+      "organism": "Ayuntamiento de Gozón",
+      "sector": "Local",
+      "municipality": "Gozón",
+      "province": "Asturias",
+      "region": "Principado de Asturias",
+      "issuer": "Ayuntamiento de Gozón",
+      "category": "Auxiliar Administrativo C2 · PER/2026/66",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "oposición · libre",
+      "seats": 5,
+      "applicationWindow": "Hasta 07/10/2026\n20 días naturales desde el siguiente al BOE de 17/09/2026. Último día oficial: miércoles 07/10/2026, según web municipal actualizada 05/10. Abierta al día de revisión; no usar plazo del proceso antiguo.",
+      "sourceState": "abierta",
+      "processKind": "plaza",
+      "publicNote": "La revisión del 07/10/2026 figuraba abierta, pero el plazo oficial terminó ese día. La fase posterior está por verificar. Es el expediente PER/2026/66; no se mezclan listas del proceso anterior.",
+      "portal": "https://ayuntamientodegozon.sede.e-ayuntamiento.es/informacionpublica/infopublica_ver.action?id=144646",
+      "sourceRow": 327,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "10/09/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Anexo I · 32 generales + 9 específicos = 41 epígrafes · p4–6",
+          "links": [
+            "https://miprincipado.asturias.es/bopa/2026/09/10/2026-07351.pdf#page=4"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-09-10 · Bases específicas completas · 8 páginas",
+          "links": [
+            "https://miprincipado.asturias.es/bopa/2026/09/10/2026-07351.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Empleo público Gozón · sección vigente cinco C2 2026",
+          "links": [
+            "https://www.ayto-gozon.org/empleo-publico"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-09-10 · Convocatoria original BOPA 175 · código 2026-07351\n2026-09-17 · BOE 19381 · abre instancia inicial",
+          "links": [
+            "https://miprincipado.asturias.es/bopa/2026/09/10/2026-07351.pdf#page=1",
+            "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19381"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Modelo oficial del expediente PER/2026/66 · sin sesión temporal en enlace\nFicha pública de convocatoria e instancia",
+          "links": [
+            "https://ayuntamientodegozon.sede.e-ayuntamiento.es/informacionpublica/infopublica_descargar.action?id=144646&nombre=TU9ERUxPX0lOU1RBTkNJQV81X1BMQVpBU19BVVhfQURNSU5JU1RSQVRJVk9fMjAyNi5wZGY%3D#page=1",
+            "https://ayuntamientodegozon.sede.e-ayuntamiento.es/informacionpublica/infopublica_ver.action?id=144646"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0057",
+      "organism": "Auditorio de Tenerife, S.A.U.",
+      "sector": "Otros organismos públicos",
+      "municipality": "Santa Cruz de Tenerife",
+      "province": "Santa Cruz de Tenerife",
+      "region": "Canarias",
+      "issuer": "Auditorio de Tenerife, S.A.U.",
+      "category": "Auxiliar Administrativo/a, grupo C2, personal laboral fijo",
+      "type": "convocatoria",
+      "state": "cerrada",
+      "access": "turno libre",
+      "seats": 7,
+      "applicationWindow": "21/08/2025 — 17/09/2025\n21/08/2025–17/09/2025: inicio expreso en portal y final acreditado por resolución de caducidad.",
+      "sourceState": "cerrada",
+      "processKind": "plaza",
+      "publicNote": "Proceso de 2025 cerrado por caducidad expresa. La convocatoria sustituta de 2026 corresponde a las mismas 7 plazas; no se cuentan como nuevas vacantes ni se traslada su plazo a esta ficha.",
+      "portal": "https://www.auditoriodetenerife.com/convocatoria/proceso-de-seleccion-de-auxiliar-administrativo/",
+      "sourceRow": 67,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 2 · 6–19",
+      "published": "20/08/2025",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2025-08-20 · AnexoIII programa9 temas",
+          "links": [
+            "https://www.auditoriodetenerife.com/wp-content/uploads/2025/08/20250820_BASES-AUXILIAR-ADMINISTRATIVO.pdf#page=36"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2025-08-20 · Bases completas de36 páginas con anexosI–III",
+          "links": [
+            "https://www.auditoriodetenerife.com/wp-content/uploads/2025/08/20250820_BASES-AUXILIAR-ADMINISTRATIVO.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2025-08-20 · Bases firmadas20/08/2025 y convocatoria en portal",
+          "links": [
+            "https://www.auditoriodetenerife.com/wp-content/uploads/2025/08/20250820_BASES-AUXILIAR-ADMINISTRATIVO.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-09-28 · Sumario oficial BOP116 confirma publicación de caducidad y nueva convocatoria",
+          "links": [
+            "https://www.bopsantacruzdetenerife.es/bopsc2/sumario.php?codigopub=1&fecha_mas_reciente=2026-09-28"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "2026-09-23 · Caducidad de2025 e inicio de nuevo proceso para mismas7 plazas",
+          "links": [
+            "https://www.auditoriodetenerife.com/wp-content/uploads/2025/08/20260923_Resolucion_2025-AUXILIAR-ADMINISTRATIVO_A-C2-FIJ-05-CADUCIDAD.pdf"
+          ]
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "2026-09-28 · Referencia posterior BOL-0058: reconvocatoria mismas7plazas2026",
+          "links": [
+            "https://www.auditoriodetenerife.com/convocatoria/proceso-de-seleccion-de-auxiliar-administrativo-26/"
+          ]
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede de solicitud indicada por bases",
+          "links": [
+            "https://auditoriodetenerife.sedelectronica.es/convocatorias"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0100",
+      "organism": "Ayuntamiento de Folgoso de la Ribera",
+      "sector": "Ayuntamientos",
+      "municipality": "Folgoso de la Ribera",
+      "province": "León",
+      "region": "Castilla y León",
+      "issuer": "Ayuntamiento de Folgoso de la Ribera",
+      "category": "Administrativo de Intervención-Tesorería; Administración General, subescala Administrativa, C1",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "concurso-oposición; libre",
+      "seats": 1,
+      "applicationWindow": "10 días hábiles desde día siguiente BOPLE",
+      "sourceState": "por verificar",
+      "processKind": "plaza",
+      "publicNote": "",
+      "portal": "https://folgosodelaribera.sedelectronica.es/board",
+      "sourceRow": 118,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "06/04/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Programa",
+          "links": [
+            "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1775450720694-final-1d6bfcbb.pdf#page=14"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases completas",
+          "links": [
+            "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1775450720694-final-1d6bfcbb.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://folgosodelaribera.sedelectronica.es/board"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-04-06 · Convocatoria",
+          "links": [
+            "https://bop.dipuleon.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1775450720694-final-1d6bfcbb.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-04-06 · Fuente oficial",
+          "links": [
+            "https://bop.dipuleon.es/publica/buscador-anuncios/anuncio/Bases-y-convocatoria-del-proceso-selectivo-para-la-cobertura-de-una-plaza-de-Administrativo-a/#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0271",
+      "organism": "Ayuntamiento de Tomelloso",
+      "sector": "Ayuntamientos",
+      "municipality": "Tomelloso",
+      "province": "Ciudad Real",
+      "region": "Castilla-La Mancha",
+      "issuer": "Ayuntamiento de Tomelloso",
+      "category": "Administrativo de Administración General",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "concurso-oposición; libre",
+      "seats": 4,
+      "applicationWindow": "Hasta 06/03/2025\nPlazo oficial inicial finalizado el 06/03/2025; 20 días naturales desde el día siguiente al BOE de14/02/2025",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "Son 4 plazas de turno libre. Una posible acumulación de plazas de promoción interna es condicional y no se añade al cupo.",
+      "portal": "https://www.tomelloso.es/ofertas-empleo-publico/convocatoria-para-la-provision-en-propiedad-de-cuatro-plazas-de-administrativo-de-administracion-general-mediante-el-sistema-de-concurso-oposicion-en-turno-libre",
+      "sourceRow": 347,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "21/12/2023",
+      "exam": "2026-04-23 17:00; primer ejercicio, IES Francisco García Pavón, Tomelloso",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2023-12-21 · Anexo/temario en PDF íntegro",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/67af3be3285c01bee633c598_Bases%20plazas%20Administrativo%20TL%20firmadas.pdf#page=15"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2023-12-21 · Fuente oficial leída íntegramente\n2025-01-27 · Corrección y ampliación de dos a cuatro plazas; PDF 2p íntegro",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/67af3be3285c01bee633c598_Bases%20plazas%20Administrativo%20TL%20firmadas.pdf#page=1",
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/67af3e459ae34b41b179360d_Anuncio%20modificaci%C3%B3n%20bases%20para%20BOP.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal del verdadero convocante",
+          "links": [
+            "https://www.tomelloso.es/ofertas-empleo-publico/convocatoria-para-la-provision-en-propiedad-de-cuatro-plazas-de-administrativo-de-administracion-general-mediante-el-sistema-de-concurso-oposicion-en-turno-libre"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2023-12-21 · Fuente oficial leída íntegramente\n2025-02-14 · BOE 2818: cuatroC1 libres, distinto del BOE 2819 PI",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/67af3be3285c01bee633c598_Bases%20plazas%20Administrativo%20TL%20firmadas.pdf#page=1",
+            "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2818"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "2026-03-30 · Lista definitiva; leído apartado administrativo y eliminado archivo nominal",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/69ca3b4666169a25d95781fc_Anuncio%20lista%20definit%20tabl%C3%B3n%20edictos.pdf#page=6"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-09-21 · Valoración de méritos para integración en bolsa; apartado administrativo leído",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/6ab11da06ecf9a5186717347_ANUNCIO%20valoraci%C3%B3n%20m%C3%A9ritos.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2026-03-30 · Primer ejercicio23abril2026 a17 h",
+          "links": [
+            "https://cdn.prod.website-files.com/6511447039604c2deeaa98c8/69ca3b4666169a25d95781fc_Anuncio%20lista%20definit%20tabl%C3%B3n%20edictos.pdf#page=6"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0114",
+      "organism": "Ajuntament de Barcelona",
+      "sector": "Ayuntamientos",
+      "municipality": "Barcelona",
+      "province": "Barcelona",
+      "region": "Cataluña",
+      "issuer": "Ajuntament de Barcelona",
+      "category": "Auxiliar administratiu/iva, subgrup C2",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "Concurso-oposición libre62 y reserva discapacidad5",
+      "seats": 67,
+      "applicationWindow": "09/07/2026 — 28/07/2026\n09/07/2026–28/07/2026, ambos incluidos, fechas expresas portal; disparadorDOGC08julio",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "Cupo corregido de 69 a 67 plazas: 62 generales y 5 reservadas a discapacidad, ya incluidas. Se conserva la ventana oficial de solicitud; no hay fecha formal de examen localizada.",
+      "portal": "https://seuelectronica.ajuntament.barcelona.cat/processosselectius/ca/convocatories/convocatria-de-6-categories-del-subgrup-c2-i-grup-ap",
+      "sourceRow": 132,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 3 · 20 o más",
+      "published": "02/07/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2026-07-22 · AnexoI Auxiliar20 temas pp20–21 republicaciónDOGC",
+          "links": [
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Esmena_Bases_DOGC.pdf#page=20"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-07-22 · DOGC 9713de22/07/2026 CVE26198033, rectificación y bases republicadas36p cotejadas\n2026-07-24 · Versión municipal con enlaces fechada24julio, PDF 51p; no se da por íntegramente leído",
+          "links": [
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Esmena_Bases_DOGC.pdf",
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Bases_esmena_enllacos.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ayuntamiento",
+          "links": [
+            "https://ajuntament.barcelona.cat"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-07-08 · Convocatoria original DOGC 9703de8julio CVE26183111,39p íntegros leídos; cupo erróneo rectificado\n2026-07-06 · ExtractoBOE original con69, rectificado después enDOGC",
+          "links": [
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Bases_DOGC.pdf",
+            "https://boe.es/diario_boe/txt.php?id=BOE-A-2026-14620"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-07-14 · Avíso14julio detecta errores, luego aprobado16julio yDOGC22julio\n2026-07-22 · Rectificación definitiva de cupos y posiciones\n2026-07-24 · Aviso recurso contencioso; no resolución de suspensión",
+          "links": [
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Avis_error_material.pdf",
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Esmena_Bases_DOGC.pdf",
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_OP_SubgrupC2_AP_Cont_Admin.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "2026-07-08 · Original69(64+5), error material no actual67",
+          "links": [
+            "https://ajuntament.barcelona.cat/seuelectronica/estatics/files/convocatories/2026_128_C2_AP_Bases_DOGC.pdf"
+          ]
+        },
+        {
+          "label": "Solicitud",
+          "text": "Solicitud desde botónAccedeixalTràmit; plazo inicial finalizado, no operarlogin",
+          "links": [
+            "https://seuelectronica.ajuntament.barcelona.cat/processosselectius/ca/convocatories/convocatria-de-6-categories-del-subgrup-c2-i-grup-ap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0126",
+      "organism": "Ajuntament de Celrà",
+      "sector": "Ayuntamientos",
+      "municipality": "Celrà",
+      "province": "Girona",
+      "region": "Cataluña",
+      "issuer": "Ajuntament de Celrà",
+      "category": "Administrativo C1, Administración General, SI15",
+      "type": "convocatoria",
+      "state": "cerrada",
+      "access": "Libre concurso-oposición funcionario carrera, más bolsa resultante",
+      "seats": 2,
+      "applicationWindow": "08/06/2026 — 06/07/2026\n08/06/2026–06/07/2026, ventana expresa en decreto constitución bolsa;20 hábiles siguiente BOE06/06",
+      "sourceState": "cerrada",
+      "processKind": "plaza",
+      "publicNote": "Cierre registrado por resultados y constitución de bolsa. El nombramiento efectivo de carrera y las prácticas no están contrastados en esta muestra.",
+      "portal": "https://www.celra.cat/wp/ajuntament/documentacio/informacio-publica/processos-selectius-en-curs/",
+      "sourceRow": 144,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "27/05/2026",
+      "exam": "2026-07-30 09:30",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2026-05-27 · AnexoI40 temas pp16–18",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-convo-bases-bop.pdf#page=16"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-05-27 · BOP 100edict4449,18p bases generales/específicas AnnsI–II completos",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-convo-bases-bop.pdf"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Seguimiento exacto exp1180/2026",
+          "links": [
+            "https://www.celra.cat/wp/ajuntament/documentacio/informacio-publica/processos-selectius-en-curs/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-05-27 · Convocatoria18mayo decreto875/2026\n2026-06-06 · BOE 12212 dosC1 misma BOP100/DOGC 9673\n2026-05-27 · DOGC 9673CVE26141099; decreto878 frente875BOP, discrepancia",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-convo-bases-bop.pdf",
+            "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-12212",
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-convo-dogc.pdf"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "2026-07-08 · Admisión provisional; sin datos personales",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-llista-prov-admissions.pdf"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "2026-07-24 · Admisión definitiva decreto1337/26 y citación; sin datos personales",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-llista-def-admissions.pdf"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-07-27 · Resultados catalán; sin datos personales\n2026-08-04 · Primera sesión tribunal y exámenes/criterios; sin datos personales\n2026-08-04 · Segunda sesión tribunal; sin datos personales",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-resultat-prova-catala.pdf",
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-acta-tribunal-1.pdf",
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-acta-tribunal-2.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2026-07-24 · Citados30julio9:30; tribunal9 h no hora examen",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-llista-def-admissions.pdf"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "2026-07-31 · Resultado definitivo; sin datos personales",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-resultat-def.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "2026-08-10 · Decreto1409/2026de5agosto constituye bolsa; sin datos personales",
+          "links": [
+            "https://celra.cat/ajuntament/documents/2026/processos_selectius/2026-1180-admin-constitucio-borsa.pdf"
+          ]
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0191",
+      "organism": "Cendea de Olza",
+      "sector": "Ayuntamientos",
+      "municipality": "Cendea de Olza/Oltza Zendea",
+      "province": "Navarra",
+      "region": "Comunidad Foral de Navarra",
+      "issuer": "Ayuntamiento de Cendea de Olza / Oltza Zendea",
+      "category": "Oficial administrativo/a (Concejos, Registro Civil y administración electrónica), nivel C navarro",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "concurso-oposición; libre",
+      "seats": 1,
+      "applicationWindow": "20 días naturales desde el día siguiente a publicación BON 1 de 2 enero 2026. Fecha final sin calcular.",
+      "sourceState": "por verificar",
+      "processKind": "plaza",
+      "publicNote": "Nivel C de Navarra. No se presume equivalencia de requisitos con otras comunidades. El nombramiento final posterior a las propuestas complementarias sigue por verificar.",
+      "portal": "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/",
+      "sourceRow": 251,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "02/01/2026",
+      "exam": "2026-03-18",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Anexo II, 14 temas",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/bon-1-de-2-de-enero-de-2026-convocatoria-para-la-provision-por-concurso-oposicion-de-una-plaza-de-oficial-administrativo_a-concejos-registro-civil-administracion-electronica/#page=12"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-01-02 · Bases completas BON 1, 13 páginas",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/bon-1-de-2-de-enero-de-2026-convocatoria-para-la-provision-por-concurso-oposicion-de-una-plaza-de-oficial-administrativo_a-concejos-registro-civil-administracion-electronica/#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-01-02 · Original convocatoria, BON 1",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/bon-1-de-2-de-enero-de-2026-convocatoria-para-la-provision-por-concurso-oposicion-de-una-plaza-de-oficial-administrativo_a-concejos-registro-civil-administracion-electronica/#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "2026-02-12 · Resolución 65/2026, definitiva y citaciones",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/anuncio-lista-definitiva-admitidas-excluidas-fechas-examen-euskera-y-1-prueba-teoria-convocatoria-concurso-oposicion-oficial-administrativa/"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-01-29 · Corrección inicio de pruebas: marzo 2026, no marzo 2025\n2026-01-02 · Fuente oficial\nPlantilla de respuestas de teoría 18 marzo; PDF escaneado, carácter provisional/definitivo no acreditado",
+          "links": [
+            "https://bon.navarra.es/es/anuncio/-/texto/2026/21/17",
+            "https://bon.navarra.es/es/anuncio/-/texto/2026/21/17#page=1",
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/plantilla-de-respuestas-de-la-prueba-teorica-18-03-2026/"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2026-02-12 · Euskera 6 marzo 9:00; teoría 18 marzo 10:30\n2026-04-21 · Ejercicio práctico celebrado 21 abril 2026",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/anuncio-lista-definitiva-admitidas-excluidas-fechas-examen-euskera-y-1-prueba-teoria-convocatoria-concurso-oposicion-oficial-administrativa/",
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/20260423_otros_ejercicio-practico-21-04-2026/#page=1"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "2026-06-05 · Nombramiento resolución 208/2026 de 15 mayo, efectos 8 junio\n2026-07-31 · Nombramiento complementario resolución 328/2026, efectos 3 agosto\n2026-08-05 · Propuesta de nombramiento complementario 2, no nombramiento final",
+          "links": [
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/bon-109-05062026-concurso-oposicon-de-una-plaza-de-oficial-administrativo-nombramiento/",
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/bon-149-31-07-2026-nombramiento-complementario/",
+            "https://www.ayuntamientoolza.com/convocatoria-para-la-provision-por-concurso-concurso-oposicion-de-una-plaza-del-puesto-de-trabajo-de-oficial-administrativo-a-concejos-registro-civil-administracion-electronica/20260805_publicacion_anuncio_anuncio_propuesta-de-nombramiento-complementario-2_convocatoria-concurso-oposicion-oficial-administrativa/"
+          ]
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede municipal: registro de instancia y anexos",
+          "links": [
+            "https://ayuntamientoolza.sedelectronica.es/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0139",
+      "organism": "Ayuntamiento de Gandia",
+      "sector": "Ayuntamientos",
+      "municipality": "Gandia",
+      "province": "Valencia",
+      "region": "Comunitat Valenciana",
+      "issuer": "Ayuntamiento de Gandia",
+      "category": "Auxiliar administrativo/a; Administración General, subescala Auxiliar, C2",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "oposición; libre",
+      "seats": 4,
+      "applicationWindow": "10 días hábiles desde día siguiente BOE 31/01/2026",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "Las 4 plazas incluyen la reserva: no se suma una quinta. Última fase del proceso pendiente de contraste.",
+      "portal": "https://gandia.sedelectronica.es/board",
+      "sourceRow": 172,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "22/01/2026",
+      "exam": "2026-05-08",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Temario 20 temas",
+          "links": [
+            "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F00245&lang=es#page=12"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases4AuxC2exp42072",
+          "links": [
+            "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F00245&lang=es#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://gandia.sedelectronica.es/board"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "BOE-A-2026-2280",
+          "links": [
+            "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2280"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "2026-04-02 · Definitivaexp42072",
+          "links": [
+            "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F03401&lang=es#page=1"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-01-22 · Fuente oficial",
+          "links": [
+            "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F00245&lang=es#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Ejercicio8mayo2026",
+          "links": [
+            "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F03401&lang=es#page=10"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0221",
+      "organism": "Ayuntamiento de Barcarrota",
+      "sector": "Ayuntamientos",
+      "municipality": "Barcarrota",
+      "province": "Badajoz",
+      "region": "Extremadura",
+      "issuer": "Ayuntamiento de Barcarrota",
+      "category": "Auxiliar de Administración General, C2",
+      "type": "convocatoria",
+      "state": "abierta",
+      "access": "concurso-oposición; libre",
+      "seats": 2,
+      "applicationWindow": "05/10/2026 — 03/11/2026\nDel 5 de octubre al 3 de noviembre de 2026, ambos incluidos, según anuncio municipal; 20 días hábiles desde BOE 3 octubre.",
+      "sourceState": "abierta",
+      "processKind": "plaza",
+      "publicNote": "Plazo expreso del organismo: 05/10/2026–03/11/2026. Abierta según el snapshot, no comprobada hoy. La bolsa derivada no añade plazas.",
+      "portal": "https://barcarrota.sedelectronica.es/preview-document/83e89acd-d753-4ff1-b58e-2a14d6767a45",
+      "sourceRow": 289,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "28/09/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "24 temas: 6 comunes y 18 específicos",
+          "links": [
+            "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-09-28000000_3738.pdf#page=12"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases completas y anexos, PDF 15 páginas",
+          "links": [
+            "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-09-28000000_3738.pdf#page=2"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://barcarrota.sedelectronica.es/preview-document/83e89acd-d753-4ff1-b58e-2a14d6767a45"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-09-28 · BOP 185, anuncio 3738/2026\n2026-10-03 · BOE 20564",
+          "links": [
+            "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-09-28000000_3738.pdf#page=2",
+            "https://www.boe.es/boe/dias/2026/10/03/pdfs/BOE-A-2026-20564.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-10-03 · Anuncio municipal y ventana expresa de instancia inicial\n2026-09-28 · Fuente oficial",
+          "links": [
+            "https://barcarrota.sedelectronica.es/preview-document/83e89acd-d753-4ff1-b58e-2a14d6767a45",
+            "https://www.dip-badajoz.es/bop/ventana_anuncio.php?FechaSolicitada=20260928000000&id_anuncio=164466#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede y catálogo público de trámites",
+          "links": [
+            "https://barcarrota.sedelectronica.es/info.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0260",
+      "organism": "Concello de Narón",
+      "sector": "Local",
+      "municipality": "Narón",
+      "province": "A Coruña",
+      "region": "Galicia",
+      "issuer": "Concello de Narón",
+      "category": "Auxiliar Administrativo/a C2 · Servicios generales · 02.01.C042",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "oposición · libre",
+      "seats": 1,
+      "applicationWindow": "01/05/2026 — 20/05/2026\n01/05/2026 a 20/05/2026 · fechas expresas en ficha oficial. Instancias finalizadas; segundo ejercicio convocado para20/10/2026, proceso en curso.",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "Las bases generales y algunas listas escaneadas requieren cotejo visual completo. La ficha directa puede requerir navegar desde el índice público, también enlazado. Los resultados del primer ejercicio no son aprobados finales.",
+      "portal": "https://sedeelectronica.naron.es/opensiac/action/eppublicaciondetalle?idPublicacion=418&te=OP",
+      "sourceRow": 334,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "25/11/2025",
+      "exam": "22/09/2026 primer ejercicio (documentos oficiales);20/10/2026 10:00 segundo ejercicio",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Anexo20 temas ·12grupoI+8grupoII ·p5–6\nComunicado de acceso a normativa municipal del temario",
+          "links": [
+            "https://bop.dacoruna.gal/bopportal/publicado/2025/11/25/2025_0000007781.pdf#page=5",
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=167&idTramite=1078976&idDocumento=1713588#page=1"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2025-11-25 · Bases específicas originales ·6p\nBases generales OEP 2024 ·9p",
+          "links": [
+            "https://bop.dacoruna.gal/bopportal/publicado/2025/11/25/2025_0000007781.pdf#page=1",
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=138&idTramite=1026405&idDocumento=1313394#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Ficha exacta418 · OEP 24 Auxiliar · requiere navegación desde listado público\nListado oficial de empleo · acceder a OEP 24 Auxiliar",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicaciondetalle?idPublicacion=418&te=OP",
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion?method=enter&te=OP"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2025-11-25 · Convocatoria original BOP226,2025/7781\n2026-04-30 · BOE 9397 · instancia inicial",
+          "links": [
+            "https://bop.dacoruna.gal/bopportal/publicado/2025/11/25/2025_0000007781.pdf#page=1",
+            "https://www.boe.es/boe/dias/2026/04/30/pdfs/BOE-A-2026-9397.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Admisión provisional · PDFescaneado, fecha individual pendiente",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=163&idTramite=1092448&idDocumento=1737571#page=1"
+          ]
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Admisión definitiva, tribunal y primer examen · PDFescaneado",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=162&idTramite=1111612&idDocumento=1768964#page=1"
+          ]
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-10-06 · Plantilla definitiva primer ejercicio · no provisional\n2026-10-06 · Resolución de alegaciones, resultados definitivos y segundo ejercicio",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=160&idTramite=1123914&idDocumento=1790937#page=1",
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=160&idTramite=1123916&idDocumento=1790934#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2026-10-06 · Segundo ejercicio confirmado20/10/2026 10:00 · acuerdo6/10",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=160&idTramite=1123916&idDocumento=1790934#page=5"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "2026-09-22 · Plantilla inicial primer ejercicio22/09/2026",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=160&idTramite=1119351&idDocumento=1783530#page=1"
+          ]
+        },
+        {
+          "label": "Aprobados",
+          "text": "2026-10-06 · Resultado definitivo PRIMER ejercicio · no superación final",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/action/eppublicacion_descargar?idCampoEsquema=160&idTramite=1123913&idDocumento=1790977"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "2026-04-20 · DOG 20/04/2026 · extracto de OEP 2024",
+          "links": [
+            "https://www.xunta.gal/dog/Publicados/2026/20260420/AnuncioL154-260326-0001_es.html"
+          ]
+        },
+        {
+          "label": "Solicitud",
+          "text": "Modelo inicial de solicitud · enlace público desde ficha",
+          "links": [
+            "https://sedeelectronica.naron.es/opensiac/eppublicacion_descargarDocumentos?idCampoEsquema=142&idTramite=1075070"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0268",
+      "organism": "Ayuntamiento de Rianxo",
+      "sector": "Ayuntamientos",
+      "municipality": "Rianxo",
+      "province": "A Coruña",
+      "region": "Galicia",
+      "issuer": "Ayuntamiento de Rianxo",
+      "category": "Administrativo, Administración general, C1",
+      "type": "convocatoria",
+      "state": "en curso",
+      "access": "oposición; libre",
+      "seats": 3,
+      "applicationWindow": "20 días naturales desde siguiente BOE correctivo19febrero2026; fin sin calcular",
+      "sourceState": "en curso",
+      "processKind": "plaza",
+      "publicNote": "",
+      "portal": "https://concelloderianxo.gal/gl/procesos-selectivos/-/blogs/seleccion-de-3-prazas-de-funcionario-a-de-carreira-de-administrativos-c1-ope-2025-",
+      "sourceRow": 344,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "05/02/2026",
+      "exam": "2026-06-03 (primer ejercicio; hora no localizada)",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2026-02-05 · Anexo/temario en PDF íntegro",
+          "links": [
+            "https://concelloderianxo.gal/documents/24047/0/Anuncio_convocatoria_administrativos.odt+%281%29.pdf/837a4964-98c7-79dd-2c42-c9d03a4ccb79?t=1770293753580#page=9"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-02-05 · Fuente oficial leída íntegramente",
+          "links": [
+            "https://concelloderianxo.gal/documents/24047/0/Anuncio_convocatoria_administrativos.odt+%281%29.pdf/837a4964-98c7-79dd-2c42-c9d03a4ccb79?t=1770293753580#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal del verdadero convocante",
+          "links": [
+            "https://concelloderianxo.gal/gl/procesos-selectivos/-/blogs/seleccion-de-3-prazas-de-funcionario-a-de-carreira-de-administrativos-c1-ope-2025-"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-02-05 · Fuente oficial leída íntegramente",
+          "links": [
+            "https://concelloderianxo.gal/documents/24047/0/Anuncio_convocatoria_administrativos.odt+%281%29.pdf/837a4964-98c7-79dd-2c42-c9d03a4ccb79?t=1770293753580#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-02-26 · Corrección puntuación test,2 páginas completas\n2026-02-19 · BOE correctivo abre nuevo plazo20 naturales\n2026-10-06 · Acta12 correccióntercer ejercicio, enlace/fecha portal, no datos individuales",
+          "links": [
+            "https://concelloderianxo.gal/documents/24047/0/BOP+26-02-26+Rectificaci%C3%B3n+erro+puntuaci%C3%B3n+1%C2%BA+exercizo+administrativo.pdf/abb52247-e23a-b098-94cd-abc604cd2a71?t=1772798953559#page=1",
+            "https://www.boe.es/boe/dias/2026/02/19/pdfs/BOE-A-2026-3847.pdf#page=1",
+            "https://concelloderianxo.gal/documents/24047/0/Acta+12+proceso+3+administr.pdf/07116aa6-5845-9780-916d-d9cfb22cb439?t=1791290564228"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2026-05-08 · Portal expresa3junio2026 polideportivoTaragoña; no sustituye resolución de citación",
+          "links": [
+            "https://concelloderianxo.gal/gl/procesos-selectivos/-/blogs/seleccion-de-3-prazas-de-funcionario-a-de-carreira-de-administrativos-c1-ope-2025-"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0197",
+      "organism": "Ayuntamiento de Valle de Trápaga-Trapagaran",
+      "sector": "Ayuntamientos",
+      "municipality": "Valle de Trápaga-Trapagaran",
+      "province": "Bizkaia",
+      "region": "País Vasco",
+      "issuer": "Ayuntamiento de Valle de Trápaga-Trapagaran",
+      "category": "Auxiliar administrativo/a C2 de Registro de Entrada y Servicios Generales, RPT 7",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "concurso-oposición; libre",
+      "seats": 1,
+      "applicationWindow": "20 días hábiles desde el día siguiente al anuncio BOE. Publicación BOE del mismo proceso no localizada; no calcular fecha final ni sustituirla por BOPV.",
+      "sourceState": "por verificar",
+      "processKind": "plaza",
+      "publicNote": "Las bases exigen perfil lingüístico PL2/B2. El índice municipal dice abierto, pero no acredita un plazo de inscripción: el BOE y las fechas de instancia siguen sin localizar.",
+      "portal": "https://www.trapagaran.net/es-ES/Ayuntamiento/Ofertapublicadeempleo/Paginas/abierto_concurso-oposicion-auxiliar-administrativo-de-servicios-generales.aspx",
+      "sourceRow": 259,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 1 · 1–5",
+      "published": "20/07/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "21 temas: 5 generales y 16 específicos; anexos I y II",
+          "links": [
+            "https://www.trapagaran.net/es-ES/Ayuntamiento/Ofertapublicadeempleo/auxiliar_admi_servicios_generales/20260720-bases-de-convocatoria-cas.pdf#page=18"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-07-20 · Bases completas oficiales, 24 páginas y anexos I–III\n2026-07-20 · BOB 136, CVE BOB-2026a136-(II-3930)",
+          "links": [
+            "https://www.trapagaran.net/es-ES/Ayuntamiento/Ofertapublicadeempleo/auxiliar_admi_servicios_generales/20260720-bases-de-convocatoria-cas.pdf#page=1",
+            "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/07/20/II-3930_cas.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://www.trapagaran.net/es-ES/Ayuntamiento/Ofertapublicadeempleo/Paginas/abierto_concurso-oposicion-auxiliar-administrativo-de-servicios-generales.aspx"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-07-20 · Decreto 1084/2026, 9 julio, publicación bases\n2026-08-17 · Extracto BOPV 155, 3624",
+          "links": [
+            "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/07/20/II-3930_cas.pdf#page=1",
+            "https://www.euskadi.eus/bopv2/datos/2026/08/2603624a.shtml"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "2024-12-31 · OEP 2024, corrección Decreto 1699/2024, RPT 7 una C2 libre",
+          "links": [
+            "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2024/12/31/II-7546_cas.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-07-20 · Fuente oficial",
+          "links": [
+            "https://www.bizkaia.eus/es/bob/resultados?_IYBIWBCC_bdate=20260720&_IYBIWBCC_bnum=136&_IYBIWBCC_mvcRenderCommandName=/detail&p_p_id=IYBIWBCC&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede municipal citada públicamente; presentación requiere trámite de instancia",
+          "links": [
+            "https://egoitza.trapagaran.net/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0186",
+      "organism": "Ayuntamiento de Mazarrón",
+      "sector": "Ayuntamientos",
+      "municipality": "Mazarrón",
+      "province": "Murcia",
+      "region": "Región de Murcia",
+      "issuer": "Ayuntamiento de Mazarrón",
+      "category": "Auxiliar Administrativo C2",
+      "type": "convocatoria",
+      "state": "cerrada",
+      "access": "oposición; libre",
+      "seats": 18,
+      "applicationWindow": "20 días hábiles desde siguiente BOE06/03/2025; final sin calcular",
+      "sourceState": "cerrada",
+      "processKind": "plaza",
+      "publicNote": "",
+      "portal": "https://www.mazarron.es/es/ayuntamiento/noticias/Finalizacion-del-proceso-selectivo-de-18-plazas-de-auxiliar-administrativo/",
+      "sourceRow": 238,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Grupo 2 · 6–19",
+      "published": "24/02/2025",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "Anexo programa",
+          "links": [
+            "https://www.borm.es/services/anuncio/ano/2025/numero/850/pdf?id=834400#page=9"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "Bases específicas íntegras",
+          "links": [
+            "https://www.borm.es/services/anuncio/ano/2025/numero/850/pdf?id=834400#page=1"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Portal público del convocante",
+          "links": [
+            "https://www.mazarron.es/es/ayuntamiento/noticias/Finalizacion-del-proceso-selectivo-de-18-plazas-de-auxiliar-administrativo/"
+          ]
+        },
+        {
+          "label": "Convocatoria",
+          "text": "Convocatoria oficial",
+          "links": [
+            "https://www.borm.es/services/anuncio/ano/2025/numero/850/pdf?id=834400#page=1"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2025-02-24 · Fuente oficial",
+          "links": [
+            "https://www.borm.es/services/anuncio/ano/2025/numero/850/pdf?id=834400#page=1"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "2025-11-14 · AcuerdoJGL14/11/2025 finalización y bolsa",
+          "links": [
+            "https://www.mazarron.es/export/sites/mazarron/es/ayuntamiento/.content/documentos/Documento-de-Finalizacion-del-proceso-selectivo.pdf#page=1"
+          ]
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Pendiente de localizar",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "BOL-0051",
+      "organism": "Ayuntamiento de Marratxí",
+      "sector": "Ayuntamientos",
+      "municipality": "Marratxí",
+      "province": "Illes Balears",
+      "region": "Illes Balears",
+      "issuer": "Ayuntamiento de Marratxí",
+      "category": "Auxiliar administrativo/a C2",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "libre",
+      "seats": null,
+      "applicationWindow": "15 días naturales contados desde día siguiente a publicación BOIB de 12/06/2025; fin no calculado",
+      "sourceState": "por verificar",
+      "processKind": "bolsa",
+      "publicNote": "Bolsa de empleo con examen, no plazas fijas cuantificadas. Propuesta de bolsa localizada, pero decreto de constitución definitivo por verificar.",
+      "portal": "https://www.marratxi.es/informacio-administrativa/procesos-de-seleccio/#889f2c7ca7dc0fe28",
+      "sourceRow": 59,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Sin dato verificado",
+      "published": "12/06/2025",
+      "exam": "2025-10-25",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2025-06-12 · Programa de 6 temas, apartado 4",
+          "links": [
+            "https://www.caib.es/eboibfront/pdf/es/2025/74/1193028#page=2"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2025-06-12 · Convocatoria y bases específicas, BOIB 74 anuncio 6477",
+          "links": [
+            "https://www.caib.es/eboibfront/pdf/es/2025/74/1193028"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2025-06-12 · Convocatoria y bases específicas, BOIB 74 anuncio 6477",
+          "links": [
+            "https://www.caib.es/eboibfront/pdf/es/2025/74/1193028"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-02-10 · Calificaciones finales y propuesta de constitución de bolsa (no decreto aprobatorio)",
+          "links": [
+            "https://www.marratxi.es/wp-content/uploads/2026/02/Edicte-valoracions-definitives-fase-concurs-i-notes-finals-borsa-funcionaris-interis-auxiliar-administratiu-2025.pdf"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "2025-09-24 · Acta constitución tribunal y fijación de examen",
+          "links": [
+            "https://www.marratxi.es/wp-content/uploads/2025/10/Acta-24-de-setembre-de-2025-Constitucio-tribunal-i-fixacio-data-exercici-borsa-personal-funcionari-interi-auxiliar-administratiu.pdf"
+          ]
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "2026-02-10 · Puntuaciones finales y propuesta de bolsa; sin datos de candidatos",
+          "links": [
+            "https://www.marratxi.es/wp-content/uploads/2026/02/Edicte-valoracions-definitives-fase-concurs-i-notes-finals-borsa-funcionaris-interis-auxiliar-administratiu-2025.pdf"
+          ]
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Sede municipal, enlace citado por documentos; acceso no verificado",
+          "links": [
+            "https://seuelectronica.marratxi.es"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BOL-0063",
+      "organism": "Ayuntamiento de Santa Cruz de Bezana",
+      "sector": "Ayuntamientos",
+      "municipality": "Santa Cruz de Bezana",
+      "province": "Cantabria",
+      "region": "Cantabria",
+      "issuer": "Ayuntamiento de Santa Cruz de Bezana",
+      "category": "Administrativo C1, Administración General",
+      "type": "convocatoria",
+      "state": "por verificar",
+      "access": "libre",
+      "seats": null,
+      "applicationWindow": "10 días naturales desde día siguiente a publicación BOC05/01/2026; sin fecha final calculada",
+      "sourceState": "por verificar",
+      "processKind": "bolsa",
+      "publicNote": "Bolsa de empleo con examen, sin cupo de plazas. Constitución y fechas de examen por verificar; no se inventa una vacante.",
+      "portal": "https://aytobezana.com/",
+      "sourceRow": 73,
+      "sourceSheet": "Hallazgos boletines",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1axaqvwsFcWar8fG8Yi3-786VtmZeBm7ickTGJSpcEAY/edit?gid=100024",
+      "group": "Sin dato verificado",
+      "published": "05/01/2026",
+      "exam": "No localizada",
+      "documents": [
+        {
+          "label": "Temario oficial",
+          "text": "2026-01-05 · Anexo programa 22 temas",
+          "links": [
+            "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=429301#page=15"
+          ]
+        },
+        {
+          "label": "Bases",
+          "text": "2026-01-05 · Bases completas BOC con anexos",
+          "links": [
+            "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=429301"
+          ]
+        },
+        {
+          "label": "Ficha municipal",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Convocatoria",
+          "text": "2026-01-05 · Bases completas BOC con anexos",
+          "links": [
+            "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=429301"
+          ]
+        },
+        {
+          "label": "Oferta",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas provisionales",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Listas definitivas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Publicaciones y actualizaciones",
+          "text": "2026-07-07 · Modificación base sexta composición tribunal, CVE2026-5460",
+          "links": [
+            "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=437719"
+          ]
+        },
+        {
+          "label": "Fecha de examen",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Plantillas",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Aprobados",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Resoluciones",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Referencia anterior",
+          "text": "Pendiente de localizar",
+          "links": []
+        },
+        {
+          "label": "Solicitud",
+          "text": "Registro electrónico, instancia genérica según base cuarta",
+          "links": [
+            "https://aytobezana.sedelectronica.es"
+          ]
+        }
+      ]
+    }
+  ]
+}
