@@ -1,3 +1,4 @@
+import {bodyGuides,bodyGuidePath,bodyDescription} from './body-guides';
 import sample from './data/catalogue.json';
 import fromDb from './data/catalogue.db.json';
 
@@ -22,7 +23,7 @@ export const municipalities = [...new Set(records.map(process => process.municip
 export const group = (seats: number | null) => seats == null || seats < 1 ? 'sin-dato' : seats <= 5 ? '1' : seats < 20 ? '2' : '3';
 export const stateLabel = (state: string) => ({ 'por verificar': 'Por verificar', 'en curso': 'En curso', 'cerrada': 'Cerrada', 'abierta': 'Abierta', 'pendiente de convocatoria': 'Pendiente de convocatoria' }[state] ?? state);
 export function matches(process: Process, query: string) {
-  const haystack = normalize([process.category, process.municipality, process.province, process.region, process.organism, process.id].join(' '));
+  const haystack = normalize([process.category, familyLabel(family(process)), process.municipality, process.province, process.region, process.organism, process.id].join(' '));
   return normalize(query).split(/\s+/).filter(Boolean).every(word => haystack.includes(word));
 }
 
@@ -37,7 +38,7 @@ export const guides = [
     { title: 'Haz una checklist con las bases delante', text: 'Anota requisitos, forma de inscripción, plazo, tasas, fases, tipo de ejercicios y programa oficial. No des por hecho que los requisitos o el examen son iguales a los de otro ayuntamiento. Si algo no está claro, utiliza la información de contacto del organismo convocante.' },
     { title: 'Guarda la fuente, no solo un resumen', text: 'Conserva el enlace de la ficha oficial y los documentos de tu proceso. Un resumen puede orientar, pero las bases y sus rectificaciones son las referencias para comprobar los detalles. Antes de preparar material específico, coteja el programa oficial.' },
   ] },
-  { slug: 'age-y-oposiciones-locales', label: 'TU ESTRATEGIA', title: 'La AGE no tiene por qué ser tu única opción', excerpt: 'Cómo explorar alternativas locales sin confundir programas ni requisitos.', minutes: '4 min', icon: 'map', sections: [
+  { slug: 'age-y-oposiciones-locales', label: 'TU ESTRATEGIA', title: 'Cómo combinar la preparación estatal y local', excerpt: 'Cómo explorar alternativas locales sin confundir programas ni requisitos.', minutes: '4 min', icon: 'map', sections: [
     { title: 'Amplía el mapa de opciones', text: 'Si estás preparando la AGE, también puedes explorar procesos de Administrativo y Auxiliar en otras administraciones. Filtrar por localidad te permite conocer alternativas que quizá no estabas siguiendo. Encontrar una opción no significa que cumplas automáticamente sus requisitos.' },
     { title: 'Compara antes de reutilizar', text: 'Confronta el programa oficial y el tipo de prueba con lo que ya estudias. Puede haber materias comunes, pero no se debe asumir que todo el contenido sirve para cualquier convocatoria. Distingue lo reutilizable de los temas específicos y comprueba su vigencia.' },
     { title: 'Elige tu siguiente paso con Superadmin', text: 'Superadmin plantea combinar la preparación estatal con opciones locales. Al elegir una convocatoria concreta puedes solicitar una revisión de cobertura para identificar qué necesitas preparar. Consulta disponibilidad, condiciones y plazos antes de contratar; explorar una ficha no activa por sí solo la creación de material.' },
@@ -48,6 +49,8 @@ export function metadata(pathname: string) {
   const path = pathname.replace(/\/$/, '') || '/';
   const process = records.find(record => processPath(record) === path);
   if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. Muestra local del registro; consulta la fuente oficial.` };
+  const bodyGuide = bodyGuides.find(g=>bodyGuidePath(g)===path);
+  if(bodyGuide)return {title:bodyGuide.title+' | OpoRadar',description:bodyDescription(bodyGuide)};
   const guide = guides.find(article => `/guias/${article.slug}` === path);
   if (guide) return { title: `${guide.title} | OpoRadar`, description: guide.excerpt };
   if (path.startsWith('/oposiciones/')) {
@@ -60,6 +63,7 @@ export function metadata(pathname: string) {
   const pages: Record<string, [string, string]> = {
     '/': ['Oposiciones administrativas cerca de ti | OpoRadar', 'Explora convocatorias locales, entiende las bases y encuentra alternativas para preparar tu oposición. Vista local de OpoRadar.'],
     '/convocatorias': ['Buscador de convocatorias administrativas | OpoRadar', 'Busca procesos por municipio, categoría, estado y grupo de plazas. Muestra del registro con fuentes oficiales.'],
+    '/oposiciones-locales': ['Administrativo y Auxiliar Local: requisitos y diferencias | OpoRadar','Conoce los cuerpos C1 y C2 de la Administración Local: requisitos, funciones, sueldo, examen y temario según cada convocatoria.'],
     '/localidades': ['Oposiciones por localidad | OpoRadar', 'Explora fichas por comunidad autónoma, provincia, municipio y cuerpo, con fuentes oficiales.'],
     '/oposiciones/madrid': ['Oposiciones administrativas en Madrid | OpoRadar', 'Consulta la muestra de Administrativo y Auxiliar en municipios de Madrid.'],
     '/guias': ['Guías para opositar en local | OpoRadar', 'Entiende las convocatorias, lee las bases y explora alternativas locales a la AGE.'],
@@ -74,4 +78,4 @@ export function metadata(pathname: string) {
   return value ? {title:value[0],description:value[1]} : {title:'Página no encontrada | OpoRadar',description:'Esta página no forma parte de la preview local.'};
 }
 
-export const staticRoutes = ['/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))];
+export const staticRoutes = ['/oposiciones-locales',...bodyGuides.map(bodyGuidePath),'/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))];

@@ -1,0 +1,27 @@
+import {useEffect,useState} from 'react';
+import {Link} from 'react-router-dom';
+import {ArrowRight,ArrowUpRight,Bell,FileText,Search} from 'lucide-react';
+import {records,matches,family,processPath,type Process} from './catalogue';
+import {processHeading} from './geo';
+import {useSite} from './context';
+
+export function FollowProcess({process:p}:{process:Process}){const {intake}=useSite();return <div className="follow-process"><button className="button button-outline" aria-label={'Seguir convocatoria '+p.id+' (demostración)'} onClick={()=>intake({kind:'process',processId:p.id,city:p.municipality})}><Bell size={18}/>Seguir convocatoria</button><small>Demo · todavía no envía avisos</small></div>;}
+
+export function PreparationExplorer(){
+ const [query,setQuery]=useState(''),[body,setBody]=useState(''),[limit,setLimit]=useState(6);
+ useEffect(()=>setLimit(6),[query,body]);
+ const found=records.filter(p=>matches(p,query)&&(!body||family(p)===body));
+ return <section className="preparation-explorer" aria-labelledby="preparation-search-title"><div className="section-heading"><div><span className="eyebrow muted">DE LA CONVOCATORIA A TU PREPARACIÓN</span><h2 id="preparation-search-title">Busca la convocatoria que quieres preparar.</h2><p>Consulta sus bases y solicita una revisión de lo que necesitas. El material específico se prepara bajo demanda, no para todos los municipios por adelantado.</p></div></div><div className="preparation-search"><label><span>Municipio, organismo o convocatoria</span><div><Search size={18}/><input type="search" aria-label="Buscar convocatoria para preparar" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ej.: Algete, Ayuntamiento, Auxiliar…"/></div></label><label><span>Cuerpo</span><select aria-label="Cuerpo para preparar" value={body} onChange={e=>setBody(e.target.value)}><option value="">Ambos cuerpos</option><option value="administrativo">Administrativo</option><option value="auxiliar-administrativo">Auxiliar Administrativo</option></select></label></div><p role="status">{found.length} {found.length===1?'ficha coincide':'fichas coinciden'} en esta muestra. No es un catálogo de temarios ya disponibles.</p><div className="preparation-results">{found.slice(0,limit).map(p=><article key={p.id}><FileText size={21}/><div><span>{p.municipality} · {p.id}</span><h3>{processHeading(p)}</h3></div><Link to={processPath(p)}>Consultar ficha <ArrowRight size={16}/></Link></article>)}</div>{found.length===0&&<p className="pending-box">No hay una ficha de muestra que coincida. Prueba otro municipio o consulta el buscador completo.</p>}{found.length>limit&&<button className="button button-outline" onClick={()=>setLimit(n=>n+6)}>Mostrar más fichas <ArrowRight size={16}/></button>}</section>;
+}
+
+const questions=[
+ ['¿Qué es una oferta de empleo público?','Es una previsión de plazas que la Administración quiere cubrir. Una oferta no significa por sí sola que puedas inscribirte: necesitas localizar la convocatoria y sus bases.'],
+ ['¿Qué es una convocatoria?','Es la publicación del proceso selectivo concreto. Revisa sus bases, requisitos, forma de inscripción y plazo; puede haber rectificaciones posteriores.'],
+ ['¿Qué son las bases y dónde las encuentro?','Son las reglas del proceso: requisitos, solicitudes, pruebas, criterios y programa, entre otros aspectos. Cada ficha enlaza las bases localizadas y el portal del convocante. Si falta un enlace, no significa que las bases no existan.'],
+ ['¿Una convocatoria en curso tiene la inscripción abierta?','No necesariamente. Después del cierre pueden publicarse listas, fechas de examen, resultados y resoluciones. Confirma el plazo en el organismo antes de presentar una solicitud.'],
+ ['¿Puedo presentarme a todas las plazas que aparecen?','No. Depende del turno y de los requisitos de cada proceso. La promoción interna exige condiciones específicas. Si falta un dato, contrasta las bases: no asumimos que cumplas los requisitos.'],
+ ['¿El mapa indica dónde es el examen?','No. Los puntos son referencias municipales para explorar la muestra. El destino y la sede de examen deben comprobarse en las publicaciones oficiales.'],
+ ['¿Se envían avisos al seguir una convocatoria?','Esta versión permite probar la solicitud de seguimiento, pero todavía no guarda emails ni envía avisos. El seguimiento real y sus preferencias se conectarán antes de ofrecer ese servicio.'],
+ ['¿Solicitar preparación genera un temario automáticamente?','No en esta demo. La propuesta es revisar una convocatoria específica y producir lo necesario bajo demanda, tras confirmar disponibilidad, alcance y condiciones.']
+];
+export function FooterFAQs(){return <section id="preguntas-frecuentes" className="footer-faqs" aria-labelledby="footer-faq-title"><div className="container"><div><span className="eyebrow muted">INFORMACIÓN PARA DECIDIR</span><h2 id="footer-faq-title">Preguntas frecuentes</h2><p>Lo esencial antes de elegir una convocatoria. Las bases y sus rectificaciones son siempre la referencia.</p></div><div className="footer-faq-list">{questions.map(([title,text])=><details key={title}><summary>{title}</summary><p>{text}</p></details>)}</div><div className="footer-brand-links"><span>Conoce nuestras academias</span><a href="https://www.superaoposiciones.es/" target="_blank" rel="noopener noreferrer">Supera <ArrowUpRight size={16}/></a><a href="https://patrio.es/" target="_blank" rel="noopener noreferrer">Patrio <ArrowUpRight size={16}/></a></div></div></section>;}

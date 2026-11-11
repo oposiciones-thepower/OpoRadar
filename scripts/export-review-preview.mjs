@@ -1,5 +1,5 @@
 // Export only the built public sample; never upload the original application's repository.
-import {readdir,readFile,writeFile,mkdir,rename,copyFile,stat} from 'node:fs/promises';
+import {readdir,readFile,writeFile,mkdir,rename,copyFile,stat,rm} from 'node:fs/promises';
 import {resolve,join,relative,extname} from 'node:path';
 const [destinationArg,originArg]=process.argv.slice(2);
 if(!destinationArg||!originArg)throw Error('Usage: node scripts/export-review-preview.mjs <isolated-site-directory> <site-origin>');
@@ -26,10 +26,12 @@ async function copy(directory){for(const entry of await readdir(directory,{withF
  }
  files++;
 }}
+// The export is generated output; remove stale hashed assets from older releases.
+await rm(target,{recursive:true,force:true});
 await copy(root);
 if(sanitized!==30||canonicalScripts!==1)throw Error('Unexpected build shape; review export before publishing');
 await writeFile(join(target,'_headers'),'/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n');
 manifest.static={directory:'dist'};const tmp=manifestFile+'.tmp';await writeFile(tmp,JSON.stringify(manifest,null,2)+'\n');await rename(tmp,manifestFile);
-await writeFile(join(destination,'README.md'),'# OpoRadar — revisión del equipo\n\nExportación estática de 30 fichas públicas de muestra. Sin backend, datos de alumnos, CRM ni captación real. No indexable. Los formularios solo simulan envíos y no guardan emails.\n\nDatos del snapshot 13/10/2026; no son una revisión de plazos actual. Los enlaces documentales se conservan; los enlaces al registro corporativo no se publican.\n');
+await writeFile(join(destination,'README.md'),'# OpoRadar — revisión del equipo\n\nExportación estática de 30 fichas públicas de muestra, dos guías generales de cuerpos y mapa territorial orientativo (119 rutas). Sin backend, datos de alumnos, CRM ni captación real. No indexable. Los formularios solo simulan envíos y no guardan emails.\n\nDatos del snapshot 13/10/2026; no son una revisión de plazos actual. Los enlaces documentales se conservan; los enlaces al registro corporativo no se publican.\n');
 await writeFile(join(destination,'.gitignore'),'.DS_Store\nnode_modules/\n.env\n.env.*\n*.tar.gz\n');
 console.log(JSON.stringify({files,internalLinksRemoved:sanitized,canonicalScripts,origin,staticDirectory:target}));

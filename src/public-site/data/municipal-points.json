@@ -1,0 +1,272 @@
+{
+  "Daganzo de Arriba": {
+    "lat": 40.559582,
+    "lon": -3.444797,
+    "province": "Madrid",
+    "officialName": "Daganzo de Arriba",
+    "municipalityCode": "28053",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Daganzo+de+Arriba%2C+Madrid&type=Municipio&id=28053",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Alcorcón": {
+    "lat": 40.358393,
+    "lon": -3.837232,
+    "province": "Madrid",
+    "officialName": "Alcorcón",
+    "municipalityCode": "28007",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Alcorc%C3%B3n%2C+Madrid&type=Municipio&id=28007",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Algete": {
+    "lat": 40.608218,
+    "lon": -3.529928,
+    "province": "Madrid",
+    "officialName": "Algete",
+    "municipalityCode": "28009",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Algete%2C+Madrid&type=Municipio&id=28009",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Arganda del Rey": {
+    "lat": 40.292369,
+    "lon": -3.445494,
+    "province": "Madrid",
+    "officialName": "Arganda del Rey",
+    "municipalityCode": "28014",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Arganda+del+Rey%2C+Madrid&type=Municipio&id=28014",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Boadilla del Monte": {
+    "lat": 40.420335,
+    "lon": -3.892677,
+    "province": "Madrid",
+    "officialName": "Boadilla del Monte",
+    "municipalityCode": "28022",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Boadilla+del+Monte%2C+Madrid&type=Municipio&id=28022",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Ciempozuelos": {
+    "lat": 40.151651,
+    "lon": -3.607136,
+    "province": "Madrid",
+    "officialName": "Ciempozuelos",
+    "municipalityCode": "28040",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Ciempozuelos%2C+Madrid&type=Municipio&id=28040",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Rivas-Vaciamadrid": {
+    "lat": 40.339876,
+    "lon": -3.528616,
+    "province": "Madrid",
+    "officialName": "Rivas-Vaciamadrid",
+    "municipalityCode": "28123",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Rivas-Vaciamadrid%2C+Madrid&type=Municipio&id=28123",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Torrelodones": {
+    "lat": 40.575658,
+    "lon": -3.926165,
+    "province": "Madrid",
+    "officialName": "Torrelodones",
+    "municipalityCode": "28152",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Torrelodones%2C+Madrid&type=Municipio&id=28152",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Paracuellos de Jarama": {
+    "lat": 40.514341,
+    "lon": -3.52465,
+    "province": "Madrid",
+    "officialName": "Paracuellos de Jarama",
+    "municipalityCode": "28104",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Paracuellos+de+Jarama%2C+Madrid&type=Municipio&id=28104",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Martos": {
+    "lat": 37.689746,
+    "lon": -4.018077,
+    "province": "Jaén",
+    "officialName": "Martos",
+    "municipalityCode": "23060",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Martos%2C+Ja%C3%A9n&type=Municipio&id=23060",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Fuerte del Rey": {
+    "lat": 37.902121,
+    "lon": -3.901898,
+    "province": "Jaén",
+    "officialName": "Fuerte del Rey",
+    "municipalityCode": "23035",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Fuerte+del+Rey%2C+Ja%C3%A9n&type=Municipio&id=23035",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Huesca": {
+    "lat": 42.127959,
+    "lon": -0.429914,
+    "province": "Huesca",
+    "officialName": "Huesca",
+    "municipalityCode": "22125",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Huesca%2C+Huesca&type=Municipio&id=22125",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Gozón": {
+    "lat": 43.603188,
+    "lon": -5.848666,
+    "province": "Asturias",
+    "officialName": "Gozón",
+    "municipalityCode": "33025",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Goz%C3%B3n%2C+Asturias&type=Municipio&id=33025",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Santa Cruz de Tenerife": {
+    "lat": 28.517914,
+    "lon": -16.225415,
+    "province": "Santa Cruz de Tenerife",
+    "officialName": "Santa Cruz de Tenerife",
+    "municipalityCode": "38038",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Santa+Cruz+de+Tenerife%2C+Santa+Cruz+de+Tenerife&type=Municipio&id=38038",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Folgoso de la Ribera": {
+    "lat": 42.653608,
+    "lon": -6.327755,
+    "province": "León",
+    "officialName": "Folgoso de la Ribera",
+    "municipalityCode": "24071",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Folgoso+de+la+Ribera%2C+Le%C3%B3n&type=Municipio&id=24071",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Tomelloso": {
+    "lat": 39.207694,
+    "lon": -2.969599,
+    "province": "Ciudad Real",
+    "officialName": "Tomelloso",
+    "municipalityCode": "13082",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Tomelloso%2C+Ciudad+Real&type=Municipio&id=13082",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Barcelona": {
+    "lat": 41.399961,
+    "lon": 2.151267,
+    "province": "Barcelona",
+    "officialName": "Barcelona",
+    "municipalityCode": "08019",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Barcelona%2C+Barcelona&type=Municipio&id=8019",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Celrà": {
+    "lat": 42.017887,
+    "lon": 2.878013,
+    "province": "Girona",
+    "officialName": "Celrà",
+    "municipalityCode": "17049",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Celr%C3%A0%2C+Girona&type=Municipio&id=17049",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Cendea de Olza/Oltza Zendea": {
+    "lat": 42.820758,
+    "lon": -1.765821,
+    "province": "Navarra",
+    "officialName": "Cendea de Olza/Oltza Zendea",
+    "municipalityCode": "31193",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Cendea+de+Olza%2FOltza+Zendea%2C+Navarra&type=Municipio&id=31193",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Barcarrota": {
+    "lat": 38.507693,
+    "lon": -6.885093,
+    "province": "Badajoz",
+    "officialName": "Barcarrota",
+    "municipalityCode": "06016",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Barcarrota%2C+Badajoz&type=Municipio&id=6016",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Narón": {
+    "lat": 43.538817,
+    "lon": -8.167593,
+    "province": "A Coruña",
+    "officialName": "Narón",
+    "municipalityCode": "15054",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Nar%C3%B3n%2C+A+Coru%C3%B1a&type=Municipio&id=15054",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Rianxo": {
+    "lat": 42.684075,
+    "lon": -8.785682,
+    "province": "A Coruña",
+    "officialName": "Rianxo",
+    "municipalityCode": "15072",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Rianxo%2C+A+Coru%C3%B1a&type=Municipio&id=15072",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Valle de Trápaga-Trapagaran": {
+    "lat": 43.289581,
+    "lon": -3.037014,
+    "province": "Bizkaia",
+    "officialName": "Valle de Trápaga-Trapagaran",
+    "municipalityCode": "48080",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Valle+de+Tr%C3%A1paga-Trapagaran%2C+Bizkaia&type=Municipio&id=48080",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Mazarrón": {
+    "lat": 37.620771,
+    "lon": -1.352296,
+    "province": "Murcia",
+    "officialName": "Mazarrón",
+    "municipalityCode": "30026",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Mazarr%C3%B3n%2C+Murcia&type=Municipio&id=30026",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Marratxí": {
+    "lat": 39.623761,
+    "lon": 2.728558,
+    "province": "Illes Balears",
+    "officialName": "Marratxí",
+    "municipalityCode": "07036",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Marratx%C3%AD%2C+Illes+Balears&type=Municipio&id=7036",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Santa Cruz de Bezana": {
+    "lat": 43.447323,
+    "lon": -3.90262,
+    "province": "Cantabria",
+    "officialName": "Santa Cruz de Bezana",
+    "municipalityCode": "39073",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Santa+Cruz+de+Bezana%2C+Cantabria&type=Municipio&id=39073",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  },
+  "Gandia": {
+    "lat": 38.984267,
+    "lon": -0.215383,
+    "province": "Valencia",
+    "officialName": "Gandia",
+    "municipalityCode": "46131",
+    "source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Gandia%2C+Val%C3%A8ncia%2FValencia&type=Municipio&id=46131",
+    "checked": "2026-10-27",
+    "precision": "Referencia municipal; no sede de examen ni destino de trabajo"
+  }
+}

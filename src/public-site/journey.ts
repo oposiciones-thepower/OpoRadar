@@ -1,3 +1,5 @@
+import verifiedMunicipalPoints from './data/municipal-points.json';
+import {formatDatesInText} from './dates';
 import {records, family, group, matches, normalize, type Process} from './catalogue';
 export const importedAt='2026-10-13';
 export type FactEvidence={value:string;url:string;section:string;checkedAt:string};
@@ -37,19 +39,12 @@ export const enrichments:Record<string,Enrichment>={
 export const detailFor=(p:Process)=>enrichments[p.id]??{};
 export const accessKind=(p:Process)=>normalize(p.access).includes('promocion interna')?'interna':normalize(p.access).includes('libre')?'libre':'pendiente';
 export const sourceFor=(p:Process,label:string)=>p.documents.find(d=>d.label===label)?.links[0]??p.portal;
-export const applicationText=(p:Process)=>p.applicationWindow.split('\n')[0];
+export const applicationText=(p:Process)=>formatDatesInText(p.applicationWindow.split('\n')[0]);
 export function isoDate(raw:string):string|null {const m=raw.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);if(!m)return null;const iso=`${m[3]}-${m[2]}-${m[1]}`;const date=new Date(iso+'T12:00:00Z');return Number.isFinite(date.getTime())&&date.toISOString().slice(0,10)===iso?iso:null;}
 export function deadline(p:Process):string|null {const first=applicationText(p);const m=first.match(/(?:—|–|hasta)\s*(\d{2}\/\d{2}\/\d{4})\s*$/i);return m?isoDate(m[1]):null;}
 export const formatDate=(iso:string)=>iso.split('-').reverse().join('/');
 export function deadlineLabel(p:Process){if(p.type==='oferta')return 'Oferta · todavía sin plazo de solicitud';const end=deadline(p);return end?`Fin registrado: ${formatDate(end)}${end<importedAt?' · pasado':''}`:'Cierre por verificar';}
-export const cityCoordinates:Record<string,{lat:number;lon:number;source:string}>={
- 'Alcorcón':{lat:40.3493217,lon:-3.8284487,source:'https://es.wikipedia.org/wiki/Alcorc%C3%B3n'},
- 'Algete':{lat:40.5977778,lon:-3.5002778,source:'https://es.wikipedia.org/wiki/Algete'},
- 'Arganda del Rey':{lat:40.2994444,lon:-3.4408333,source:'https://es.wikipedia.org/wiki/Arganda_del_Rey'},
- 'Boadilla del Monte':{lat:40.4069444,lon:-3.875,source:'https://es.wikipedia.org/wiki/Boadilla_del_Monte'},
- 'Ciempozuelos':{lat:40.1591667,lon:-3.6180556,source:'https://es.wikipedia.org/wiki/Ciempozuelos'},
- 'Daganzo de Arriba':{lat:40.5433333,lon:-3.4572222,source:'https://es.wikipedia.org/wiki/Daganzo_de_Arriba'}
-};
+export const cityCoordinates:Record<string,{lat:number;lon:number;source:string}>=verifiedMunicipalPoints;
 export function distanceKm(from:string,to:string){const a=cityCoordinates[from],b=cityCoordinates[to];if(!a||!b)return null;const rad=(n:number)=>n*Math.PI/180;const dLat=rad(b.lat-a.lat),dLon=rad(b.lon-a.lon);const h=Math.sin(dLat/2)**2+Math.cos(rad(a.lat))*Math.cos(rad(b.lat))*Math.sin(dLon/2)**2;return 6371*2*Math.atan2(Math.sqrt(h),Math.sqrt(Math.max(0,1-h)));}
 export function filterRecords(params:URLSearchParams,source:Process[]=records){
  const get=(key:string)=>params.get(key)??''; const city=get('municipio');const radius=Number(get('radio')); const phase=get('fase');
