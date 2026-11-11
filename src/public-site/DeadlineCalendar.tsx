@@ -1,0 +1,34 @@
+import {useState} from 'react';
+import {CalendarDays,ChevronLeft,ChevronRight} from 'lucide-react';
+import {type Process} from './catalogue';
+import {formatDatesInText,toISO} from './dates';
+import {computeDeadline,dayReason,explicitRule,referenceCalendars,type DeadlineCalendar as CalendarData} from './calendars';
+const legal='https://www.boe.es/eli/es/l/2015/10/01/39/con#art30';
+export function DeadlineCalendar({process:p}:{process:Process}) {
+  const rule=explicitRule(p.applicationWindow);const matching=referenceCalendars.find(c=>c.municipality===p.municipality);
+  const [trigger,setTrigger]=useState(formatDatesInText(rule?.trigger??toISO(p.published??'')??''));
+  const [days,setDays]=useState(rule?.days??20);const [unit,setUnit]=useState<'hábiles'|'naturales'>(rule?.unit??'hábiles');
+  const [inclusive,setInclusive]=useState(false);const [confirmed,setConfirmed]=useState(false);
+  const [extraDates,setExtraDates]=useState('');const [month,setMonth]=useState((rule?.trigger??toISO(p.published??'')??'2026-10-01').slice(0,7));
+  if(p.type==='oferta')return null;
+  const calendar:CalendarData|undefined=matching&&{...matching,holidays:[...matching.holidays,...extraDates.split(/[,;\s]+/).filter(Boolean).map(toISO).filter((x):x is string=>!!x).map(date=>({date,name:'Día inhábil adicional indicado para la simulación',scope:'local' as const}))]};
+  const badExtra=extraDates.split(/[,;\s]+/).filter(Boolean).some(d=>!toISO(d));
+  const result=calendar&&!badExtra?computeDeadline({trigger:toISO(trigger)??'',days,unit,includeTrigger:inclusive,calendar}):null;
+  const months=(offset:number)=>{const date=new Date(month+'-01T12:00:00Z');date.setUTCMonth(date.getUTCMonth()+offset);setMonth(date.toISOString().slice(0,7));};
+  const first=new Date(month+'-01T12:00:00Z');const offset=(first.getUTCDay()+6)%7;const length=new Date(Date.UTC(first.getUTCFullYear(),first.getUTCMonth()+1,0)).getUTCDate();
+  return <details className="deadline-calculator"><summary><CalendarDays size={18}/>Calcular un plazo orientativo <span>Desplegar herramienta · no sustituye el plazo oficial</span></summary><div className="calculator-body">
+    <p>Calcula días hábiles o naturales, el inicio y el traslado de un vencimiento inhábil. <strong>No modifica el plazo oficial de esta ficha.</strong></p>
+    {!calendar?<div className="calendar-pending"><strong>Calendario de {p.municipality}: pendiente de validar.</strong><p>No se ha cargado un calendario completo para esta localidad. No inventamos sus festivos ni una fecha límite. El motor está disponible para las referencias 2026 de Martos y Fuerte del Rey.</p><a href={p.portal||legal} target="_blank" rel="noreferrer">Consultar calendario y bases en el organismo</a></div>:<>
+      <p className="calendar-source-note">Referencia: {calendar.municipality} · {calendar.region} · {calendar.years.join(', ')}. Comprueba las rectificaciones y el calendario de la sede o registro que corresponda. No es una validación jurídica del trámite.</p>
+      <div className="calculator-inputs"><label>Fecha de publicación o notificación<input type="text" inputMode="numeric" placeholder="DD/MM/AAAA" aria-label="Fecha de inicio del plazo" value={trigger} onChange={e=>{setTrigger(e.target.value);const iso=toISO(e.target.value);if(iso)setMonth(iso.slice(0,7));setConfirmed(false);}}/></label><label>Número de días<input type="number" min="1" max="366" aria-label="Número de días del plazo" value={days} onChange={e=>{setDays(Number(e.target.value));setConfirmed(false);}}/></label><label>Tipo de días<select aria-label="Tipo de días del plazo" value={unit} onChange={e=>{setUnit(e.target.value as typeof unit);setConfirmed(false);}}><option>hábiles</option><option>naturales</option></select></label></div>
+      <label className="calculator-check"><input type="checkbox" checked={inclusive} onChange={e=>{setInclusive(e.target.checked);setConfirmed(false);}}/>Las bases indican expresamente que el día inicial se incluye. Si no, contamos desde el día siguiente.</label>
+      <label className="calculator-extra">Otros días inhábiles aplicables (DD/MM/AAAA, separados por coma)<input value={extraDates} placeholder="Solo si lo confirma el calendario aplicable" onChange={e=>{setExtraDates(e.target.value);setConfirmed(false);}}/></label>
+      <label className="calculator-check"><input type="checkbox" aria-label="Confirmar reglas y calendario para la simulación" checked={confirmed} onChange={e=>setConfirmed(e.target.checked)}/>He contrastado el inicio, el tipo de días y el calendario aplicable —incluidos los locales y, si procede, los de mi residencia— con las bases y la sede de presentación.</label>
+      <div className="calculator-result" role="status">{badExtra?'Hay una fecha adicional no válida. Usa DD/MM/AAAA.':!confirmed?'Confirma las reglas y el calendario para ver el resultado orientativo.':result?.error??<>Vencimiento orientativo: <strong>{formatDatesInText(result?.end??'')}</strong><small>Inicio del cómputo: {formatDatesInText(result?.start??'')}. {days} días {unit}; sábados, domingos y festivos excluidos cuando corresponde. Verifica posibles ampliaciones y la hora de cierre en la sede.</small></>}</div>
+      <div className="calendar-month"><div><button type="button" aria-label="Mes anterior" onClick={()=>months(-1)}><ChevronLeft size={17}/></button><strong>{first.toLocaleDateString('es-ES',{month:'long',year:'numeric',timeZone:'UTC'})}</strong><button type="button" aria-label="Mes siguiente" onClick={()=>months(1)}><ChevronRight size={17}/></button></div><div className="calendar-days">{['L','M','X','J','V','S','D'].map((x,i)=><span className="calendar-weekday" key={'w'+i}>{x}</span>)}{Array.from({length:offset},(_,i)=><span key={'e'+i}/>)}{Array.from({length},(_,i)=>{const date=month+'-'+String(i+1).padStart(2,'0');const reason=dayReason(date,calendar);const known=calendar.years.includes(Number(month.slice(0,4)));return <span key={date} title={known?(reason??'Día hábil según la referencia'):'Calendario anual no cargado'} className={!known?'calendar-unknown':reason?'calendar-holiday':'calendar-working'}>{i+1}</span>;})}</div><p>Verde: hábil en la referencia · naranja: fin de semana o festivo · gris: año no cargado.</p></div>
+      {confirmed&&!!result?.excluded.length&&<details><summary>Ver días excluidos o traslado del vencimiento</summary><ul>{result.excluded.map((d,i)=><li key={i}>{formatDatesInText(d.date)} · {d.reason}</li>)}</ul></details>}
+      <div className="calendar-sources">{calendar.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label}</a>)}</div>
+    </>}
+    <a className="calendar-legal" href={legal} target="_blank" rel="noreferrer">Ley 39/2015 · artículos 30 y 31. No calculamos plazos por meses, horas o reglas especiales con este formulario.</a>
+  </div></details>;
+}

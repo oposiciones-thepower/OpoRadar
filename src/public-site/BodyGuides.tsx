@@ -1,0 +1,42 @@
+import {Link} from 'react-router-dom';
+import {ArrowRight,ArrowUpRight,BookOpen,Check,GraduationCap} from 'lucide-react';
+import {bodyGuides,bodyGuidePath,bodyDescription,type BodyGuide,type GuideBlock} from './body-guides';
+import {family,records,processPath,slug} from './catalogue';
+import {useSite} from './context';
+import {PreparationExplorer} from './MeetingExperience';
+
+function bodyText(text:string){return text.replace(/Bachillerato o equivalente/g,'Bachiller, Técnico o equivalencia admitida en las bases').replace(/plazas disponibles/g,'fichas de la muestra').replace('Puedes distinguir entre convocatorias abiertas, próximas, en proceso o finalizadas.','El buscador diferencia ofertas, convocatorias y estados documentados. El estado del registro no confirma que el plazo siga abierto hoy.').replace('Próximamente.','Ofertas pendientes de convocatoria.').replace('En proceso.','En curso.').replace('Finalizadas.','Cerradas o históricas.').replace(/^Recibe avisos sobre nuevas.*$/,'En esta demo puedes probar la configuración de alertas. Todavía no se guardan emails ni se envían avisos.');}
+const headingId=(i:number,text:string)=>'guia-'+i+'-'+slug(text);
+export function BodyGuideCards({compact=false}:{compact?:boolean}){return <div className={`body-guide-cards ${compact?'body-guide-cards-compact':''}`}>{[...bodyGuides].sort((a,b)=>a.group.localeCompare(b.group)).map(g=><Link to={bodyGuidePath(g)} className="body-guide-card" key={g.slug}><span className="body-guide-group">{g.group}</span><div><h3>{g.group==='C2'?'Auxiliar Administrativo (C2)':'Administrativo (C1)'}</h3>{compact&&<p className="body-guide-destination">Guía de requisitos, funciones y pruebas <ArrowRight size={14}/></p>}{!compact&&<><p>{g.group==='C2'?'ESO o equivalencia admitida':'Bachiller, Técnico o equivalencia admitida'}. Requisitos, funciones, sueldo, examen y programa: conoce el cuerpo antes de elegir una convocatoria.</p><strong>Consultar la guía <ArrowRight size={16}/></strong></>}</div>{compact&&<ArrowRight size={18}/>}</Link>)}</div>;}
+export function BodyGuidesIndex(){return <div className="container page-section"><nav className="breadcrumbs" aria-label="Ruta de navegación"><Link to="/">Inicio</Link><span>Qué preparar</span></nav><div className="page-title"><div><span className="eyebrow muted">EMPIEZA POR EL CUERPO</span><h1>Administrativo o Auxiliar.<br/>Conoce las diferencias.</h1><p>Dos guías generales para entender requisitos y trabajo. Después, consulta las bases de cada convocatoria: no hay un examen ni un temario único para toda la Administración Local.</p></div></div><BodyGuideCards/><PreparationExplorer/><section className="body-index-note"><BookOpen size={26}/><div><h2>Una guía general no es una convocatoria.</h2><p>Aquí puedes conocer el cuerpo. En cada ficha concreta encontrarás organismo, plazas, documentos y fechas localizadas, con los datos pendientes señalados.</p><Link className="text-link" to="/localidades">Buscar por comunidad y municipio <ArrowRight size={16}/></Link></div></section></div>;}
+function ArticleBlocks({blocks,guide,start=0}:{blocks:GuideBlock[];guide:BodyGuide;start?:number}){
+ const {alert}=useSite();const out=[];
+ for(let i=0;i<blocks.length;i++){
+  const b=blocks[i],id=start+i,text=bodyText(b.text??'');
+  if(b.kind==='HEADING_2')out.push(<h2 id={headingId(id,text)} key={id}>{text}</h2>);
+  else if(b.kind==='HEADING_3')out.push(<h3 id={headingId(id,text)} key={id}>{text}</h3>);
+  else if(b.kind==='table')out.push(<div className="body-guide-table" role="region" aria-label="Tabla informativa desplazable" tabIndex={0} key={id}><table><thead><tr>{b.rows![0].map((v,j)=><th key={j} scope="col">{v}</th>)}</tr></thead><tbody>{b.rows!.slice(1).map((row,k)=><tr key={k}>{row.map((v,j)=>j?<td key={j}>{bodyText(v)}</td>:<th scope="row" key={j}>{v}</th>)}</tr>)}</tbody></table></div>);
+  else if(text.startsWith('[CTA:')){
+   const other=text.includes('VER OPOSICIONES DE AUXILIAR');
+   out.push(<div className="body-guide-cta" key={id}>{text.includes('CREAR MI RADAR')?<button className="button button-outline" onClick={()=>alert()}>Probar una alerta <ArrowRight size={16}/></button>:<Link className="button" to={other?bodyGuidePath(bodyGuides[0]):'/convocatorias?cuerpo='+guide.family}>{other?'Conocer Auxiliar Administrativo':'Ver fichas de '+(guide.group==='C2'?'Auxiliar':'Administrativo')}<ArrowRight size={16}/></Link>}</div>);
+  }else if(b.bullet){const items=[text];while(blocks[i+1]?.bullet)items.push(bodyText(blocks[++i].text??''));out.push(<ul key={id}>{items.map((v,j)=><li key={j}>{v}</li>)}</ul>);}
+  else out.push(<p key={id}>{text}</p>);
+ }
+ return <>{out}</>;
+}
+export function BodyGuidePage({guideSlug}:{guideSlug:string}){
+ const guide=bodyGuides.find(g=>g.slug===guideSlug)!;
+ const faqStart=guide.blocks.findIndex(b=>b.kind==='HEADING_2'&&b.text?.startsWith('Preguntas frecuentes'));
+ const faqEnd=guide.blocks.findIndex((b,i)=>i>faqStart&&b.kind==='HEADING_2');
+ const faqs:{q:string;blocks:GuideBlock[];start:number}[]=[];
+ guide.blocks.slice(faqStart+1,faqEnd<0?undefined:faqEnd).forEach((b,i)=>{if(b.kind==='HEADING_3')faqs.push({q:b.text!,blocks:[],start:faqStart+i+2});else faqs[faqs.length-1]?.blocks.push(b);});
+ const toc=guide.blocks.map((b,i)=>({...b,index:i})).filter(b=>b.kind==='HEADING_2');
+ const sample=records.filter(p=>family(p)===guide.family).slice(0,3);
+ return <div className="container page-section"><nav className="breadcrumbs" aria-label="Ruta de navegación"><Link to="/">Inicio</Link><span>›</span><Link to="/oposiciones-locales">Qué preparar</Link><span>› {guide.group}</span></nav>
+  <header className="body-guide-hero"><div><span className="eyebrow muted">GUÍA GENERAL · {guide.group}</span><h1>{guide.title}</h1><p>{bodyDescription(guide)}</p><div className="action-row"><Link className="button" to={'/convocatorias?cuerpo='+guide.family}>Ver fichas de {guide.group==='C2'?'Auxiliar':'Administrativo'} <ArrowRight size={17}/></Link><Link className="text-link" to={bodyGuidePath(bodyGuides.find(g=>g.slug!==guide.slug)!)}>Comparar con {guide.group==='C2'?'Administrativo C1':'Auxiliar C2'}</Link></div></div><div className="body-guide-keyfacts"><span><GraduationCap size={20}/>Titulación habitual</span><strong>{guide.group==='C2'?'ESO o equivalencia admitida':'Bachiller, Técnico o equivalencia admitida'}</strong><span><Check size={19}/>Cada entidad fija sus bases</span><strong>Programa y examen según convocatoria</strong><small>Comprueba el turno, la titulación y los demás requisitos. Esta guía no acredita tu admisión.</small></div></header>
+  <div className="body-guide-layout"><aside><nav className="body-guide-toc" aria-label="Índice de la ficha general"><strong>EN ESTA GUÍA</strong>{toc.map(b=><a key={b.index} href={'#'+headingId(b.index,bodyText(b.text!))}>{b.text}</a>)}</nav></aside><article className="body-guide-article"><p className="body-guide-note">Guía general · texto de referencia editorial, no convocatoria vigente. Las fichas del buscador son una muestra; consulta siempre las bases y rectificaciones del organismo antes de inscribirte.</p>
+  <ArticleBlocks blocks={guide.blocks.slice(0,faqStart)} guide={guide}/><section className="body-guide-faq"><h2 id={headingId(faqStart,guide.blocks[faqStart].text!)}>{guide.blocks[faqStart].text}</h2>{faqs.map(f=><details key={f.q}><summary>{f.q}</summary><ArticleBlocks blocks={f.blocks} guide={guide} start={f.start}/></details>)}</section><ArticleBlocks blocks={guide.blocks.slice(faqEnd)} guide={guide} start={faqEnd}/>
+  <section className="body-guide-official"><h2>Contrasta los requisitos en la fuente oficial</h2><p>Como referencia general, el Estatuto Básico del Empleado Público regula los requisitos de acceso y los subgrupos C1/C2. Las bases concretan cada proceso; para personal laboral se aplica su clasificación correspondiente.</p><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a56" target="_blank" rel="noreferrer">EBEP · artículos 56, 76 y 77 <ArrowUpRight size={15}/></a><small>Referencia normativa consultada el 19/10/2026. Equivalencias y requisitos específicos deben contrastarse para tu caso.</small></section>
+  <section className="body-guide-examples"><h2>Lleva la guía a un proceso concreto</h2><p>Ejemplos de la muestra, no una selección de inscripciones abiertas hoy.</p>{sample.map(p=><Link to={processPath(p)} key={p.id}><strong>{p.municipality}</strong><span>{p.organism} · {p.id}</span><ArrowRight size={17}/></Link>)}</section></article></div>
+ </div>;
+}
