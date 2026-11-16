@@ -17,3 +17,7 @@ export {pointFor,validZone,encodeZone,decodeZone,insideZone,decodeBounds,geograp
 export {institutionKind,governmentScope,discoveryResults,publicCategory,categoryNeedsReview} from './discovery';
 
 export {comparisonTrayVisible} from './discovery';
+
+export {parseApprovedCatalogue,publicUrl} from './approved-contract';
+export {ApprovedCatalogueClient,storedIds} from './approved-client';
+export {approvedMode,applyApprovedCatalogue,todayMadrid,isApplicationOpen,catalogueVersion,catalogueGeneratedAt} from './catalogue';

@@ -1,3 +1,7 @@
+## Approved catalogue mode (14 November)
+
+A separate runtime integration is prepared and tested against the existing administrator-approved catalogue. See [contract, checks and deployment boundaries](docs/APPROVED-CATALOGUE.md). It requires an authorized permanent public read endpoint before hosted deployment; the supervised loopback bridge is QA only. No main-branch merge or production application change.
+
 # OpoRadar — public marketing preview
 
 Public information frontend, separate from the existing production application and backend. Default build: 30 real public sample records, snapshot 13 October 2026; not an up-to-date national catalogue. Preview is public, requests no indexing and keeps capture/tracking forms simulated.

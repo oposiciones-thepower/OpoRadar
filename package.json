@@ -15,7 +15,9 @@
     "serve:marketing": "node scripts/serve-marketing.mjs",
     "test:marketing": "node --test scripts/test-marketing.mjs",
     "export:db": "node --env-file-if-exists=.env.local scripts/export-db-catalogue.mjs",
-    "build:marketing:db": "VITE_CATALOGUE=db npm run build:marketing"
+    "build:marketing:db": "VITE_CATALOGUE=db npm run build:marketing",
+    "build:approved": "node scripts/build-approved.mjs",
+    "test:approved": "node --test scripts/test-approved.mjs"
   },
   "dependencies": {
     "@ant-design/icons": "6.1.0",

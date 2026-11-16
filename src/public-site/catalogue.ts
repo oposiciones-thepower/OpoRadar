@@ -1,25 +1,42 @@
 import {bodyGuides,bodyGuidePath,bodyDescription} from './body-guides';
 import sample from './data/catalogue.json';
+import {type ApprovedCatalogue,type ApplicationStatus} from './approved-contract';
+export const approvedMode=import.meta.env.VITE_CATALOGUE==='approved';
 import fromDb from './data/catalogue.db.json';
 
 // VITE_CATALOGUE=db usa el export de la BD de OpoRadar (scripts/export-db-catalogue.mjs); por defecto, la muestra revisada de 30 fichas.
 const snapshot = (import.meta.env.VITE_CATALOGUE === 'db' ? fromDb : sample) as typeof sample;
 
-export const records = snapshot.records;
-export const snapshotLabel = snapshot.snapshot.split('-').reverse().join('/');
-export type Process = typeof records[number];
+export type Process = typeof sample.records[number] & {publicId?:string;applicationStatus?:ApplicationStatus;applicationStart?:string|null;applicationEnd?:string|null;verifiedAt?:string|null;approvedAt?:string|null;approvalVersion?:string;coordinates?:{lat:number;lon:number;source?:string}|null;title?:string;examDate?:string|null};
+export let records:Process[] = approvedMode?[]:snapshot.records;
+export let catalogueVersion=0;
+export let catalogueGeneratedAt:string|null=null;
+export let snapshotLabel = approvedMode?'—':snapshot.snapshot.split('-').reverse().join('/');
+
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 export const slug = (value: string) => normalize(value).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-export const family = (process: Process) => normalize(process.category).includes('auxiliar') ? 'auxiliar-administrativo' : 'administrativo';
-export const familyLabel = (value: string) => !value ? 'Administrativo y Auxiliar' : value === 'auxiliar-administrativo' ? 'Auxiliar administrativo' : 'Administrativo';
-export const processPath = (process: Process) => `/convocatorias/${slug(process.municipality)}-${family(process)}-${process.id.toLowerCase()}`;
+export const family = (process: Process) => normalize(process.category).includes('auxiliar') ? 'auxiliar-administrativo' : !approvedMode||normalize(process.category).includes('administrativ')?'administrativo':'por-verificar';
+export const familyLabel = (value: string) => !value ? 'Administrativo y Auxiliar' : value === 'auxiliar-administrativo' ? 'Auxiliar administrativo' : value==='por-verificar'?'Categoría por verificar':'Administrativo';
+export const processPath = (process: Process) => approvedMode?'/convocatorias/'+process.id.toLowerCase():'/convocatorias/'+slug(process.municipality)+'-'+family(process)+'-'+process.id.toLowerCase();
 export const regionSlug = (region: string) => region === 'Comunidad de Madrid' ? 'madrid' : region === 'Principado de Asturias' ? 'asturias' : slug(region);
 export const regionPath = (region: string) => `/oposiciones/${regionSlug(region)}`;
-export const regions = [...new Set(records.map(p => p.region))].sort((a,b) => a.localeCompare(b,'es'));
-export const provinces = [...new Set(records.map(p => p.province))].sort((a,b) => a.localeCompare(b,'es'));
+export let regions = [...new Set(records.map(p => p.region))].sort((a,b) => a.localeCompare(b,'es'));
+export let provinces = [...new Set(records.map(p => p.province))].sort((a,b) => a.localeCompare(b,'es'));
 export const cityRegion = (city: string) => records.find(p => p.municipality === city)?.region ?? '';
 export const cityPath = (city: string, body?: string) => `${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`;
-export const municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
+export let municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
+export function applyApprovedCatalogue(data:ApprovedCatalogue){
+ records=data.records.map(p=>({...p,published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo aprobado',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
+ regions=[...new Set(records.map(p=>p.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ provinces=[...new Set(records.map(p=>p.province).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ municipalities=[...new Set(records.map(p=>p.municipality).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ catalogueGeneratedAt=data.generatedAt;snapshotLabel=new Date(data.generatedAt).toLocaleString('es-ES',{timeZone:'Europe/Madrid'});catalogueVersion++;
+}
+export function todayMadrid(){return new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Madrid'}).format(new Date());}
+export function isApplicationOpen(p:Process){
+ const today=todayMadrid();
+ return p.type!=='oferta'&&p.applicationStatus==='open'&&!!p.applicationStart&&!!p.applicationEnd&&p.applicationStart.slice(0,10)<=today&&p.applicationEnd.slice(0,10)>=today;
+}
 export const group = (seats: number | null) => seats == null || seats < 1 ? 'sin-dato' : seats <= 5 ? '1' : seats < 20 ? '2' : '3';
 export const stateLabel = (state: string) => ({ 'por verificar': 'Por verificar', 'en curso': 'En curso', 'cerrada': 'Cerrada', 'abierta': 'Abierta', 'pendiente de convocatoria': 'Pendiente de convocatoria' }[state] ?? state);
 export function matches(process: Process, query: string) {
