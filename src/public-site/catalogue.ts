@@ -1,13 +1,13 @@
 import {bodyGuides,bodyGuidePath,bodyDescription} from './body-guides';
 import sample from './data/catalogue.json';
-import {type ApprovedCatalogue,type ApplicationStatus} from './approved-contract';
+import {type ApprovedCatalogue,type ApplicationStatus,type PublicationStatus} from './approved-contract';
 export const approvedMode=import.meta.env.VITE_CATALOGUE==='approved';
 import fromDb from './data/catalogue.db.json';
 
 // VITE_CATALOGUE=db usa el export de la BD de OpoRadar (scripts/export-db-catalogue.mjs); por defecto, la muestra revisada de 30 fichas.
 const snapshot = (import.meta.env.VITE_CATALOGUE === 'db' ? fromDb : sample) as typeof sample;
 
-export type Process = typeof sample.records[number] & {publicId?:string;applicationStatus?:ApplicationStatus;applicationStart?:string|null;applicationEnd?:string|null;verifiedAt?:string|null;approvedAt?:string|null;approvalVersion?:string;coordinates?:{lat:number;lon:number;source?:string}|null;title?:string;examDate?:string|null};
+export type Process = typeof sample.records[number] & {publicId?:string;publicationStatus?:PublicationStatus;applicationStatus?:ApplicationStatus;applicationStart?:string|null;applicationEnd?:string|null;verifiedAt?:string|null;approvedAt?:string|null;approvalVersion?:string|null;coordinates?:{lat:number;lon:number;source?:string}|null;title?:string;examDate?:string|null};
 export let records:Process[] = approvedMode?[]:snapshot.records;
 export let catalogueVersion=0;
 export let catalogueGeneratedAt:string|null=null;
@@ -26,7 +26,7 @@ export const cityRegion = (city: string) => records.find(p => p.municipality ===
 export const cityPath = (city: string, body?: string) => `${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`;
 export let municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
 export function applyApprovedCatalogue(data:ApprovedCatalogue){
- records=data.records.map(p=>({...p,published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo aprobado',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
+ records=data.records.map(p=>({...p,published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo de OpoRadar',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
  regions=[...new Set(records.map(p=>p.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
  provinces=[...new Set(records.map(p=>p.province).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
  municipalities=[...new Set(records.map(p=>p.municipality).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));

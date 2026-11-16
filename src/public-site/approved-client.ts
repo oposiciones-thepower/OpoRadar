@@ -19,7 +19,7 @@ export class ApprovedCatalogueClient{
     const text=await response.text();if(text.length>12000000)throw Error('Respuesta demasiado grande');
     const data=parseApprovedCatalogue(JSON.parse(text));if(controller.signal.aborted)return;
     this.apply(data);this.update({status:'ready',hasData:true,generation:this.state.generation+1,lastSuccess:new Date().toISOString(),error:null});
-   }catch{if(!this.stopped)this.update({status:'error',error:'No se ha podido consultar el catálogo aprobado. No se sustituye por fichas de muestra.'});}
+   }catch{if(!this.stopped)this.update({status:'error',error:'No se ha podido consultar el catálogo de OpoRadar. No se sustituye por fichas de muestra.'});}
    finally{clearTimeout(timeout);this.pending=null;this.controller=null;}
   })();return this.pending;
  };

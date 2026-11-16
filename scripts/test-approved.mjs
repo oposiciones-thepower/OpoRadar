@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {programmeEvidence,parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
+import {publicationLabel,programmeEvidence,parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
 const record=()=>({id:'OPO-900001',organism:'Ayuntamiento de prueba',sector:'Administración Local',municipality:'Municipio de prueba',province:'Madrid',region:'Comunidad de Madrid',issuer:'Ayuntamiento de prueba',category:'Auxiliar administrativo',type:'convocatoria',state:'por verificar',portal:'https://example.org/proceso',access:'Por verificar',seats:null,published:null,applicationWindow:'Por verificar',exam:null,documents:[{label:'Bases',text:'No publicadas',links:[]}],processKind:'plaza',applicationStatus:'unverified',coordinates:null,verifiedAt:null});
 const catalogue=(items=[record()])=>({schemaVersion:1,revision:'test-v1',generatedAt:'2026-11-14T12:00:00Z',records:items,coverage:{scope:'Fixture aislada, no datos públicos reales'}});
 test('approved mode starts empty, never loads sample records',()=>{assert.equal(records.length,0);});
@@ -49,4 +49,41 @@ test('synchronous transport throws do not freeze future refreshes',async()=>{
 });
 test('calendar-invalid ISO dates rejected',()=>{assert.throws(()=>parseApprovedCatalogue(catalogue([{...record(),published:'2026-02-31'}])));});
 
-test('missing approved programme has no generic portal disguised as a programme link',()=>{const r=record();assert.deepEqual(programmeEvidence(r),{url:null,label:'Sin enlace aprobado al programa'});r.documents.push({label:'Temario oficial',text:'Programa publicado',links:['https://example.org/programa.pdf']});assert.deepEqual(programmeEvidence(r),{url:'https://example.org/programa.pdf',label:'Consultar programa oficial'});});
+test('missing approved programme has no generic portal disguised as a programme link',()=>{const r=record();assert.deepEqual(programmeEvidence(r),{url:null,label:'Sin enlace al programa en el catálogo'});r.documents.push({label:'Temario oficial',text:'Programa publicado',links:['https://example.org/programa.pdf']});assert.deepEqual(programmeEvidence(r),{url:'https://example.org/programa.pdf',label:'Consultar programa oficial'});});
+
+const legacyRecord=(extra={})=>({...record(),publicationStatus:'legacy_catalogue',approvedAt:null,approvalVersion:null,...extra});
+const adminRecord=(extra={})=>({...record(),publicationStatus:'admin_approved',approvedAt:'2026-11-16T09:00:00Z',approvalVersion:'test-approved-version',...extra});
+const v2=(items)=>({...catalogue(items),schemaVersion:2,coverage:{scope:'Fixture aislada',totalRecords:items.length,adminApprovedRecords:items.filter(r=>r.publicationStatus==='admin_approved').length,legacyRecords:items.filter(r=>r.publicationStatus==='legacy_catalogue').length}});
+test('v2 retains all 868 catalogue rows instead of filtering on the new approval ledger',()=>{
+ const items=Array.from({length:867},(_,i)=>legacyRecord({id:'OPO-'+(i+1)}));items.push(adminRecord({id:'OPO-900001'}));
+ const parsed=parseApprovedCatalogue(v2(items));assert.equal(parsed.records.length,868);assert.equal(parsed.records.filter(p=>p.publicationStatus==='legacy_catalogue').length,867);
+ assert.equal(parsed.records[0].approvedAt,null);assert.equal(parsed.records[0].approvalVersion,null);
+});
+test('v2 exposes real approval provenance without certifying legacy review',()=>{
+ const parsed=parseApprovedCatalogue(v2([legacyRecord({id:'OPO-1'}),adminRecord({id:'OPO-2'})]));
+ assert.match(publicationLabel(parsed.records[0]),/histórico.*sin aprobación individual/);
+ assert.match(publicationLabel(parsed.records[1]),/Aprobada en el admin.*2026-11-16/);
+});
+test('legacy must not acquire a fabricated approval date or hash',()=>{
+ for(const extra of [{approvedAt:'2026-11-16'},{approvalVersion:'fake-approval'}])assert.throws(()=>parseApprovedCatalogue(v2([legacyRecord(extra)])));
+});
+test('explicit v2 approvals require real metadata and cannot be downgraded by missing values',()=>{
+ for(const extra of [{approvedAt:null},{approvalVersion:null},{approvalVersion:''}])assert.throws(()=>parseApprovedCatalogue(v2([adminRecord(extra)])));
+});
+test('v2 requires an explicit supported publication status',()=>{
+ const missing=legacyRecord();delete missing.publicationStatus;
+ for(const r of [missing,legacyRecord({publicationStatus:'assumed-approved'})])assert.throws(()=>parseApprovedCatalogue(v2([r])));
+});
+test('v2 counts must reconcile exactly with the returned rows',()=>{
+ const raw=v2([legacyRecord()]);for(const key of ['totalRecords','adminApprovedRecords','legacyRecords'])assert.throws(()=>parseApprovedCatalogue({...raw,coverage:{...raw.coverage,[key]:999}}));
+});
+test('v1 remains readable while frontend and endpoint roll out separately',()=>{
+ const old=catalogue([adminRecord()]);delete old.records[0].publicationStatus;
+ assert.equal(parseApprovedCatalogue(old).records[0].publicationStatus,'admin_approved');
+ assert.equal(parseApprovedCatalogue(catalogue()).records[0].publicationStatus,'legacy_catalogue');
+});
+test('mixed v2 records refresh facets and stable routes without excluding legacy',()=>{
+ const parsed=parseApprovedCatalogue(v2([legacyRecord({id:'OPO-901',municipality:'Villa histórica'}),adminRecord({id:'OPO-902',region:'Cataluña',municipality:'Villa nueva'})]));
+ applyApprovedCatalogue(parsed);assert.equal(records.length,2);assert.equal(processPath(records[0]),'/convocatorias/opo-901');assert.equal(filterRecords(new URLSearchParams('q=histórica')).length,1);
+});
+

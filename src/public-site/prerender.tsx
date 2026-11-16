@@ -18,7 +18,7 @@ export {institutionKind,governmentScope,discoveryResults,publicCategory,category
 
 export {comparisonTrayVisible} from './discovery';
 
-export {parseApprovedCatalogue,publicUrl} from './approved-contract';
+export {parseApprovedCatalogue,publicUrl,publicationLabel} from './approved-contract';
 export {ApprovedCatalogueClient,storedIds} from './approved-client';
 export {approvedMode,applyApprovedCatalogue,todayMadrid,isApplicationOpen,catalogueVersion,catalogueGeneratedAt} from './catalogue';
 
