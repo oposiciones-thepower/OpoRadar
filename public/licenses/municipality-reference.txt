@@ -1,0 +1,11 @@
+Obra derivada de NGMEP · IGN/ANE · CC BY 4.0.
+Extracción y emparejamiento por OpoRadar. Coordenadas municipales aproximadas; no sedes de examen.
+Fuente: https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS.json
+Descripción: https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS.html
+Condiciones IGN: https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Última modificación HTTP de fuente: 2025-12-12 (no fecha del padrón).
+Recuperada: 2026-11-16
+SHA256 original: bafa998aa4a95237713aa591bbe51af965f46a80743d108642f1620a594d4415
+Campos transformados: INE5, nombre, provincia, latitud/longitud extraídas de center=longitud,latitud.
+Emparejamiento: nombre normalizado + provincia, única coincidencia; homónimos/ambiguos permanecen sin ubicar.

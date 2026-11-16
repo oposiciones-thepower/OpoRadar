@@ -20,6 +20,8 @@ export {comparisonTrayVisible} from './discovery';
 
 export {parseApprovedCatalogue,publicUrl,publicationLabel} from './approved-contract';
 export {ApprovedCatalogueClient,storedIds} from './approved-client';
-export {approvedMode,applyApprovedCatalogue,todayMadrid,isApplicationOpen,catalogueVersion,catalogueGeneratedAt} from './catalogue';
+export {productionMode,approvedMode,applyApprovedCatalogue,todayMadrid,isApplicationOpen,catalogueVersion,catalogueGeneratedAt} from './catalogue';
 
 export {programmeEvidence} from './features';
+
+export {municipalityReference,municipalityReferenceMetadata} from './municipality-reference';

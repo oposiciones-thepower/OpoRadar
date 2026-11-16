@@ -12,9 +12,9 @@ export function GeoSearchMap(props:Props){
  const [ready,setReady]=useState(false),[failed,setFailed]=useState(false),[tileWarning,setTileWarning]=useState(false),[moving,setMoving]=useState(false),[revision,setRevision]=useState(0),[mode,setMode]=useState<'free'|'points'|null>(null),[draft,setDraft]=useState<GeoPoint[]>([]),[error,setError]=useState('');
  const tracing=useRef<GeoPoint[]|null>(null),draftRef=useRef(draft);draftRef.current=draft;
  useEffect(()=>{let disposed=false;let observer:ResizeObserver|undefined;
-  import('leaflet').then(L=>{if(disposed||!container.current)return;lib.current=L;const m=L.map(container.current,{zoomControl:false,scrollWheelZoom:true,attributionControl:true,minZoom:5,maxZoom:15,worldCopyJump:false,maxBounds:SPAIN_BOUNDS,maxBoundsViscosity:1});map.current=m;
+  import('leaflet').then(L=>{if(disposed||!container.current)return;lib.current=L;const m=L.map(container.current,{zoomControl:false,scrollWheelZoom:true,attributionControl:true,minZoom:3,maxZoom:15,worldCopyJump:false,maxBounds:SPAIN_BOUNDS,maxBoundsViscosity:1});map.current=m;
    L.control.zoom({position:'bottomright',zoomInTitle:'Acercar mapa',zoomOutTitle:'Alejar mapa'}).addTo(m);m.attributionControl.setPrefix(false);
-   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{bounds:SPAIN_BOUNDS,maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a>',crossOrigin:true,referrerPolicy:'strict-origin-when-cross-origin'}).addTo(m);
+   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{bounds:SPAIN_BOUNDS,maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> · Obra derivada de NGMEP · <a href="https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS.html" target="_blank" rel="noreferrer">IGN/ANE</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>',crossOrigin:true,referrerPolicy:'strict-origin-when-cross-origin'}).addTo(m);
    const pane=m.createPane('spain-mask');pane.style.zIndex='300';pane.style.pointerEvents='none';
    const rings=spainRings;
    const world:GeoPoint[]=[[-85,-180],[-85,180],[85,180],[85,-180]];
@@ -22,13 +22,13 @@ export function GeoSearchMap(props:Props){
    rings.forEach(r=>L.polygon(r,{pane:'spain-mask',fill:false,color:'#bbcdbf',weight:1,interactive:false}).addTo(m));
    tiles.on('tileerror',()=>setTileWarning(true));tiles.on('tileload',()=>setTileWarning(false));
    pins.current=L.layerGroup().addTo(m);shape.current=L.layerGroup().addTo(m);
-   m.setView([39.5,-4.5],5);m.on('moveend',()=>{setMoving(true);setRevision(n=>n+1);});
-   observer=new ResizeObserver(()=>m.invalidateSize({animate:false}));observer.observe(container.current);setReady(true);
+   m.setMinZoom(Math.max(3,Math.min(5,m.getBoundsZoom(SPAIN_BOUNDS,false,L.point(24,24)))));m.setView([39.5,-4.5],5);m.on('moveend',()=>{setMoving(true);setRevision(n=>n+1);});
+   observer=new ResizeObserver(()=>{const atOverview=m.getZoom()===m.getMinZoom();m.invalidateSize({animate:false});const minimum=Math.max(3,Math.min(5,m.getBoundsZoom(SPAIN_BOUNDS,false,L.point(24,24))));m.setMinZoom(minimum);if(atOverview){m.setZoom(minimum,{animate:false});setMoving(false);}});observer.observe(container.current);setReady(true);
   }).catch(()=>setFailed(true));
   return()=>{disposed=true;observer?.disconnect();map.current?.remove();map.current=null;};
  },[]);
  useEffect(()=>{if(!ready||!map.current||!lib.current)return;const m=map.current,L=lib.current;const p=props.zone??props.items.flatMap(v=>{const c=pointFor(v);return c?[c]:[];});
-  if(p.length)m.fitBounds(L.latLngBounds(p),{padding:[55,55],maxZoom:11,animate:false});else m.setView([39.5,-4.5],5);
+  if(p.length)m.fitBounds(L.latLngBounds(p),{padding:[24,24],maxZoom:11,animate:false});else m.setView([39.5,-4.5],5);
   setMoving(false);
  },[ready,props.fitKey]); // A pin selection never resets the view.
  useEffect(()=>{if(!ready||!map.current||!lib.current||!pins.current)return;const m=map.current,L=lib.current,g=pins.current;g.clearLayers();
@@ -58,7 +58,7 @@ export function GeoSearchMap(props:Props){
   {ready&&<><div className="geo-map-tools">{!mode?<><button onClick={start}><Pencil size={16}/>Dibujar zona</button><button className="geo-icon-button" aria-label="Ver toda España" onClick={()=>map.current?.fitBounds(SPAIN_BOUNDS,{padding:[20,20],animate:false})}><Expand size={17}/></button>{props.zone&&<button onClick={()=>props.onZone(null)}><X size={15}/>Borrar zona</button>}</>:<><button aria-pressed={mode==='free'} onClick={()=>{setMode('free');setDraft([]);}}><Pencil size={15}/>Trazo libre</button><button aria-pressed={mode==='points'} onClick={()=>{setMode('points');setDraft([]);}}><MousePointer2 size={15}/>Por puntos</button><button aria-label="Cancelar dibujo de zona" onClick={stop}><X size={17}/></button></>}</div>
    {mode&&<div className="geo-draw-layer" role="application" aria-label={mode==='free'?'Mantén pulsado y dibuja tu zona':'Haz clic para añadir los vértices de la zona'} tabIndex={0} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={()=>{tracing.current=null;}} onClick={e=>{if(mode==='points'){const p=position(e);if(p){setDraft(d=>d.length<80?[...d,p]:d);setError('');}}}} onKeyDown={e=>{if(e.key==='Escape')stop();if(e.key==='Enter')apply();}}/>}
    {mode?<div className="geo-draw-panel"><strong>{mode==='free'?'Dibuja alrededor de donde quieres buscar':'Marca los puntos del perímetro'}</strong><span>{mode==='free'?'Arrastra con el ratón o el dedo. Después, aplica la zona.':'Haz clic al menos en tres puntos y aplica la zona.'}</span>{error&&<p role="alert">{error}</p>}<div><button onClick={()=>setDraft(d=>d.slice(0,-1))} disabled={!draft.length}><Undo2 size={15}/>Deshacer</button><button onClick={stop}>Cancelar</button><button className="geo-apply" onClick={apply} disabled={draft.length<3}><Check size={16}/>Aplicar zona</button></div></div>:moving&&<button className="geo-search-view" onClick={()=>{const b=map.current!.getBounds();props.onView([b.getSouth(),b.getWest(),b.getNorth(),b.getEast()]);setMoving(false);}}><SearchIcon/>Buscar en esta vista</button>}
-   <div className="geo-map-caption"><Compass size={13}/><span>España · ubicación municipal, no sede de examen</span></div>
+   <div className="geo-map-caption"><Compass size={13}/><span>España · referencia municipal, no destino ni sede de examen</span></div>
    {tileWarning&&<div className="geo-tile-warning" role="status">Cartografía temporalmente no disponible. Los puntos y el listado siguen funcionando.</div>}
   </>}
  </section>;

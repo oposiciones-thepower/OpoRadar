@@ -1,38 +1,46 @@
-# Approved catalogue integration
-## Boundaries
-This change concerns the separate marketing demo, not the default branch or original application. It reuses the existing administrator approval/publication circuit. A scraped or edited row is not automatically public. Public catalogue and lead capture remain separate: forms still simulate, no emails or CRM calls.
+# Published catalogue and approval provenance
+## Scope
+This is the separate public OpoRadar experience. Changes stay on the isolated review branch/PR; no merge to master, original application source or DNS cutover is implied. Publication data changes in the shared catalogue were explicitly authorized; pending research rows are not automatically public.
 
-## Contract
-Version 1 envelope: schemaVersion, revision, generatedAt, records and coverage.
-Stable public IDs are OPO-<catalogue-id>. Public URLs use the stable ID, not mutable municipality/category text.
-Records preserve nullable seats and dates, type, official category, process state and application status separately. Documents retain multiple approved URLs. Coordinates are explicit or null; missing coordinates never remove the unfiltered list row.
-No source sheet rows/links, personal records, review comments, credentials or job payloads are exposed.
+## Contract and the legacy catalogue correction
+The live endpoint uses schemaVersion 2; the frontend remains able to read version 1 during rollout. Records carry publicationStatus: admin_approved or legacy_catalogue.
+- admin_approved has real approvedAt and approvalVersion.
+- legacy_catalogue has null approval metadata: absence of a row in the new approval ledger does not make an already published legacy catalogue entry a draft.
+- verifiedAt is independent and stays null without documentary verification.
+coverage.totalRecords, adminApprovedRecords and legacyRecords must reconcile with the actual response. Public IDs remain OPO-<catalogue-id>, with stable detail URLs.
 
-## Approval and frozen records
-Use only publications with an accredited approval, tenant and catalogue lineage. A false synchronization flag can protect an already published record: it is not an exclusion flag.
-Do not enrich a frozen catalogue record by joining current origin links. Until an approved document-version snapshot exists, show only information already published in the catalogue and mark missing document types honestly.
-The first real approved read has one record; this is not the whole DWH and not proof of completeness. Legacy ambiguous type/status/deadline data stays unverified.
+The original new-ledger-only gate wrongly reduced 868 existing Supera catalogue records to one. This was an integration error, not lost records. The corrected read projection selects the existing Administrative/Auxiliary catalogue and accredited new publications. It does not invent origin lineage, duplicate the old catalogue or join pending source links into frozen publications.
 
-## Frontend
-VITE_CATALOGUE=approved enables runtime reads. VITE_APPROVED_CATALOGUE_URL is a public read-only endpoint URL, never a secret, administrator JWT or database URI. Without it, local preview expects /api/public/v1/catalogue.
-The app starts with no records, fetches immediately, refreshes every five minutes and offers a manual refresh. Valid empty, loading and error are distinct. Failed requests never fall back to sample data; the last approved response may remain visible with an explicit warning and timestamp.
-Immutable responses update facets, counts, comparison, metadata and routes. Sample editorial enrichments and old coordinates are disabled. Saved IDs are not discarded while loading or after a transient failure.
-Approved builds contain no sample records. Information pages remain noindex. The demo's SPA fallback supports direct navigation to new stable IDs; production SEO/SSR publication remains a separate decision.
+On 16 November 2026 a protected approval operation added 40 eligible new publications: the Supera catalogue became 908 (41 with recorded admin approval, 867 legacy). The other 75 additional candidates and previously excluded, duplicate or mapper-blocked cohorts were not mass-published. These are dated operational counts, not a completeness certificate.
 
-## Checks
+## Public fields and documents
+The server projects a public allowlist, not review notes, source sheet rows, student data, jobs or credentials. Published seats and dates remain nullable; process state and application window are separate. A past deadline does not prove that the whole selection process is finished.
+Only documentary URLs present in the published catalogue are exposed. The existing publisher does not freeze all source JSONB links; missing programme/list/result links are not completed by joining current pending research. A generic portal is not labelled as an approved programme.
+Publication approval is not a fresh audit of requirements, documents, deadline, exam or destination.
+
+## Geographic references
+Explicit valid catalogue coordinates take precedence. Otherwise the map uses the official public IGN/ANE municipality reference, derived from NGMEP, with 8,132 entries.
+Match municipality name plus province, require a unique official reference and allow controlled accent/language variants. No fuzzy town matching, national-name-only fallback, guessed capital, or use of internal database IDs as INE codes.
+Coordinates are approximate municipal references, not examination sites or destinations of the vacancies. Unknown/ambiguous records remain in the unfiltered list and are excluded only when a geographic area is applied.
+The 908-record validation resolved 653 records; 255 remained unlocated. This is geographic-reference coverage, not documentary verification.
+Source, retrieval metadata, original SHA256 and CC BY 4.0 attribution are kept in data/municipality-reference.json and public/licenses/municipality-reference.txt. Attribution is visible on the map.
+
+## Public release
+npm run build:public enables VITE_CATALOGUE=approved and VITE_PUBLIC_RELEASE=production. VITE_APPROVED_CATALOGUE_URL is the declared public read endpoint, never a secret, administrator JWT or database URI.
+The public build removes review/sandbox notices, fake email collection, simulated follow/preparation requests, review metrics and the disconnected student route. It does not make inactive integrations appear operational.
+Search, comparison, browser-local saved records, published sources and real geographic filtering remain functional. Training links lead to the actual Supera website without sending form data from this application.
+CRM, automated notices, accounts and content generation are separate integrations; they are not activated by removing copy.
+
+## Runtime and deployment
+Read immediately, refresh every five minutes and on request. Loading, valid empty and failure are different. Failed reads never substitute the old sample. The last valid catalogue response may remain visible only with an explicit failure notice and consultation timestamp.
+Use the existing Sites project and audience, with SPA fallback for stable new IDs. Export only the public build with scripts/export-approved-preview.mjs; do not copy private backend SQL, credentials or approval backups.
+The shared review origin remains non-indexable until an explicitly coordinated official-domain/SEO cutover. Removing review copy is not authorization to replace the original domain. Least-privilege credentials and public-traffic protections are infrastructure work, not solved by UI wording.
+
+## Verification
 - npm run check:marketing
-- npm run build:marketing && npm run test:marketing (original sample regressions)
-- npm run build:approved && npm run test:approved (approved runtime contract/client)
-- Browser QA: real approved source, direct detail reload, empty, removal, outage, recovery, comparison/saved selections, map without invented coordinates, five responsive widths.
-- Backend publication/freeze/read projection tests run in the private backend module, not this public repository.
-No mass approval or production administrator action is part of these tests.
+- npm run build:marketing && npm run test:marketing: 57 legacy regressions
+- npm run build:public && npm run test:approved: contract/client/export and municipality-reference tests
+- npm run test:public: rendered public routes contain no sandbox copy, fake collection or disconnected review routes
+- Real browser: catalogue, stable direct details, legacy/new provenance, comparison/saved selections, markers, drawing a containing/excluding zone, URL persistence, mobile map/list and failure/recovery in a local controlled proxy only.
+No new real admin approvals are created by frontend tests; backend approval receipts and database tests remain in the private backend project.
 
-## Deployment
-On 16 November 2026 the isolated read endpoint was explicitly authorized, activated by EELL and verified against the frontend contract. The shared review demo is now deployed as Sites v12 and reads the live approved catalogue. No laptop bridge or database credentials are used by the published frontend. The former 30-record sample is not a fallback in this mode.
-Export only the public build with scripts/export-approved-preview.mjs. Preserve Site identity and audience. Never copy the original application tree, environment files, backend SQL or private QA artifacts into Sites.
-The exporter verifies the exact declared public API URL and rejects internal URLs, sample records or credentials. Use a new branch; do not merge into master.
-
-## Hosted validation — 16 November 2026
-Frontend checks: TypeScript, 57 sample regressions and 18 approved/client/export tests pass. Real browser on the hosted v12: catalogue, stable direct detail URL/reload, manual refresh, saved records and comparison; nine responsive traversals (390/768/1440) without page overflow or internal Sheets links, and no observed JavaScript errors. Controlled error/empty/recovery was repeated only in a local QA transport proxying the real endpoint; the database was never forced offline.
-
-Only one approved record is currently returned. Approval is not documentary verification or proof of catalogue completeness. A generic portal must not be displayed as an approved programme link; missing programmes stay explicitly missing. Admin approval writes were tested separately in ephemeral PostgreSQL, not performed on real records during this validation. Lead capture and content generation remain simulated/unconnected.

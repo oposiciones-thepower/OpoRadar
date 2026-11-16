@@ -2,6 +2,7 @@ import {bodyGuides,bodyGuidePath,bodyDescription} from './body-guides';
 import sample from './data/catalogue.json';
 import {type ApprovedCatalogue,type ApplicationStatus,type PublicationStatus} from './approved-contract';
 export const approvedMode=import.meta.env.VITE_CATALOGUE==='approved';
+export const productionMode=approvedMode&&import.meta.env.VITE_PUBLIC_RELEASE==='production';
 import fromDb from './data/catalogue.db.json';
 
 // VITE_CATALOGUE=db usa el export de la BD de OpoRadar (scripts/export-db-catalogue.mjs); por defecto, la muestra revisada de 30 fichas.
@@ -67,6 +68,7 @@ export function metadata(pathname: string) {
   const path = pathname.replace(/\/$/, '') || '/';
   const process = records.find(record => processPath(record) === path);
   if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. Muestra local del registro; consulta la fuente oficial.` };
+  if(productionMode&&/^\/convocatorias\/opo-\d+$/.test(path)&&!catalogueGeneratedAt)return{title:'Ficha de empleo público | OpoRadar',description:'Consulta plazas, bases, fechas y publicaciones del organismo convocante.'};
   const bodyGuide = bodyGuides.find(g=>bodyGuidePath(g)===path);
   if(bodyGuide)return {title:bodyGuide.title+' | OpoRadar',description:bodyDescription(bodyGuide)};
   const guide = guides.find(article => `/guias/${article.slug}` === path);
@@ -74,9 +76,9 @@ export function metadata(pathname: string) {
   if (path.startsWith('/oposiciones/')) {
     const parts = path.split('/');
     const region = regions.find(r => regionSlug(r) === parts[2]);
-    if (region && parts.length === 3) return {title:`Oposiciones administrativas en ${region} | OpoRadar`,description:`Muestra de procesos de ${region}: plazas, bases y seguimiento con fuentes oficiales.`};
+    if (region && parts.length === 3) return {title:`Oposiciones administrativas en ${region} | OpoRadar`,description:`Procesos del catálogo de ${region}: plazas, bases y seguimiento con fuentes oficiales.`};
     const city = municipalities.find(name => slug(name) === parts[3] && cityRegion(name) === region);
-    if (city && (!parts[4] || ['administrativo','auxiliar-administrativo'].includes(parts[4])) && parts.length <= 5) return { title: `${parts[4] ? familyLabel(parts[4]) : 'Oposiciones administrativas'} en ${city} | OpoRadar`, description: `Consulta la muestra de procesos de ${city}: bases, programa oficial, estado y documentos. Datos pendientes señalados, sin inventar plazos.` };
+    if (city && (!parts[4] || ['administrativo','auxiliar-administrativo'].includes(parts[4])) && parts.length <= 5) return { title: `${parts[4] ? familyLabel(parts[4]) : 'Oposiciones administrativas'} en ${city} | OpoRadar`, description: `Consulta los procesos de ${city}: bases, programa oficial, estado y documentos. Datos pendientes señalados, sin inventar plazos.` };
   }
   const pages: Record<string, [string, string]> = {
     '/': ['Oposiciones administrativas cerca de ti | OpoRadar', 'Explora convocatorias locales, entiende las bases y encuentra alternativas para preparar tu oposición. Vista local de OpoRadar.'],
@@ -92,8 +94,8 @@ export function metadata(pathname: string) {
     '/guardadas': ['Mis fichas guardadas | OpoRadar', 'Fichas guardadas solo en este navegador.'],
     '/area-alumno': ['Área de alumno | OpoRadar', 'El área privada se conserva separada de esta preview pública local.'],
   };
-  const value = pages[path];
-  return value ? {title:value[0],description:value[1]} : {title:'Página no encontrada | OpoRadar',description:'Esta página no forma parte de la preview local.'};
+  const value = productionMode&&['/preview-metricas','/area-alumno'].includes(path)?undefined:pages[path];
+  return value ? {title:value[0],description:productionMode?value[1].replace('Vista local de OpoRadar.','Información de empleo público.').replace('Muestra del registro','Catálogo').replace('la muestra de','el catálogo de'):value[1]} : {title:'Página no encontrada | OpoRadar',description:productionMode?'Vuelve al buscador de ofertas y convocatorias de empleo público.':'Esta página no forma parte de la preview local.'};
 }
 
-export const staticRoutes = ['/oposiciones-locales',...bodyGuides.map(bodyGuidePath),'/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))];
+export const staticRoutes = ['/oposiciones-locales',...bodyGuides.map(bodyGuidePath),'/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))].filter(path=>!productionMode||!['/preview-metricas','/area-alumno'].includes(path));

@@ -1,4 +1,4 @@
-import {approvedMode} from './catalogue';
+import {approvedMode,productionMode} from './catalogue';
 import {useEffect,useState} from 'react';
 import {Link} from 'react-router-dom';
 import {ArrowRight,ArrowUpRight,Bell,FileText,Search} from 'lucide-react';
@@ -6,7 +6,7 @@ import {records,matches,family,processPath,type Process} from './catalogue';
 import {processHeading} from './geo';
 import {useSite} from './context';
 
-export function FollowProcess({process:p}:{process:Process}){const {intake}=useSite();return <div className="follow-process"><button className="button button-outline" aria-label={'Seguir convocatoria '+p.id+' (demostración)'} onClick={()=>intake({kind:'process',processId:p.id,city:p.municipality})}><Bell size={18}/>Seguir convocatoria</button><small>Demo · todavía no envía avisos</small></div>;}
+export function FollowProcess({process:p}:{process:Process}){const {intake}=useSite();if(productionMode)return null;return <div className="follow-process"><button className="button button-outline" aria-label={'Seguir convocatoria '+p.id+' (demostración)'} onClick={()=>intake({kind:'process',processId:p.id,city:p.municipality})}><Bell size={18}/>Seguir convocatoria</button><small>Demo · todavía no envía avisos</small></div>;}
 
 export function PreparationExplorer(){
  const [query,setQuery]=useState(''),[body,setBody]=useState(''),[limit,setLimit]=useState(6);
@@ -25,4 +25,4 @@ const questions=[
  ['¿Se envían avisos al seguir una convocatoria?','Esta versión permite probar la solicitud de seguimiento, pero todavía no guarda emails ni envía avisos. El seguimiento real y sus preferencias se conectarán antes de ofrecer ese servicio.'],
  ['¿Solicitar preparación genera un temario automáticamente?','No en esta demo. La propuesta es revisar una convocatoria específica y producir lo necesario bajo demanda, tras confirmar disponibilidad, alcance y condiciones.']
 ];
-export function FooterFAQs(){return <section id="preguntas-frecuentes" className="footer-faqs" aria-labelledby="footer-faq-title"><div className="container"><div><span className="eyebrow muted">INFORMACIÓN PARA DECIDIR</span><h2 id="footer-faq-title">Preguntas frecuentes</h2><p>Lo esencial antes de elegir una convocatoria. Las bases y sus rectificaciones son siempre la referencia.</p></div><div className="footer-faq-list">{questions.map(([title,text])=><details key={title}><summary>{title}</summary><p>{text}</p></details>)}</div><div className="footer-brand-links"><span>Conoce nuestras academias</span><a href="https://www.superaoposiciones.es/" target="_blank" rel="noopener noreferrer">Supera <ArrowUpRight size={16}/></a><a href="https://patrio.es/" target="_blank" rel="noopener noreferrer">Patrio <ArrowUpRight size={16}/></a></div></div></section>;}
+export function FooterFAQs(){return <section id="preguntas-frecuentes" className="footer-faqs" aria-labelledby="footer-faq-title"><div className="container"><div><span className="eyebrow muted">INFORMACIÓN PARA DECIDIR</span><h2 id="footer-faq-title">Preguntas frecuentes</h2><p>Lo esencial antes de elegir una convocatoria. Las bases y sus rectificaciones son siempre la referencia.</p></div><div className="footer-faq-list">{(productionMode?[...questions.slice(0,5),['¿Qué representa un punto del mapa?','Una referencia municipal aproximada. No acredita el destino de las plazas ni la sede del examen; consulta esos datos en las publicaciones oficiales.'],['¿Dónde se guardan mis fichas?','Al pulsar el marcador, tu selección se conserva en este navegador. Puedes volver a ella desde Fichas guardadas.'],['¿Dónde puedo consultar la formación?','Accede a la web de Supera para conocer la formación y confirmar disponibilidad, alcance y condiciones para tu convocatoria.']]:questions).map(([title,text])=><details key={title}><summary>{title}</summary><p>{text}</p></details>)}</div><div className="footer-brand-links"><span>Conoce nuestras academias</span><a href="https://www.superaoposiciones.es/" target="_blank" rel="noopener noreferrer">Supera <ArrowUpRight size={16}/></a><a href="https://patrio.es/" target="_blank" rel="noopener noreferrer">Patrio <ArrowUpRight size={16}/></a></div></div></section>;}

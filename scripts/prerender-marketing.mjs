@@ -1,6 +1,6 @@
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
-import {render,metadata,staticRoutes} from '../.prerender/prerender.js';
+import {render,metadata,staticRoutes,productionMode} from '../.prerender/prerender.js';
 const template=await readFile('dist/index.html','utf8');
 if(!template.includes('<!--public-content-->')) throw new Error('SSR outlet missing');
 const escape=value=>value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
@@ -16,7 +16,7 @@ function page(route){
 }
 for(const route of routes){const folder=join('dist',route.slice(1));await mkdir(folder,{recursive:true});await writeFile(join(folder,'index.html'),page(route));}
 await writeFile('dist/404.html',page('/404'));
-await writeFile('dist/robots.txt','User-agent: *\nDisallow: /\n# LOCAL PREVIEW: not approved for publication\n');
+await writeFile('dist/robots.txt',productionMode?'User-agent: *\nDisallow: /\n':'User-agent: *\nDisallow: /\n# LOCAL PREVIEW: not approved for publication\n');
 await writeFile('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+routes.filter(path=>!['/guardadas','/area-alumno','/comparar','/preview-metricas'].includes(path)).map(path=>'<url><loc>https://www.oporadar.es'+path+'</loc></url>').join('')+'</urlset>');
 await writeFile('dist/routes.json',JSON.stringify(routes));
 console.log('HTML prerendered for '+routes.length+' routes; noindex remains active.');

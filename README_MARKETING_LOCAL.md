@@ -53,3 +53,12 @@ Real follow-up notifications need consent, event/version deduplication, preferen
 
 ## 16 November 2026 — approved catalogue demo connected
 The shared review demo is deployed as v12 with runtime reads of approved publications, not the previous 30-record sample. The existing OpoRadar admin remains the review/publication entry point. Source changes stay on the isolated review branch/PR #2; neither master nor the original website was changed. See [approved catalogue contract and verification](docs/APPROVED-CATALOGUE.md) for behavior, limits and checks.
+
+## 16 November 2026 — public release and real geographic search
+The public build (`npm run build:public`) removes sandbox copy and simulated contact/account/review flows instead of pretending they are connected. Functional search, comparison, browser-local saves and official sources remain available. Training links use the actual Supera website.
+
+The legacy catalogue is no longer excluded by a partial approval ledger: DTO v2 distinguishes existing catalogue records from recorded admin approvals. The authorized approval operation added 40 eligible publications, yielding 908 Supera records at the dated verification cut. No false documentary verification is inferred.
+
+The map resolves municipality+province against the official IGN/ANE reference (NGMEP, CC BY 4.0), with attribution and unique matches only: 653 of 908 records located, 255 retained without an invented point. These are approximate municipal references, not exam venues or vacancy destinations. See [contract, geographic source and verification](docs/APPROVED-CATALOGUE.md).
+
+Master and the original website source/DNS remain separate. The shared review host remains noindex until a coordinated official-domain launch. CRM, alerts, student services and content generation are not silently activated.

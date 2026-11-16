@@ -190,7 +190,7 @@ test('Spain-only map includes all Spanish territories and masks foreign countrie
  assert.deepEqual(geo.spainBounds,[[27.5,-18.35],[43.9,4.5]]);
  for(const p of [[40.4,-3.7],[28.3,-16.5],[39.7,2.9],[35.889,-5.3167],[35.292,-2.938]])assert.ok(geo.spainRings.some(r=>geo.insideZone(p,r)),p.join(','));
  for(const p of [[38.722,-9.139],[48.8566,2.3522],[51.5,-.12]])assert.ok(!geo.spainRings.some(r=>geo.insideZone(p,r)));
- const source=await readFile('src/public-site/GeoSearchMap.tsx','utf8');assert.ok(source.includes('maxBounds:SPAIN_BOUNDS,maxBoundsViscosity:1'));assert.ok(source.includes('minZoom:5'));assert.ok(source.includes('fillOpacity:1,fillRule:'));assert.ok(source.includes('bounds:SPAIN_BOUNDS'));assert.ok(!source.includes('navigator.geolocation'));
+ const source=await readFile('src/public-site/GeoSearchMap.tsx','utf8');assert.ok(source.includes('maxBounds:SPAIN_BOUNDS,maxBoundsViscosity:1'));assert.ok(source.includes('minZoom:3'));assert.ok(source.includes('getBoundsZoom(SPAIN_BOUNDS,false,L.point(24,24))'));assert.ok(source.includes('fillOpacity:1,fillRule:'));assert.ok(source.includes('bounds:SPAIN_BOUNDS'));assert.ok(!source.includes('navigator.geolocation'));
 });
 
 test('Blanca: detail contains deadline, honest source CTA, anchors and responsive disclosures',()=>{
