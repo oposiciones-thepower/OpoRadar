@@ -24,10 +24,12 @@ async function fixture(content,expectPass){
   }
  }finally{await rm(root,{recursive:true,force:true});}
 }
-test('export accepts security-validator token keyword, not a credential',()=>fixture('const reject=/(token|key|access_token|auth|signature)=/i;',true));
+test('export accepts security-validator token keyword, not a credential',()=>fixture('const reject=/(token|key|access_token|auth|signature)=/i;const api="'+api+'";',true));
 test('export allows only the declared public API and preserves identity/noindex/SPA',()=>fixture('const api="'+api+'";',true));
 test('export rejects a real access_token query value',()=>fixture('const url="https://example.com/?access_token=secret-fixture";',false));
 test('export rejects a serialized credential value',()=>fixture('const value={"access_token":"secret-fixture"};',false));
 test('export rejects undeclared backend and internal sheet URL',async()=>{await fixture('const api="https://n8n.thepower.education/webhook/other";',false);await fixture('const url="https://docs.google.com/spreadsheets/d/fixture";',false);});
 test('export rejects legacy sample records',()=>fixture('const record="L-005";',false));
 
+
+test('export rejects a public build without the declared API wired in JavaScript',()=>fixture('const api="/api/public/v1/catalogue";',false));

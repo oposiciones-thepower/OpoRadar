@@ -8,7 +8,7 @@ let publicApi='';
 if(apiArg){const u=new URL(apiArg);if(u.origin!=='https://n8n.thepower.education'||!u.pathname.startsWith('/webhook/')||u.search||u.username||u.password||u.hash)throw Error('Only the approved isolated public API is allowed');publicApi=u.href;}
 const manifestFile=join(destination,'.openai/hosting.json'),manifest=JSON.parse(await readFile(manifestFile,'utf8'));
 if(!manifest.project_id)throw Error('Use the existing Site identity');
-const target=join(destination,'dist');let files=0;
+const target=join(destination,'dist');let files=0,wired=!publicApi;
 await rm(target,{recursive:true,force:true});
 async function copy(directory){for(const entry of await readdir(directory,{withFileTypes:true})){
  const source=join(directory,entry.name),rel=relative(root,source),out=join(target,rel);
@@ -19,6 +19,7 @@ async function copy(directory){for(const entry of await readdir(directory,{withF
  if(['.png','.ico'].includes(extname(entry.name)))await copyFile(source,out);else{
   let content=await readFile(source,'utf8');
   content=content.replaceAll('https://www.oporadar.es',origin).replaceAll('Preview local','OpoRadar');
+  if(publicApi&&extname(entry.name)==='.js'&&content.includes(publicApi))wired=true;
   const audit=publicApi?content.replaceAll(publicApi,'APPROVED_PUBLIC_READ_API'):content;
   if(/docs\.google\.com\/spreadsheets|thepower\.education|postgres(?:ql)?:\/\/|[?&]access_token=|[\"']access_token[\"']\s*:\s*[\"'][^\"']{6}|Bearer\s|private_key|BEGIN PRIVATE KEY|\/Users\//.test(audit))throw Error('Private data or undeclared backend in '+rel);
   if(/L-005|L-006|P-038|catalogue\.db\.json|2026-10-13/.test(content))throw Error('Old sample material in approved output '+rel);
@@ -26,6 +27,7 @@ async function copy(directory){for(const entry of await readdir(directory,{withF
  }files++;
 }}
 await copy(root);
+if(!wired)throw Error('Public API is not wired into the built browser bundle');
 await writeFile(join(target,'_headers'),'/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n');
 manifest.static={directory:'dist',not_found_handling:'single-page-application'};
 await writeFile(manifestFile,JSON.stringify(manifest,null,2)+'\n');

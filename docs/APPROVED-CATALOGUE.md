@@ -44,3 +44,7 @@ The shared review origin remains non-indexable until an explicitly coordinated o
 - Real browser: catalogue, stable direct details, legacy/new provenance, comparison/saved selections, markers, drawing a containing/excluding zone, URL persistence, mobile map/list and failure/recovery in a local controlled proxy only.
 No new real admin approvals are created by frontend tests; backend approval receipts and database tests remain in the private backend project.
 
+
+## Public release build guard
+
+Set `VITE_APPROVED_CATALOGUE_URL` to the isolated public read endpoint when running `npm run build:public`. The build rejects missing or undeclared endpoints; export also requires that the declared API is wired into the browser JavaScript. This prevents a static host from accidentally requesting an absent same-origin `/api/public/v1/catalogue` route.

@@ -67,7 +67,7 @@ export const guides = [
 export function metadata(pathname: string) {
   const path = pathname.replace(/\/$/, '') || '/';
   const process = records.find(record => processPath(record) === path);
-  if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. Muestra local del registro; consulta la fuente oficial.` };
+  if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. ${productionMode?'Catálogo de empleo público':'Muestra local del registro'}; consulta la fuente oficial.` };
   if(productionMode&&/^\/convocatorias\/opo-\d+$/.test(path)&&!catalogueGeneratedAt)return{title:'Ficha de empleo público | OpoRadar',description:'Consulta plazas, bases, fechas y publicaciones del organismo convocante.'};
   const bodyGuide = bodyGuides.find(g=>bodyGuidePath(g)===path);
   if(bodyGuide)return {title:bodyGuide.title+' | OpoRadar',description:bodyDescription(bodyGuide)};
