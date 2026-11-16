@@ -1,25 +1,44 @@
 import {bodyGuides,bodyGuidePath,bodyDescription} from './body-guides';
 import sample from './data/catalogue.json';
+import {type ApprovedCatalogue,type ApplicationStatus,type PublicationStatus} from './approved-contract';
+export const approvedMode=import.meta.env.VITE_CATALOGUE==='approved';
+export const productionMode=approvedMode&&import.meta.env.VITE_PUBLIC_RELEASE==='production';
 import fromDb from './data/catalogue.db.json';
 
 // VITE_CATALOGUE=db usa el export de la BD de OpoRadar (scripts/export-db-catalogue.mjs); por defecto, la muestra revisada de 30 fichas.
 const snapshot = (import.meta.env.VITE_CATALOGUE === 'db' ? fromDb : sample) as typeof sample;
 
-export const records = snapshot.records;
-export const snapshotLabel = snapshot.snapshot.split('-').reverse().join('/');
-export type Process = typeof records[number];
+export type Process = typeof sample.records[number] & {publicId?:string;publicationStatus?:PublicationStatus;applicationStatus?:ApplicationStatus;applicationStart?:string|null;applicationEnd?:string|null;verifiedAt?:string|null;approvedAt?:string|null;approvalVersion?:string|null;coordinates?:{lat:number;lon:number;source?:string}|null;title?:string;examDate?:string|null};
+export let records:Process[] = approvedMode?[]:snapshot.records;
+export let catalogueVersion=0;
+export let catalogueGeneratedAt:string|null=null;
+export let snapshotLabel = approvedMode?'—':snapshot.snapshot.split('-').reverse().join('/');
+
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 export const slug = (value: string) => normalize(value).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-export const family = (process: Process) => normalize(process.category).includes('auxiliar') ? 'auxiliar-administrativo' : 'administrativo';
-export const familyLabel = (value: string) => !value ? 'Administrativo y Auxiliar' : value === 'auxiliar-administrativo' ? 'Auxiliar administrativo' : 'Administrativo';
-export const processPath = (process: Process) => `/convocatorias/${slug(process.municipality)}-${family(process)}-${process.id.toLowerCase()}`;
+export const family = (process: Process) => normalize(process.category).includes('auxiliar') ? 'auxiliar-administrativo' : !approvedMode||normalize(process.category).includes('administrativ')?'administrativo':'por-verificar';
+export const familyLabel = (value: string) => !value ? 'Administrativo y Auxiliar' : value === 'auxiliar-administrativo' ? 'Auxiliar administrativo' : value==='por-verificar'?'Categoría por verificar':'Administrativo';
+export const processPath = (process: Process) => approvedMode?'/convocatorias/'+process.id.toLowerCase():'/convocatorias/'+slug(process.municipality)+'-'+family(process)+'-'+process.id.toLowerCase();
 export const regionSlug = (region: string) => region === 'Comunidad de Madrid' ? 'madrid' : region === 'Principado de Asturias' ? 'asturias' : slug(region);
 export const regionPath = (region: string) => `/oposiciones/${regionSlug(region)}`;
-export const regions = [...new Set(records.map(p => p.region))].sort((a,b) => a.localeCompare(b,'es'));
-export const provinces = [...new Set(records.map(p => p.province))].sort((a,b) => a.localeCompare(b,'es'));
+export let regions = [...new Set(records.map(p => p.region))].sort((a,b) => a.localeCompare(b,'es'));
+export let provinces = [...new Set(records.map(p => p.province))].sort((a,b) => a.localeCompare(b,'es'));
 export const cityRegion = (city: string) => records.find(p => p.municipality === city)?.region ?? '';
-export const cityPath = (city: string, body?: string) => `${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`;
-export const municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
+export const cityPath = (city: string, body?: string) => cityRegion(city)?`${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`:'/localidades';
+export let municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
+const cleanTerritory=(value:string)=>/^(?:null|undefined)$/i.test(value.trim())?'':value;
+export function applyApprovedCatalogue(data:ApprovedCatalogue){
+ records=data.records.map(p=>({...p,region:cleanTerritory(p.region),province:cleanTerritory(p.province),municipality:cleanTerritory(p.municipality),published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo de OpoRadar',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
+ regions=[...new Set(records.map(p=>p.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ provinces=[...new Set(records.map(p=>p.province).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ municipalities=[...new Set(records.map(p=>p.municipality).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+ catalogueGeneratedAt=data.generatedAt;snapshotLabel=new Date(data.generatedAt).toLocaleString('es-ES',{timeZone:'Europe/Madrid'});catalogueVersion++;
+}
+export function todayMadrid(){return new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Madrid'}).format(new Date());}
+export function isApplicationOpen(p:Process){
+ const today=todayMadrid();
+ return p.type!=='oferta'&&p.applicationStatus==='open'&&!!p.applicationStart&&!!p.applicationEnd&&p.applicationStart.slice(0,10)<=today&&p.applicationEnd.slice(0,10)>=today;
+}
 export const group = (seats: number | null) => seats == null || seats < 1 ? 'sin-dato' : seats <= 5 ? '1' : seats < 20 ? '2' : '3';
 export const stateLabel = (state: string) => ({ 'por verificar': 'Por verificar', 'en curso': 'En curso', 'cerrada': 'Cerrada', 'abierta': 'Abierta', 'pendiente de convocatoria': 'Pendiente de convocatoria' }[state] ?? state);
 export function matches(process: Process, query: string) {
@@ -48,7 +67,8 @@ export const guides = [
 export function metadata(pathname: string) {
   const path = pathname.replace(/\/$/, '') || '/';
   const process = records.find(record => processPath(record) === path);
-  if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. Muestra local del registro; consulta la fuente oficial.` };
+  if (process) return { title: `${process.category} · ${process.municipality} | OpoRadar`, description: `Ficha ${process.id}: plazas, bases, programa oficial y seguimiento de ${process.organism}. ${productionMode?'Catálogo de empleo público':'Muestra local del registro'}; consulta la fuente oficial.` };
+  if(productionMode&&/^\/convocatorias\/opo-\d+$/.test(path)&&!catalogueGeneratedAt)return{title:'Ficha de empleo público | OpoRadar',description:'Consulta plazas, bases, fechas y publicaciones del organismo convocante.'};
   const bodyGuide = bodyGuides.find(g=>bodyGuidePath(g)===path);
   if(bodyGuide)return {title:bodyGuide.title+' | OpoRadar',description:bodyDescription(bodyGuide)};
   const guide = guides.find(article => `/guias/${article.slug}` === path);
@@ -56,9 +76,9 @@ export function metadata(pathname: string) {
   if (path.startsWith('/oposiciones/')) {
     const parts = path.split('/');
     const region = regions.find(r => regionSlug(r) === parts[2]);
-    if (region && parts.length === 3) return {title:`Oposiciones administrativas en ${region} | OpoRadar`,description:`Muestra de procesos de ${region}: plazas, bases y seguimiento con fuentes oficiales.`};
+    if (region && parts.length === 3) return {title:`Oposiciones administrativas en ${region} | OpoRadar`,description:`Procesos del catálogo de ${region}: plazas, bases y seguimiento con fuentes oficiales.`};
     const city = municipalities.find(name => slug(name) === parts[3] && cityRegion(name) === region);
-    if (city && (!parts[4] || ['administrativo','auxiliar-administrativo'].includes(parts[4])) && parts.length <= 5) return { title: `${parts[4] ? familyLabel(parts[4]) : 'Oposiciones administrativas'} en ${city} | OpoRadar`, description: `Consulta la muestra de procesos de ${city}: bases, programa oficial, estado y documentos. Datos pendientes señalados, sin inventar plazos.` };
+    if (city && (!parts[4] || ['administrativo','auxiliar-administrativo'].includes(parts[4])) && parts.length <= 5) return { title: `${parts[4] ? familyLabel(parts[4]) : 'Oposiciones administrativas'} en ${city} | OpoRadar`, description: `Consulta los procesos de ${city}: bases, programa oficial, estado y documentos. Datos pendientes señalados, sin inventar plazos.` };
   }
   const pages: Record<string, [string, string]> = {
     '/': ['Oposiciones administrativas cerca de ti | OpoRadar', 'Explora convocatorias locales, entiende las bases y encuentra alternativas para preparar tu oposición. Vista local de OpoRadar.'],
@@ -74,8 +94,8 @@ export function metadata(pathname: string) {
     '/guardadas': ['Mis fichas guardadas | OpoRadar', 'Fichas guardadas solo en este navegador.'],
     '/area-alumno': ['Área de alumno | OpoRadar', 'El área privada se conserva separada de esta preview pública local.'],
   };
-  const value = pages[path];
-  return value ? {title:value[0],description:value[1]} : {title:'Página no encontrada | OpoRadar',description:'Esta página no forma parte de la preview local.'};
+  const value = productionMode&&['/preview-metricas','/area-alumno'].includes(path)?undefined:pages[path];
+  return value ? {title:value[0],description:productionMode?value[1].replace('Vista local de OpoRadar.','Información de empleo público.').replace('Muestra del registro','Catálogo').replace('la muestra de','el catálogo de'):value[1]} : {title:'Página no encontrada | OpoRadar',description:productionMode?'Vuelve al buscador de ofertas y convocatorias de empleo público.':'Esta página no forma parte de la preview local.'};
 }
 
-export const staticRoutes = ['/oposiciones-locales',...bodyGuides.map(bodyGuidePath),'/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))];
+export const staticRoutes = ['/oposiciones-locales',...bodyGuides.map(bodyGuidePath),'/', '/convocatorias', '/localidades', ...regions.map(regionPath), '/guias', '/superadmin', '/guardadas', '/area-alumno', '/comparar', '/alternativas-age', '/preview-metricas', ...guides.map(guide => `/guias/${guide.slug}`), ...records.map(processPath), ...municipalities.flatMap(city => [cityPath(city), ...new Set(records.filter(record => record.municipality === city).map(family))].map((value, index) => index ? cityPath(city, value) : value))].filter(path=>!productionMode||!['/preview-metricas','/area-alumno'].includes(path));

@@ -28,3 +28,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Referencias municipales del catálogo público: obra derivada de NGMEP, IGN/ANE, CC BY 4.0. Extracción y emparejamiento por OpoRadar; puntos aproximados, no sedes de examen ni destinos de plazas. Fuente y condiciones completas: /licenses/municipality-reference.txt

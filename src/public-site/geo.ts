@@ -1,6 +1,7 @@
+import {municipalityReference} from './municipality-reference';
 import outline from './data/spain-outline.json';
 import points from './data/municipal-points.json';
-import {family,normalize,type Process} from './catalogue';
+import {family,normalize,approvedMode,type Process} from './catalogue';
 
 import {publicCategory,categoryNeedsReview} from './discovery';
 export type GeoPoint=[number,number]; // latitude, longitude; EPSG:4326
@@ -8,6 +9,7 @@ export const spainBounds:[GeoPoint,GeoPoint]=[[27.5,-18.35],[43.9,4.5]];
 export const spainRings:GeoPoint[][]=outline.geometry.coordinates.map(p=>p[0].map(([lon,lat])=>[lat,lon] as GeoPoint));
 export const municipalPoints:Record<string,{lat:number;lon:number;province:string;source:string;municipalityCode:string}>=points;
 export function pointFor(p:Process):GeoPoint|null {
+ if(approvedMode){if(p.coordinates)return[p.coordinates.lat,p.coordinates.lon];const reference=municipalityReference(p.municipality,p.province);return reference?[reference.lat,reference.lon]:null;}
  const v=municipalPoints[p.municipality];
  return v&&normalize(v.province)===normalize(p.province)?[v.lat,v.lon]:null;
 }
