@@ -23,10 +23,11 @@ export const regionPath = (region: string) => `/oposiciones/${regionSlug(region)
 export let regions = [...new Set(records.map(p => p.region))].sort((a,b) => a.localeCompare(b,'es'));
 export let provinces = [...new Set(records.map(p => p.province))].sort((a,b) => a.localeCompare(b,'es'));
 export const cityRegion = (city: string) => records.find(p => p.municipality === city)?.region ?? '';
-export const cityPath = (city: string, body?: string) => `${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`;
+export const cityPath = (city: string, body?: string) => cityRegion(city)?`${regionPath(cityRegion(city))}/${slug(city)}${body ? '/' + body : ''}`:'/localidades';
 export let municipalities = [...new Set(records.map(process => process.municipality))].sort((a, b) => a.localeCompare(b, 'es'));
+const cleanTerritory=(value:string)=>/^(?:null|undefined)$/i.test(value.trim())?'':value;
 export function applyApprovedCatalogue(data:ApprovedCatalogue){
- records=data.records.map(p=>({...p,published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo de OpoRadar',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
+ records=data.records.map(p=>({...p,region:cleanTerritory(p.region),province:cleanTerritory(p.province),municipality:cleanTerritory(p.municipality),published:p.published?p.published.slice(0,10).split('-').reverse().join('/'):'',exam:p.exam||'Pendiente de localizar',group:p.seats==null||p.seats<1?'Sin dato verificado':p.seats<=5?'1':p.seats<20?'2':'3',sourceState:p.sourceState||p.state,sourceRow:0,sourceSheet:'Catálogo de OpoRadar',sourceUrl:'',publicNote:p.publicNote||''})) as Process[];
  regions=[...new Set(records.map(p=>p.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
  provinces=[...new Set(records.map(p=>p.province).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
  municipalities=[...new Set(records.map(p=>p.municipality).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));

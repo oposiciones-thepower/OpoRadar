@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {publicationLabel,programmeEvidence,parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
+import {publicationLabel,programmeEvidence,parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,cityPath,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
 const record=()=>({id:'OPO-900001',organism:'Ayuntamiento de prueba',sector:'Administración Local',municipality:'Municipio de prueba',province:'Madrid',region:'Comunidad de Madrid',issuer:'Ayuntamiento de prueba',category:'Auxiliar administrativo',type:'convocatoria',state:'por verificar',portal:'https://example.org/proceso',access:'Por verificar',seats:null,published:null,applicationWindow:'Por verificar',exam:null,documents:[{label:'Bases',text:'No publicadas',links:[]}],processKind:'plaza',applicationStatus:'unverified',coordinates:null,verifiedAt:null});
 const catalogue=(items=[record()])=>({schemaVersion:1,revision:'test-v1',generatedAt:'2026-11-14T12:00:00Z',records:items,coverage:{scope:'Fixture aislada, no datos públicos reales'}});
 test('approved mode starts empty, never loads sample records',()=>{assert.equal(records.length,0);});
@@ -87,3 +87,8 @@ test('mixed v2 records refresh facets and stable routes without excluding legacy
  applyApprovedCatalogue(parsed);assert.equal(records.length,2);assert.equal(processPath(records[0]),'/convocatorias/opo-901');assert.equal(filterRecords(new URLSearchParams('q=histórica')).length,1);
 });
 
+
+test('literal NULL territory remains unknown and never creates a /null/ locality route',()=>{
+ const parsed=parseApprovedCatalogue(v2([legacyRecord({municipality:'Villa sin CCAA',region:'NULL'})]));applyApprovedCatalogue(parsed);
+ assert.equal(records.length,1);assert.equal(records[0].region,'');assert.equal(cityPath('Villa sin CCAA'),'/localidades');
+});
