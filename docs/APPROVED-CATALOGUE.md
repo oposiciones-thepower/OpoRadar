@@ -28,6 +28,11 @@ Approved builds contain no sample records. Information pages remain noindex. The
 No mass approval or production administrator action is part of these tests.
 
 ## Deployment
-Do not publish an approved build until the isolated public read endpoint is authorized, deployed and verified. The current development loopback bridge is supervised QA only, not a permanent connection.
+On 16 November 2026 the isolated read endpoint was explicitly authorized, activated by EELL and verified against the frontend contract. The shared review demo is now deployed as Sites v12 and reads the live approved catalogue. No laptop bridge or database credentials are used by the published frontend. The former 30-record sample is not a fallback in this mode.
 Export only the public build with scripts/export-approved-preview.mjs. Preserve Site identity and audience. Never copy the original application tree, environment files, backend SQL or private QA artifacts into Sites.
 The exporter verifies the exact declared public API URL and rejects internal URLs, sample records or credentials. Use a new branch; do not merge into master.
+
+## Hosted validation — 16 November 2026
+Frontend checks: TypeScript, 57 sample regressions and 18 approved/client/export tests pass. Real browser on the hosted v12: catalogue, stable direct detail URL/reload, manual refresh, saved records and comparison; nine responsive traversals (390/768/1440) without page overflow or internal Sheets links, and no observed JavaScript errors. Controlled error/empty/recovery was repeated only in a local QA transport proxying the real endpoint; the database was never forced offline.
+
+Only one approved record is currently returned. Approval is not documentary verification or proof of catalogue completeness. A generic portal must not be displayed as an approved programme link; missing programmes stay explicitly missing. Admin approval writes were tested separately in ephemeral PostgreSQL, not performed on real records during this validation. Lead capture and content generation remain simulated/unconnected.

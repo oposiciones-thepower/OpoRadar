@@ -49,3 +49,7 @@ The static server uses port 4173 by default; set `PORT` if needed. `npm run dev:
 No new backend, database writes, scraper jobs, real subscriptions, emails, CRM, generated material or production deployment. Saved and compared IDs stay in this browser. Simulator inputs are not submitted or stored as leads. Existing database snapshot mode is legacy/unreviewed in this release; it is not selected for the review demo.
 
 Real follow-up notifications need consent, event/version deduplication, preference and unsubscribe handling, and a verified ingestion integration. See `docs/MEETING-CHANGES.md`. A visual approval and complete accessibility/content audit are still required before candidate-facing production.
+
+
+## 16 November 2026 — approved catalogue demo connected
+The shared review demo is deployed as v12 with runtime reads of approved publications, not the previous 30-record sample. The existing OpoRadar admin remains the review/publication entry point. Source changes stay on the isolated review branch/PR #2; neither master nor the original website was changed. See [approved catalogue contract and verification](docs/APPROVED-CATALOGUE.md) for behavior, limits and checks.

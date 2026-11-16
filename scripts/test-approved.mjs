@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
+import {programmeEvidence,parseApprovedCatalogue,publicUrl,ApprovedCatalogueClient,storedIds,group,applyApprovedCatalogue,records,isApplicationOpen,processPath,filterRecords,deadline,detailFor,pointFor} from '../.prerender/prerender.js';
 const record=()=>({id:'OPO-900001',organism:'Ayuntamiento de prueba',sector:'Administración Local',municipality:'Municipio de prueba',province:'Madrid',region:'Comunidad de Madrid',issuer:'Ayuntamiento de prueba',category:'Auxiliar administrativo',type:'convocatoria',state:'por verificar',portal:'https://example.org/proceso',access:'Por verificar',seats:null,published:null,applicationWindow:'Por verificar',exam:null,documents:[{label:'Bases',text:'No publicadas',links:[]}],processKind:'plaza',applicationStatus:'unverified',coordinates:null,verifiedAt:null});
 const catalogue=(items=[record()])=>({schemaVersion:1,revision:'test-v1',generatedAt:'2026-11-14T12:00:00Z',records:items,coverage:{scope:'Fixture aislada, no datos públicos reales'}});
 test('approved mode starts empty, never loads sample records',()=>{assert.equal(records.length,0);});
@@ -48,3 +48,5 @@ test('synchronous transport throws do not freeze future refreshes',async()=>{
  await c.refresh();await c.refresh();assert.equal(n,2);assert.equal(c.snapshot().status,'error');c.stop();
 });
 test('calendar-invalid ISO dates rejected',()=>{assert.throws(()=>parseApprovedCatalogue(catalogue([{...record(),published:'2026-02-31'}])));});
+
+test('missing approved programme has no generic portal disguised as a programme link',()=>{const r=record();assert.deepEqual(programmeEvidence(r),{url:null,label:'Sin enlace aprobado al programa'});r.documents.push({label:'Temario oficial',text:'Programa publicado',links:['https://example.org/programa.pdf']});assert.deepEqual(programmeEvidence(r),{url:'https://example.org/programa.pdf',label:'Consultar programa oficial'});});
