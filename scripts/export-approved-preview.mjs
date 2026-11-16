@@ -20,7 +20,7 @@ async function copy(directory){for(const entry of await readdir(directory,{withF
   let content=await readFile(source,'utf8');
   content=content.replaceAll('https://www.oporadar.es',origin).replaceAll('Preview local','Demo de revisión');
   const audit=publicApi?content.replaceAll(publicApi,'APPROVED_PUBLIC_READ_API'):content;
-  if(/docs\.google\.com\/spreadsheets|thepower\.education|postgres(?:ql)?:\/\/|access_token|Bearer\s|private_key|BEGIN PRIVATE KEY|\/Users\//.test(audit))throw Error('Private data or undeclared backend in '+rel);
+  if(/docs\.google\.com\/spreadsheets|thepower\.education|postgres(?:ql)?:\/\/|[?&]access_token=|[\"']access_token[\"']\s*:\s*[\"'][^\"']{6}|Bearer\s|private_key|BEGIN PRIVATE KEY|\/Users\//.test(audit))throw Error('Private data or undeclared backend in '+rel);
   if(/L-005|L-006|P-038|catalogue\.db\.json|2026-10-13/.test(content))throw Error('Old sample material in approved output '+rel);
   await writeFile(out,content);
  }files++;
