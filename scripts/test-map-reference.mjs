@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {municipalityReference,municipalityReferenceMetadata,pointFor,geographicResults,encodeZone,decodeZone} from '../.prerender/prerender.js';
 const row=(municipality,province,extra={})=>({id:'OPO-999001',municipality,province,coordinates:null,...extra});
@@ -11,3 +12,5 @@ test('an explicit valid catalogue coordinate remains authoritative',()=>{assert.
 test('drawn zone includes a real municipal point and excludes other municipalities/unknowns',()=>{const a=row('Guadarrama','Madrid'),b=row('Galdar','Las Palmas'),u=row('Sin municipio','Madrid');const p=pointFor(a);assert.ok(p);const zone=[[p[0]-.03,p[1]-.03],[p[0]-.03,p[1]+.03],[p[0]+.03,p[1]+.03],[p[0]+.03,p[1]-.03]];assert.deepEqual(geographicResults([a,b,u],decodeZone(encodeZone(zone)),null),[a]);assert.equal(geographicResults([a,b,u],null,null).length,3);});
 test('islands and autonomous cities have real reference points',()=>{for(const [city,province]of[['Santa Cruz de Tenerife','Santa Cruz de Tenerife'],['Palma','Illes Balears'],['Ceuta','Ceuta'],['Melilla','Melilla']])assert.ok(municipalityReference(city,province),city);});
 
+
+test('map cluster summaries are bounded instead of listing hundreds of municipalities',()=>{const text=readFileSync('src/public-site/GeoSearchMap.tsx','utf8');assert.match(text,/names\.slice\(0,3\)/);assert.doesNotMatch(text,/names\.join\(/);});

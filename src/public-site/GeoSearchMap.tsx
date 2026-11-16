@@ -35,10 +35,10 @@ export function GeoSearchMap(props:Props){
   const clusters=new Map<string,{items:Process[];p:GeoPoint[]}>();
   for(const item of props.items){const p=pointFor(item);if(!p)continue;const projected=m.project(p,m.getZoom());const k=`${Math.floor(projected.x/46)}:${Math.floor(projected.y/46)}`;const c=clusters.get(k)??{items:[],p:[]};c.items.push(item);c.p.push(p);clusters.set(k,c);}
   for(const c of clusters.values()){
-   const center:GeoPoint=[c.p.reduce((n,p)=>n+p[0],0)/c.p.length,c.p.reduce((n,p)=>n+p[1],0)/c.p.length];const active=c.items.some(p=>p.id===props.selected);const names=[...new Set(c.items.map(p=>p.municipality))];
-   const icon=L.divIcon({className:`geo-pin ${active?'geo-pin-selected':''}`,html:`<span>${c.items.length}</span>`,iconSize:[44,44],iconAnchor:[22,22]});const marker=L.marker(center,{icon,keyboard:true,title:`${names.join(', ')} · ${c.items.length} ${c.items.length===1?'ficha':'fichas'}`,alt:`${c.items.length} ${c.items.length===1?'ficha':'fichas'} en ${names.join(', ')}`}).addTo(g);
-   const label=document.createElement('span');label.textContent=names.join(', ');marker.bindTooltip(label,{direction:'top'});
-   const el=marker.getElement();el?.setAttribute('role','button');el?.setAttribute('aria-label',`Ver ${c.items.length} ${c.items.length===1?'ficha':'fichas'} de ${names.join(', ')}`);
+   const center:GeoPoint=[c.p.reduce((n,p)=>n+p[0],0)/c.p.length,c.p.reduce((n,p)=>n+p[1],0)/c.p.length];const active=c.items.some(p=>p.id===props.selected);const names=[...new Set(c.items.map(p=>p.municipality))];const summary=names.slice(0,3).join(', ')+(names.length>3?` y ${names.length-3} municipios más`:'');
+   const icon=L.divIcon({className:`geo-pin ${active?'geo-pin-selected':''}`,html:`<span>${c.items.length}</span>`,iconSize:[44,44],iconAnchor:[22,22]});const marker=L.marker(center,{icon,keyboard:true,title:`${summary} · ${c.items.length} ${c.items.length===1?'ficha':'fichas'}`,alt:`${c.items.length} ${c.items.length===1?'ficha':'fichas'} en ${summary}`}).addTo(g);
+   const label=document.createElement('span');label.textContent=summary;marker.bindTooltip(label,{direction:'top'});
+   const el=marker.getElement();el?.setAttribute('role','button');el?.setAttribute('aria-label',`Ver ${c.items.length} ${c.items.length===1?'ficha':'fichas'} de ${summary}`);
    marker.on('click',()=>{if(names.length>1&&m.getZoom()<12)m.fitBounds(L.latLngBounds(c.p),{padding:[70,70],maxZoom:m.getZoom()+3});live.current.onSelect(c.items[0].id);});
   }
  },[ready,props.items,props.selected,revision]);
